@@ -2,3 +2,22 @@ baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme ="zen"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All blog posts are defined in their own files.
+
+	name = "sysapp"
+	description = "we make it work"
+
+  # Navigation
+	[params.navigation]
+		brand = "sysapp"
+
+	[params.navigation.links]
+		about     = "About"
+		portfolio = "Portfolio"
+		# contact   = "Contact"
