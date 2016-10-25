@@ -1,5 +1,12 @@
 # Hugo, grunt, less kickstart template
-Startup a hugo project with less, grunt, uglify and image resize, it features live reload.
+Startup a hugo project with:
+- less,
+- grunt,
+- uglify
+- image resize,
+- livereload,
+- bootstrap.
+
 
  ### 1. Create your hugo site in a `site` directory at the root of the repo
 ```

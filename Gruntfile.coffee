@@ -4,12 +4,12 @@ module.exports = (grunt) ->
         less:
             dev:
                 paths: ['less/']
-                src: ['less/mysite.less']
-                dest: 'site/static/css/mysite.css'
+                src: ['site/themes/zen/static/less/styles.less']
+                dest: 'site/static/css/style.css'
             dist:
                 paths: ['less/']
-                src: ['less/mysite.less']
-                dest: 'site/static/css/mysite.min.css'
+                src: ['site/themes/zen/static/less/styles.less']
+                dest: 'site/static/css/style.min.css'
                 options:
                     plugins: [
                         new (require 'less-plugin-autoprefix') browsers: ['> 0.1%']
