@@ -10,14 +10,19 @@ theme ="zen"
 
 	# All blog posts are defined in their own files.
 
-	name = "sysapp"
-	description = "we make it work"
+	name = "your site name"
+	description = "your site description"
 
   # Navigation
 	[params.navigation]
-		brand = "sysapp"
+		brand = "brand"
 
 	[params.navigation.links]
-		about     = "About"
-		portfolio = "Portfolio"
-		# contact   = "Contact"
+
+  [params.navigation.links.blog]
+		name     = "blog"
+		link = "/blog"
+
+  [params.navigation.links.services]
+  	name     = "services"
+  	link = "#services"

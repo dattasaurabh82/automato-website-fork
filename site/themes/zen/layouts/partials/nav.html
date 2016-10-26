@@ -13,15 +13,14 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+
+              {{ range .Site.Params.navigation.links }}
                 <li>
-                    <a class="page-scroll" href="{{ .Site.BaseURL }}about">{{ with .Site.Params.navigation.links.about }}{{ . }}{{ end }}</a>
+                    <a class="page-scroll" href="{{ .Site.BaseURL }} {{ .link }}">
+                      {{ .name }}
+                    </a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="{{ .Site.BaseURL }}">{{ with .Site.Params.navigation.links.portfolio }}{{ . }}{{ end }}</a>
-                </li>
-                <li>
-                    <!-- <a class="page-scroll" href="#contact">{{ with .Site.Params.navigation.links.contact }}{{ . }}{{ end }}</a> -->
-                </li>
+              {{end}}
             </ul>
         </div>
     </div>
