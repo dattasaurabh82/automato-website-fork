@@ -3,11 +3,11 @@ module.exports = (grunt) ->
         pkg: grunt.file.readJSON('package.json')
         less:
             dev:
-                paths: ['less/']
+                paths: ['site/themes/zen/static/less']
                 src: ['site/themes/zen/static/less/styles.less']
                 dest: 'site/static/css/style.css'
             dist:
-                paths: ['less/']
+                paths: ['site/themes/zen/static/less']
                 src: ['site/themes/zen/static/less/styles.less']
                 dest: 'site/static/css/style.min.css'
                 options:
@@ -58,7 +58,7 @@ module.exports = (grunt) ->
                 atBegin: true
                 livereload: true
             less:
-                files: ['less/*.less']
+                files: ['site/themes/zen/static/less/*.less']
                 tasks: 'less:dev'
             coffee:
                 files: ['coffee/*.coffee']

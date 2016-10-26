@@ -11,7 +11,7 @@ theme ="zen"
 	# All blog posts are defined in their own files.
 
 	name = "your site name"
-	description = "your site description"
+	claim = "we have what you want"
 
   # Navigation
 	[params.navigation]
