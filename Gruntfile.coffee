@@ -42,10 +42,22 @@ module.exports = (grunt) ->
                     engine: 'gm'
                     separator: '_'
                     sizes: [
-                        { rename: false, width: '100%', height: '100%' }                # Copy the source.
-                        { name: '64x64', width: 64, height: 64, aspectRatio: false }    # Exact 64x64 via cropping.
-                        { name: '300', width: 300, aspectRatio: true }                  # At most 300px wide.
-                        { name: '400x250', width: 400, height: 250, aspectRatio: true } # At most 400px wide and 250px tall.
+                        # Copy the source.
+                        { rename: false, width: '100%', height: '100%' }
+
+                        # different sizes for cropped images
+                        { name: '2000x400', width: 2000, height: 400, aspectRatio: false }
+                        { name: '1025x300', width: 1025, height: 300, aspectRatio: false }
+                        { name: '768x300', width: 768, height: 300, aspectRatio: false }
+                        { name: '480x200', width: 480, height: 200, aspectRatio: false }
+
+                        # different sizes for non cropped images
+                        { name: '2000', width: 2000 }
+                        { name: '1024', width: 1024 }
+                        { name: '768', width: 768 }
+                        { name: '480', width: 768 }
+
+
                     ]
                 files: [
                     expand: true
@@ -53,6 +65,23 @@ module.exports = (grunt) ->
                     src: '**.{png,jpg,jpeg,gif}'
                     dest: 'site/static/img'
                 ]
+
+
+
+        svg_sprite        : {
+            dist          : {
+                expand    : true,
+                cwd       : 'site/themes/zen/static/svg/',
+                src       : '**/*.svg',
+                dest      : 'site/themes/zen/static/',
+                options   : "mode": {
+                  "symbol": true,
+                  "log": "verbose",
+                  "inline": true,
+                }
+            }
+        }
+
         watch:
             options:
                 atBegin: true
@@ -80,6 +109,12 @@ module.exports = (grunt) ->
                     protocol: 'http'
                     base: 'build/dev'
                     livereload: true
+        'gh-pages': {
+            options: {
+                base: 'build/dist'
+            },
+            src: ['**']
+        }
 
     grunt.registerTask 'hugo', (target) ->
         done = @async()
@@ -99,7 +134,10 @@ module.exports = (grunt) ->
         'grunt-contrib-watch'
         'grunt-contrib-connect'
         'grunt-responsive-images'
+        'grunt-svg-sprite'
+        'grunt-gh-pages'
     ]
-    grunt.registerTask 'dev', ['less:dev', 'coffee', 'copy:coffee', 'responsive_images', 'hugo:dev']
-    grunt.registerTask 'default', ['less:dist', 'coffee', 'copy:coffee', 'uglify', 'responsive_images', 'hugo:dist']
+    grunt.registerTask 'dev', ['less:dev', 'coffee', 'copy:coffee', 'svg_sprite','responsive_images', 'hugo:dev']
+    grunt.registerTask 'default', ['less:dist', 'coffee', 'copy:coffee', 'uglify','svg_sprite', 'responsive_images', 'hugo:dist']
     grunt.registerTask 'edit', ['connect', 'watch']
+    grunt.registerTask 'deploy', ['gh-pages']
