@@ -6,6 +6,8 @@ Startup a hugo project with:
 - image resize,
 - livereload,
 - bootstrap.
+- aos
+- font-awesome
 
 
  ### 1. Create your hugo site in a `site` directory at the root of the repo
