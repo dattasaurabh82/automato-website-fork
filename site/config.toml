@@ -1,4 +1,4 @@
-baseurl = "https://automato-build.github.io/"
+baseurl = "https://automato-build.github.io/website/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme ="automato"
