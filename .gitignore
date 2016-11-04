@@ -1,4 +1,7 @@
 node_modules/*
 build/*
 *.DS_Store
-site/static/css/style.css
+.grunt/*
+site/themes/antefact/static/symbol/*
+site/static/css/*
+site/static/img/*

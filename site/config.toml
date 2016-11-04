@@ -1,7 +1,7 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme ="zen"
+theme ="automato"
 
 [params]
 
@@ -10,19 +10,50 @@ theme ="zen"
 
 	# All blog posts are defined in their own files.
 
-	name = "your site name"
-	claim = "we have what you want"
-
   # Navigation
 	[params.navigation]
-		brand = "brand"
+		brand = "automato.farm"
 
-	[params.navigation.links]
+	[[params.navigation.links]]
+    name     = "works"
+    link = ""
+  [[params.navigation.links]]
+    name     = "research"
+    link = ""
+  [[params.navigation.links]]
+    name     = "about"
+    link = ""
+  [[params.navigation.links]]
+    name     = "market"
+    link = ""
+  [[params.navigation.links]]
+    name     = "blog"
+    link = ""
 
-  [params.navigation.links.blog]
-		name     = "blog"
-		link = "/blog"
+  #section hero
+  [params.hero]
+  claim="Research, design & prototype from 7 hours in the future"
 
-  [params.navigation.links.services]
-  	name     = "services"
-  	link = "#services"
+  #section research
+  [params.research]
+  title="We research and develop future products and interfaces sometimes real sometimes fictional."
+  more="See all projects"
+  more-link=""
+
+  #section collaboration
+  [params.collaboration]
+  title="We collaborate with studios, companies and institutions to ideate & prototype with emerging technologies"
+  more="More about automato.farm"
+  more-link=""
+
+  #section reach
+  [params.teach]
+  title="We teach, talk and research the complex relationships between people and machines"
+  more="get in touch"
+  more-link=""
+
+  #section footer
+  [params.footer]
+  claim="We think about the future so you don’t have to."
+  subtitle="We are based in Shanghai, Contact us."
+  link=""
