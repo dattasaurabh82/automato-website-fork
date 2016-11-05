@@ -1,18 +1,23 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" .}}
-<div class="container">
+<div class="page-list container">
+    <div class="row">
+        {{ range .Data.Pages }}
+            <div class=" list-item col-md-6">
 
-<section id="main">
-  <div>
-   <h1 id="title">{{ .Title }}</h1>
-        <ul id="list">
-            {{ range .Data.Pages }}
-              <li><a href="{{.Permalink }}">{{ .Title }}</a></li>
-            {{ end }}
-        </ul>
-  </div>
-</section>
+                {{range .Params.img}}
+                    <div class="bg-img fill" style="background-image:url({{$.Site.BaseURL}}img/{{.}})"></div>
+                {{end}}
+
+                <div class="container fill overlay">
+                    <div class="row">
+                        <h1 id="title">{{ .Title }}</h1>
+                        <a href="{{.Permalink }}">{{ .Title }}</a>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </div>
 </div>
-
 
 {{ partial "footer.html" . }}
