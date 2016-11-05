@@ -39,18 +39,12 @@ module.exports = (grunt) ->
         responsive_images:
             process:
                 options:
-                    engine: 'im'
+                    engine: 'gm'
                     separator: '_'
+                    tryAnimated: true
                     sizes: [
                         # Copy the source.
                         { rename: false, width: '100%', height: '100%' }
-
-                        # different sizes for cropped images
-                        { name: '2000x400', width: 2000, height: 400, aspectRatio: false }
-                        { name: '1025x300', width: 1025, height: 300, aspectRatio: false }
-                        { name: '768x300', width: 768, height: 300, aspectRatio: false }
-                        { name: '480x200', width: 480, height: 200, aspectRatio: false }
-
                         # different sizes for non cropped images
                         { name: '2000', width: 2000 }
                         { name: '1024', width: 1024 }
@@ -62,7 +56,7 @@ module.exports = (grunt) ->
                 files: [
                     expand: true
                     cwd: 'img'
-                    src: '**.{png,jpg,jpeg,gif,GIF}'
+                    src: '**/*.{gif,jpg,png,svg}'
                     dest: 'site/static/img'
                 ]
 
