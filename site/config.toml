@@ -16,19 +16,19 @@ theme ="automato"
 
 	[[params.navigation.links]]
     name     = "works"
-    link = ""
+    link = "/portfolio"
   [[params.navigation.links]]
     name     = "research"
-    link = ""
+    link = "/research"
   [[params.navigation.links]]
     name     = "about"
-    link = ""
+    link = "/about"
   [[params.navigation.links]]
     name     = "market"
-    link = ""
+    link = "/market"
   [[params.navigation.links]]
     name     = "blog"
-    link = ""
+    link = "/blog"
 
   #section hero
   [params.hero]
