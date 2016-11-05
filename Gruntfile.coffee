@@ -39,7 +39,7 @@ module.exports = (grunt) ->
         responsive_images:
             process:
                 options:
-                    engine: 'gm'
+                    engine: 'im'
                     separator: '_'
                     sizes: [
                         # Copy the source.
@@ -62,7 +62,7 @@ module.exports = (grunt) ->
                 files: [
                     expand: true
                     cwd: 'img'
-                    src: '**.{png,jpg,jpeg,gif}'
+                    src: '**.{png,jpg,jpeg,gif,GIF}'
                     dest: 'site/static/img'
                 ]
 
