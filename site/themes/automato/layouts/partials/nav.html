@@ -1,7 +1,8 @@
-<nav id="mainNav" class="fill">
+<nav id="mainNav" class="mainNav">
+     <div class="navbar-header">
+       <div class="container">
 
-    <!-- <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle collapsed">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -10,19 +11,20 @@
         <a class="navbar-brand page-scroll" href="{{ .Site.BaseURL }}#page-top">
             {{ with .Site.Params.navigation.brand }}{{ . }}{{ end }}
         </a>
-    </div> -->
+      </div>
+    </div>
+</nav>
 
-    <section class="menu fill container">
-        <div class=" row middle">
-            <ul class="">
+    <section class="dropDown menu fill hidden">
+      <div class="container fill">
+        <div class="row middle">
                 {{ range .Site.Params.navigation.links }}
                     <h1>
-                        <a class="page-scroll" href="{{ .Site.BaseURL }} {{ .link }}">
+                        <a class="menu-item page-scroll" href="{{ .Site.BaseURL }} {{ .link }}">
                             {{ .name }}
                         </a>
                     </h1>
                 {{end}}
-            </ul>
         </div>
+      </div>
     </section>
-</nav>

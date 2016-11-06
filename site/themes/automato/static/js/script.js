@@ -11,5 +11,12 @@ window.onload = function() {
     //add scrollspy to activate menu on scroll
     $('body').scrollspy({target: ".navbar"});
     AOS.init();
-
 }
+
+
+$('#mainNav .navbar-toggle').click(function(){
+  $('.dropDown.menu').toggleClass("hidden");
+  $('#mainNav').toggleClass("expanded");
+
+  console.log("clicked");
+});

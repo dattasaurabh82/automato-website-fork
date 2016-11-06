@@ -1,18 +1,14 @@
 @import "bootstrap/bootstrap.less";
 @import "../css/aos.css";
-@import "font-awesome/less/font-awesome.less";
-
-//colors
-
+@import "font-awesome/less/font-awesome.less"; //colors
 @cyan: #34BCEF;
 @magenta: #E0107C;
 @dark-gray: #3F4346;
 @light-gray: #EFEFEF;
 @white: #fff;
 @rat: #9B928C;
-
-
-// Font-Size
+@red: #ff0000;
+@black: #000000; // Font-Size
 @base-font-size: 1em; // Line-Height
 @base-line-height: 1.5;
 @header-line-height: 1.25; //sizes
@@ -47,7 +43,6 @@ h2,
 h3,
 h4,
 h5 {
-
     a:focus,
     a:hover {
         text-decoration: none;
@@ -104,12 +99,13 @@ p {
     }
 }
 
-a:hover, a:focus{
-  text-decoration: none;
+a:focus,
+a:hover {
+    text-decoration: none;
 }
 
-.fill{
-  height: 100%;
+.fill {
+    height: 100%;
 }
 
 .middle {
@@ -118,58 +114,92 @@ a:hover, a:focus{
     transform: translateY(-50%);
 }
 
-.project{
-  position: relative;
+.project {
+    position: relative;
 
-  .bg-img{
-  background-position: center;
-  background-size: cover;
-  }
-  .overlay{
-    position: absolute;
-    top: 0px;
-    right: 0;
-    left: 0;
-    margin: auto;
-  }
+    .bg-img {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
 }
 
-.page-list{
-  margin-top: 70px;
+.page-list {
+    margin-top: 70px;
 
-  .list-item{
-    min-height: 6em;
+    .list-item {
+        min-height: 6em;
 
-    .bg-img{
-      height: 30em;
-      width: 100%;
-      background-size: cover;
+        .bg-img {
+            height: 30em;
+            width: 100%;
+            background-size: cover;
+        }
     }
-  }
 }
 
-#mainNav{
-  .navbar-toggle {
-    @media (min-width: 768px){
-      display: block;
-    }
-  }
+#mainNav {
+    .navbar-header {
+        position: fixed;
+        top: 1em;
+        background-color: transparent;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
 
-  .navbar-toggle {
-    @media (min-width: 768px){
-      display: block;
+        a.navbar-brand {
+            color: @black;
+            border: 1px solid @black;
+            height: 2em;
+            padding: 6px;
+            margin-top: 1em;
+        }
 
-    }
-  }
+        button.navbar-toggle {
+            float: right;
 
-  .navbar-collapse.collapse{
-    .navbar-nav{
-      display: none;
+            .icon-bar {
+                background-color: @black;
+            }
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
     }
-  }
-  .navbar-collapse.collapse.in{
-    .navbar-nav{
-      display: table;
+}
+
+#mainNav.expanded {
+    a.navbar-brand {
+        color: @white;
+        border: 1px solid @white;
     }
-  }
+    button.navbar-toggle .icon-bar {
+        background-color: @white;
+    }
+}
+
+.dropDown.menu {
+    background-color: @red;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+
+    a.menu-item {
+        text-align: center;
+        color: @black;
+
+        &:hover {
+            color: @white;
+        }
+    }
 }
