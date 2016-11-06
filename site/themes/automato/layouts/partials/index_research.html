@@ -3,14 +3,14 @@
         <div class="container">
             <h1>{{ .Site.Params.research.title }}</h1>
 
-            <div id="#heroCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
+            <div id="#researchCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner " role="listbox">
                     {{ range $index, $element := first 4 (where .Site.Pages "Section" "portfolio") }}
 
                         <div class="item {{ if (eq $index 0) }}active{{end}}">
                             <img src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) "." "_wide." }}">
 
-                            <div class="carousel-caption">
+                            <div class="carousel-caption col-md-4">
                                 <h3>{{.Title}}</h3>
                                 <p>{{.Params.subtitle}}</p>
                             </div>

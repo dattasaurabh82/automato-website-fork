@@ -185,15 +185,39 @@ a:hover {
         color: @white;
         border: 1px solid @white;
     }
+
     button.navbar-toggle .icon-bar {
         background-color: @white;
     }
 }
 
-#hero{
-  h1{
-    color: @white;
-  }
+#hero {
+    h1 {
+        color: @white;
+    }
+}
+
+#research {
+    .carousel {
+        .carousel-inner {
+            img {
+                width: 100%;
+            }
+            .carousel-caption {
+                position: absolute;
+                left: 0;
+                right: 60%;
+
+                h3 {
+                    background-color: @black;
+                }
+
+                p {
+                    background-color: @black;
+                }
+            }
+        }
+    }
 }
 
 .dropDown.menu {
