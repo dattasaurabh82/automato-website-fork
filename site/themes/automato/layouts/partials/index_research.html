@@ -1,7 +1,19 @@
-<section id="hero" class="fill">
-    <div class="row middle">
+<section id="research" class="fill">
+  <div class="row middle">
       <div class="container">
-        <h2>{{ .Site.Params.research.title }}</h2>
+          <h1>{{ .Site.Params.research.title }}</h1>
+
+          <div id="#heroCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                  {{ range $index, $element := first 4 (where .Site.Pages "Section" "portfolio") }}
+
+                  <div class="item {{ if (eq $index 0) }}active{{end}}">
+                        <img src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) "." "_wide." }}">
+                    </div>
+                {{ end }}
+              </div>
+          </div>
+          <h4 class="readMore">{{ .Site.Params.research.more }}</h4>
       </div>
-    </div>
+  </div>
 </section>

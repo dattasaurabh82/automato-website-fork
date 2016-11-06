@@ -11,6 +11,9 @@ window.onload = function() {
     //add scrollspy to activate menu on scroll
     $('body').scrollspy({target: ".navbar"});
     AOS.init();
+    $('#heroCarousel').carousel({
+		interval: 3000
+	});
 }
 
 

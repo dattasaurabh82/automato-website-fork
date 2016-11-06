@@ -39,7 +39,7 @@ module.exports = (grunt) ->
         responsive_images:
             process:
                 options:
-                    engine: 'gm'
+                    engine: 'im'
                     separator: '_'
                     tryAnimated: true
                     sizes: [
@@ -50,6 +50,8 @@ module.exports = (grunt) ->
                         { name: '1024', width: 1024 }
                         { name: '768', width: 768 }
                         { name: '480', width: 768 }
+
+                        { name: 'wide', width: 1024, height :300, aspectRatio:false }
 
 
                     ]
