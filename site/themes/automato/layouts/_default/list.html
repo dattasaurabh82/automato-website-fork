@@ -1,23 +1,40 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" .}}
 <div class="page-list container">
-    <div class="row">
-        {{ range .Data.Pages }}
-            <div class=" list-item col-md-6">
 
-                {{range .Params.img}}
-                    <div class="bg-img fill" style="background-image:url({{$.Site.BaseURL}}img/{{.}})"></div>
-                {{end}}
 
-                <div class="container fill overlay">
-                    <div class="row">
-                        <h1 id="title">{{ .Title }}</h1>
-                        <a href="{{.Permalink }}">{{ .Title }}</a>
-                    </div>
-                </div>
-            </div>
-        {{ end }}
-    </div>
+
+  <div class="row list grid">
+      {{ range .Data.Pages }}
+          <div class="item col-md-6 {{ .Params.fronttype }}">
+              <a href="{{.Permalink }}">{{ .Params.frontType }}
+                  <div class="bg-container">
+                      {{ if eq .Params.fronttype "image"}}
+                          <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+                      {{end}}
+
+                      {{ if eq .Params.fronttype "video"}}
+                          <div class="flex-video">
+                              <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
+                          </div>
+                      {{end}}
+
+                      {{ if eq .Params.fronttype "text"}}
+                          <p class="text">
+                              {{.Params.subtitle}}
+                          </p>
+                      {{end}}
+
+                  </div>
+                  <h3 class="title">{{ .Title }}</h3>
+              </a>
+
+          </div>
+
+      {{ end }}
+  </div>
+
+
 </div>
 
 {{ partial "footer.html" . }}

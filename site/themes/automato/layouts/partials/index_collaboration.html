@@ -2,23 +2,40 @@
     <div class="row middle">
         <div class="container">
             <h1>{{ .Site.Params.collaboration.title }}</h1>
-            <div class="row">
+            <div class="row list grid">
                 {{ range $index, $element := first 4 (where .Site.Pages "Section" "blog") }}
+                    <div class="item col-md-6 {{ .Params.fronttype }}">
+                        <a href="{{.Permalink }}">{{ .Params.frontType }}
+                            <div class="bg-container">
+                                {{ if eq .Params.fronttype "image"}}
+                                    <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+                                {{end}}
 
-                    <div class="col-md-6 {{ .Params.fronttype }}">
+                                {{ if eq .Params.fronttype "video"}}
+                                    <div class="flex-video">
+                                        <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
+                                    </div>
+                                {{end}}
 
-                        {{ if eq .Params.fronttype "image"}}
-                            <img src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) "." "_wide." }}">
-                        {{end}}
+                                {{ if eq .Params.fronttype "text"}}
+                                    <p class="text">
+                                      {{.Params.subtitle}}
+                                    </p>
+                                {{end}}
 
-                        <h1 id="title">{{ .Title }}</h1>
-                        <a href="{{.Permalink }}">{{ .Params.frontType }}</a>
+                            </div>
+                            <h3 class="title">{{ .Title }}</h3>
+                        </a>
 
                     </div>
 
                 {{ end }}
             </div>
-            <h4 class="readMore">{{ .Site.Params.collaboration.more }}</h4>
+            <h4 class="readMore">
+              <a href="{{.Site.BaseURL}}{{ .Site.Params.collaboration.morelink }}">
+                {{ .Site.Params.collaboration.more }}
+              </a>
+            </h4>
         </div>
     </div>
 </section>

@@ -114,6 +114,59 @@ a:hover {
     transform: translateY(-50%);
 }
 
+.responsive_images{
+  width: 100%;
+}
+
+.flex-video{
+  height: 100%;
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.readMore{
+  text-align: center;
+}
+
+.list.grid{
+
+  max-width: @bp-medium;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+
+
+
+
+  .item{
+
+    .bg-container {
+        height: 18em;
+        width: 100%;
+        overflow: hidden;
+    }
+    .title{
+      position: absolute;
+      top: 0px;
+      color: @white;
+      background-color: @black;
+      left: 1em;
+    }
+    .text{
+      padding: 4em;
+      font-size: 1em;
+      color: black;
+      text-align: left;
+    }
+
+    &:hover{
+    }
+  }
+}
 .project {
     position: relative;
 

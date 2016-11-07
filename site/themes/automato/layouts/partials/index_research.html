@@ -19,7 +19,11 @@
                     {{ end }}
                 </div>
             </div>
-            <h4 class="readMore">{{ .Site.Params.research.more }}</h4>
+            <h4 class="readMore">
+              <a href="{{.Site.BaseURL}}{{ .Site.Params.research.morelink }}">
+                {{ .Site.Params.research.more }}
+              </a>
+            </h4>
         </div>
     </div>
 </section>
