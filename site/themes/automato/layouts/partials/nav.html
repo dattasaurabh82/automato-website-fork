@@ -20,7 +20,7 @@
         <div class="row middle">
                 {{ range .Site.Params.navigation.links }}
                     <h1>
-                        <a class="menu-item page-scroll" href="{{ .Site.BaseURL }} {{ .link }}">
+                        <a class="menu-item page-scroll" href="{{ $.Site.BaseURL }}{{ .link }}">
                             {{ .name }}
                         </a>
                     </h1>
