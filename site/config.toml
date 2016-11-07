@@ -39,13 +39,13 @@ theme ="automato"
   [params.research]
   title="We research and develop future products and interfaces sometimes real sometimes fictional."
   more="See all projects"
-  morelink="research"
+  morelink="/research"
 
   #section collaboration
   [params.collaboration]
   title="We collaborate with studios, companies and institutions to ideate & prototype with emerging technologies"
   more="More about automato.farm"
-  morelink="about"
+  morelink="/about"
 
   #section reach
   [params.teach]
