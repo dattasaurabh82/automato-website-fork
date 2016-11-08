@@ -2,8 +2,6 @@
 {{ partial "nav.html" .}}
 <div class=" fill">
 
-  <h1>porfolio</h1>
-
   {{ range .Data.Pages }}
   <div class="project fill">
 
@@ -12,9 +10,9 @@
     {{end}}
 
     <div class="container fill overlay">
-      <div class="row">
-        <h1 id="title">{{ .Title }}</h1>
-        <a href="{{.Permalink }}">{{ .Title }}</a>
+      <div class="row middle inverted project-info">
+        <h1 id="title"><a href="{{.Permalink }}">{{ .Title }}</a></h1>
+        <p>{{.Params.subtitle}}</p>
       </div>
     </div>
 
