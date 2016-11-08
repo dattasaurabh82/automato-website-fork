@@ -1,39 +1,41 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" .}}
-<div class="page-list container">
+<div class="page-long page-list container">
 
+    <div class="row list grid">
+        {{ range .Data.Pages }}
+            <div class="item col-md-6 {{ .Params.fronttype }}">
+                <a href="{{.Permalink }}">{{ .Params.frontType }}
+                    <div class="bg-container">
+                        {{ if eq .Params.fronttype "image"}}
+                            <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+                        {{end}}
 
+                        {{ if eq .Params.fronttype "video"}}
+                            <div class="flex-video">
+                                <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
+                            </div>
+                        {{end}}
 
-  <div class="row list grid">
-      {{ range .Data.Pages }}
-          <div class="item col-md-6 {{ .Params.fronttype }}">
-              <a href="{{.Permalink }}">{{ .Params.frontType }}
-                  <div class="bg-container">
-                      {{ if eq .Params.fronttype "image"}}
-                          <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
-                      {{end}}
+                        {{ if eq .Params.fronttype "text"}}
+                            
+                        {{end}}
 
-                      {{ if eq .Params.fronttype "video"}}
-                          <div class="flex-video">
-                              <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
-                          </div>
-                      {{end}}
+                    </div>
+                    <div class="overlay-title inverted">
+                        <div class="title">
+                            <h3>{{.Title}}</h3>
+                        </div>
+                        <div class="subtitle">
+                            <p>{{.Params.subtitle}}</p>
+                        </div>
+                    </div>
+                </a>
 
-                      {{ if eq .Params.fronttype "text"}}
-                          <p class="text">
-                              {{.Params.subtitle}}
-                          </p>
-                      {{end}}
+            </div>
 
-                  </div>
-                  <h3 class="title">{{ .Title }}</h3>
-              </a>
-
-          </div>
-
-      {{ end }}
-  </div>
-
+        {{ end }}
+    </div>
 
 </div>
 

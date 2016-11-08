@@ -1,27 +1,41 @@
 <section id="research" class="fill">
     <div class="row middle">
         <div class="container">
-            <h1>{{ .Site.Params.research.title }}</h1>
+            <h2>{{ .Site.Params.research.title }}</h2>
+            <div class="row list grid">
+                {{ range $index, $element := first 3 (where .Site.Pages "Section" "research") }}
+                    <div class="item col-md-4 {{ .Params.fronttype }}">
+                        <a href="{{.Permalink }}">{{ .Params.frontType }}
+                            <div class="bg-container">
+                                {{ if eq .Params.fronttype "image"}}
+                                    <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+                                {{end}}
 
-            <div id="#researchCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner " role="listbox">
-                    {{ range $index, $element := first 4 (where .Site.Pages "Section" "portfolio") }}
+                                {{ if eq .Params.fronttype "video"}}
+                                    <div class="flex-video">
+                                        <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
+                                    </div>
+                                {{end}}
 
-                        <div class="item {{ if (eq $index 0) }}active{{end}}">
-                            <img src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) "." "_wide." }}">
+                                {{ if eq .Params.fronttype "text"}}
+                                    <p class="text">
+                                      {{.Params.subtitle}}
+                                    </p>
+                                {{end}}
 
-                            <div class="carousel-caption col-md-4">
-                                <h3>{{.Title}}</h3>
-                                <p>{{.Params.subtitle}}</p>
                             </div>
+                            <div class="title inverted overlay-title">
+                                <h4>{{ .Title }}</h4>
+                            </div>
+                        </a>
 
-                        </div>
-                    {{ end }}
-                </div>
+                    </div>
+
+                {{ end }}
             </div>
             <h4 class="readMore">
-              <a href="{{.Site.BaseURL}}{{ .Site.Params.research.morelink }}">
-                {{ .Site.Params.research.more }}
+              <a href="{{.Site.BaseURL}}{{ .Site.Params.blog.morelink }}">
+                {{ .Site.Params.blog.more }}
               </a>
             </h4>
         </div>

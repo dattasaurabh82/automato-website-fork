@@ -36,6 +36,18 @@
 html {
     height: 100%;
     width: 100%;
+    font-family: soleil;
+}
+
+body {
+    height: 100%;
+}
+
+section {
+    margin-bottom: 2em;
+    h2{
+      margin-bottom: 1em;
+    }
 }
 
 h1,
@@ -48,56 +60,14 @@ h5 {
         text-decoration: none;
     }
     .transition( font-size 1s);
-}
-
-h1 {
-    //  font-size: @base-font-size*3;
-    @media @mq-medium {
-        font-size: @base-font-size*3;
-    }
-    @media @mq-large {
-        font-size: @base-font-size*3;
-    }
-    @media @mq-xlarge {
-        font-size: @base-font-size*5;
-    }
-    @media @mq-xxlarge {
-        font-size: @base-font-size*8;
-    }
-}
-
-h2 {
-    //  font-size: @base-font-size*3;
-    font-size: @base-font-size*2;
-    @media @mq-medium {
-        font-size: @base-font-size*2;
-    }
-    @media @mq-large {
-        font-size: @base-font-size*2.8;
-    }
-    @media @mq-xlarge {
-        font-size: @base-font-size*3.5;
-    }
-    @media @mq-xxlarge {
-        font-size: @base-font-size*4;
-    }
+    font-family: soleil;
 }
 
 p {
-    font-size: @base-font-size*1.5;
-    @media @mq-medium {
-        font-size: @base-font-size*1.5;
-    }
-    @media @mq-large {
-        font-size: @base-font-size*1.5;
-    }
-    @media @mq-xlarge {
-        font-size: @base-font-size*1.5;
-    }
-    @media @mq-xxlarge {
-        font-size: @base-font-size*2;
-    }
+    font-family: soleil;
 }
+
+
 
 a:focus,
 a:hover {
@@ -105,68 +75,78 @@ a:hover {
 }
 
 .fill {
+    @media @mq-medium {
+        height: 100%;
+
+        .middle {
+            @media @mq-medium {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.cover {
     height: 100%;
+
+    .middle {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 1em;
+    }
 }
 
-.middle {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.responsive_images{
-  width: 100%;
-}
-
-.flex-video{
-  height: 100%;
-  iframe{
+.responsive_images {
     width: 100%;
+}
+
+.flex-video {
     height: 100%;
-  }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-
-.readMore{
-  text-align: center;
+.readMore {
+    text-align: center;
+    a{
+      color: black;
+    }
 }
 
-.list.grid{
-
+.smaller-container{
   max-width: @bp-medium;
   left: 0;
   right: 0;
   margin: auto;
-
-
-
-
-
-  .item{
-
-    .bg-container {
-        height: 18em;
-        width: 100%;
-        overflow: hidden;
-    }
-    .title{
-      position: absolute;
-      top: 0px;
-      color: @white;
-      background-color: @black;
-      left: 1em;
-    }
-    .text{
-      padding: 4em;
-      font-size: 1em;
-      color: black;
-      text-align: left;
-    }
-
-    &:hover{
-    }
-  }
 }
+
+.list.grid {
+
+    .item {
+        .bg-container {
+            height: 18em;
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .text {
+            padding: 4em;
+            font-size: 1em;
+            color: black;
+            text-align: left;
+        }
+
+        &:hover {}
+    }
+}
+
 .project {
     position: relative;
 
@@ -184,27 +164,34 @@ a:hover {
     }
 }
 
-.project-info{
-  float: left;
-}
-
-.inverted{
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  a,
-  p {
-    background-color: @black;
-    color: @white;
+.project-info {
+  .title{
+    margin-bottom: 1em;
   }
 }
 
-.page-list {
-    margin-top: 70px;
+.inverted {
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        color: @white;
 
+        display: inline;
+        background: @black;
+        box-shadow: 10px 0 0 @black, -10px 0 0 @black;
+    }
+}
+
+.page-long {
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.page-list {
     .list-item {
         min-height: 6em;
 
@@ -219,6 +206,18 @@ a:hover {
 .bg-img {
     background-size: cover;
 }
+
+.overlay-title{
+  position: absolute;
+    left: 3em;
+    right: 60%;
+    text-align: left;
+    top: 1em;
+  .title{
+    margin-bottom: 1em;
+  }
+}
+
 
 #mainNav {
     .navbar-header {
@@ -268,27 +267,22 @@ a:hover {
     }
 }
 
-#research {
+#portfolio {
     .carousel {
         .carousel-inner {
             img {
                 width: 100%;
             }
-            .carousel-caption {
-                position: absolute;
-                left: 0;
-                right: 60%;
-
-                h3 {
-                    background-color: @black;
-                }
-
-                p {
-                    background-color: @black;
-                }
-            }
         }
     }
+}
+
+#footer {
+    background-color: @light-gray;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
 }
 
 .dropDown.menu {

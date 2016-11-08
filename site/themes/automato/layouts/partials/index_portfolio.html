@@ -1,0 +1,34 @@
+<section id="portfolio" class="fill">
+    <div class="row middle">
+        <div class="container">
+            <h2>{{ .Site.Params.portfolio.title }}</h2>
+
+            <div id="#researchCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner " role="listbox">
+                    {{ range $index, $element := first 4 (where .Site.Pages "Section" "portfolio") }}
+
+                        <div class="item {{ if (eq $index 0) }}active{{end}}">
+                            <img src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) "." "_wide." }}">
+
+                        
+                            <div class="carousel-caption col-md-4 inverted overlay-title">
+                              <div class="title">
+                                <h3>{{.Title}}</h3>
+                              </div>
+                              <div class="subtitle">
+                                <p>{{.Params.subtitle}}</p>
+                              </div>
+                            </div>
+
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+            <h4 class="readMore">
+              <a href="{{.Site.BaseURL}}{{ .Site.Params.research.morelink }}">
+                {{ .Site.Params.research.more }}
+              </a>
+            </h4>
+        </div>
+    </div>
+</section>

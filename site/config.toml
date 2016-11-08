@@ -35,20 +35,20 @@ theme ="automato"
   claim="Research, design & prototype from 7 hours in the future"
   backgroundGif="politicsofpower.gif"
 
-  #section research
-  [params.research]
+  #section portfolio
+  [params.portfolio]
   title="We research and develop future products and interfaces sometimes real sometimes fictional."
   more="See all projects"
   morelink="/research"
 
-  #section collaboration
-  [params.collaboration]
+  #section blog
+  [params.blog]
   title="We collaborate with studios, companies and institutions to ideate & prototype with emerging technologies"
   more="More about automato.farm"
   morelink="/about"
 
-  #section reach
-  [params.teach]
+  #section research
+  [params.research]
   title="We teach, talk and research the complex relationships between people and machines"
   more="get in touch"
   morelink=""

@@ -1,15 +1,43 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" .}}
-<div class="container">
 
-  <section id="main">
-    <h1 id="title">{{ .Title }}</h1>
+<div id="post-header" class="fill cover">
+    <div class="project fill">
 
-    <div>
-          <article id="content">
-             {{ .Content | markdownify}}
-          </article>
+        {{ if eq .Params.fronttype "image"}}
+            <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+        {{end}}
+
+        {{ if eq .Params.fronttype "video"}}
+            <div class="flex-video">
+                <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
+            </div>
+        {{end}}
+
+        {{ if eq .Params.fronttype "text"}}
+
+        {{end}}
+
+        <div class="container fill overlay">
+            <div class="row middle inverted project-info">
+              <div class="title">
+                <h1>
+                    <a href="{{.Permalink }}">{{ .Title }}</a>
+                </h1>
+              </div>
+              <div class="subtitle">
+                <p>{{.Params.subtitle}}</p>
+              </div>
+            </div>
+        </div>
     </div>
-  </section>
 </div>
+
+<div id="project-content" class="">
+  <div class="container">
+    {{.Content}}
+  </div>
+</div>
+
+
 {{ partial "footer.html" . }}

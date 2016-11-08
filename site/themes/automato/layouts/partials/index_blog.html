@@ -1,7 +1,7 @@
-<section id="collaboration" class="fill">
+<section id="blog" class="fill">
     <div class="row middle">
         <div class="container">
-            <h1>{{ .Site.Params.collaboration.title }}</h1>
+            <h2>{{ .Site.Params.blog.title }}</h2>
             <div class="row list grid">
                 {{ range $index, $element := first 4 (where .Site.Pages "Section" "blog") }}
                     <div class="item col-md-6 {{ .Params.fronttype }}">
@@ -19,12 +19,14 @@
 
                                 {{ if eq .Params.fronttype "text"}}
                                     <p class="text">
-                                      {{.Params.subtitle}}
+                                        {{.Params.subtitle}}
                                     </p>
                                 {{end}}
 
                             </div>
-                            <h3 class="title">{{ .Title }}</h3>
+                            <div class="title inverted overlay-title">
+                                <h4>{{ .Title }}</h4>
+                            </div>
                         </a>
 
                     </div>
@@ -32,9 +34,9 @@
                 {{ end }}
             </div>
             <h4 class="readMore">
-              <a href="{{.Site.BaseURL}}{{ .Site.Params.collaboration.morelink }}">
-                {{ .Site.Params.collaboration.more }}
-              </a>
+                <a href="{{.Site.BaseURL}}{{ .Site.Params.blog.morelink }}">
+                    {{ .Site.Params.blog.more }}
+                </a>
             </h4>
         </div>
     </div>
