@@ -52,6 +52,8 @@ module.exports = (grunt) ->
                         { name: '480', width: 768 }
 
                         { name: 'wide', width: 1024, height :300, aspectRatio:false }
+                        { name: 'thumb', width: 200, height :200, aspectRatio:false }
+
 
 
                     ]
