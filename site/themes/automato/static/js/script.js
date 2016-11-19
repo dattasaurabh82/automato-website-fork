@@ -18,8 +18,13 @@ window.onload = function() {
 
 
 $('#mainNav .navbar-toggle').click(function(){
-  $('.dropDown.menu').toggleClass("hidden");
-  $('#mainNav').toggleClass("expanded");
+  //$('.dropDown.menu').toggleClass("hidden");
+  //$('#mainNav').toggleClass("expanded");
+  if($('.dropDown.menu').css('display') == 'none') $('.dropDown.menu').fadeIn(400);
+  else $('.dropDown.menu').fadeOut(400);
+});
 
-  console.log("clicked");
+
+$('.dropDown.menu').click(function(){
+  $(this).fadeOut(400);
 });
