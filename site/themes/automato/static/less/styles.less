@@ -7,7 +7,7 @@
 @light-gray: #EFEFEF;
 @white: #fff;
 @rat: #9B928C;
-@red: #ff0000;
+@red: #bd1e2d;
 @black: #000000; // Font-Size
 @base-font-size: 1em; // Line-Height
 @base-line-height: 1.5;
@@ -230,10 +230,13 @@ a:hover {
         z-index: 10;
 
         a.navbar-brand {
-            color: @black;
-            border: 1px solid @black;
-            height: 2em;
-            padding: 6px;
+            color: @white;
+            font-weight:400;
+            border: 2px solid @white;
+            height: 1.8em;
+            padding: 5px;
+            padding-left:10px;
+            padding-right:10px;
             margin-top: 1em;
         }
 
@@ -241,7 +244,7 @@ a:hover {
             float: right;
 
             .icon-bar {
-                background-color: @black;
+                background-color: @white;
             }
             @media (min-width: 768px) {
                 display: block;
