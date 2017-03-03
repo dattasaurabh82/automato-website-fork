@@ -2,12 +2,14 @@
   <div class="container">
 
         {{ range $index, $element := first 4 (where .Site.Pages "Section" "portfolio") }}
-            <div class="portfolio_item ">
+            <div class="portfolio_item " style="background-image:url('{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) "." "_wide." }}')">
+
+
                 <div class="row">
 
                     <div class="col-md-12">
 
-                        <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+                         <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}"> 
                         <a href="{{ .Permalink }}">
 
                             <div class="portfolio_item_overlay">
