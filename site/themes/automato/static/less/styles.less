@@ -172,21 +172,6 @@ a:hover {
     }
 }
 
-.inverted {
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    p {
-        color: @white;
-        display: inline;
-        background: @black;
-        box-shadow: 10px 0 0 @black, -10px 0 0 @black;
-    }
-}
-
 .page-long {
     margin-top: 10em;
     margin-bottom: 10em;
@@ -224,7 +209,7 @@ a:hover {
     .navbar-header {
         position: fixed;
         top: 0;
-        background-color: white;
+        background-color: transparent;
         width: 100%;
         left: 0;
         right: 0;
@@ -269,18 +254,31 @@ a:hover {
     }
 
     a.navbar-brand {
-        color: @white;
-        border: 1px solid @white;
+        .transition( all 1s);
+        color: @black;
+        border: 1px solid @black;
     }
 
     button.navbar-toggle .icon-bar {
         background-color: @white;
+    }
+
+    &.inverted {
+        a.navbar-brand {
+                color: @white;
+                border: 1px solid @white;
+
+        }
+        .nav_item a{
+          color: @white;
+        }
     }
 }
 
 #hero {
     h1 {
         color: @white;
+        font-size: 6em;
     }
 }
 
