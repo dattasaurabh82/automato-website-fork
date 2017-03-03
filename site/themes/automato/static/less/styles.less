@@ -1,15 +1,12 @@
 @import "bootstrap/bootstrap.less";
 @import "../css/aos.css";
 @import "font-awesome/less/font-awesome.less"; //colors
-
-
 @cyan: #34BCEF;
 @magenta: #E0107C;
 @dark-gray: #3F4346;
 @light-gray: #EFEFEF;
 @white: #fff;
 @rat: #9B928C;
-
 @red: #bd1e2d;
 @black: #000000; // Font-Size
 @base-font-size: 1em; // Line-Height
@@ -48,8 +45,9 @@ body {
 
 section {
     margin-bottom: 2em;
-    h2{
-      margin-bottom: 1em;
+
+    h2 {
+        margin-bottom: 1em;
     }
 }
 
@@ -69,8 +67,6 @@ h5 {
 p {
     font-family: soleil;
 }
-
-
 
 a:focus,
 a:hover {
@@ -95,10 +91,10 @@ a:hover {
     height: 100%;
 
     .middle {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-left: 1em;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 1em;
     }
 }
 
@@ -117,27 +113,26 @@ a:hover {
 
 .readMore {
     text-align: center;
-    a{
-      color: black;
+
+    a {
+        color: black;
     }
 }
 
-.smaller-container{
-  max-width: @bp-medium;
-  left: 0;
-  right: 0;
-  margin: auto;
+.smaller-container {
+    max-width: @bp-medium;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .list.grid {
-
     .item {
         .bg-container {
             height: 18em;
             width: 100%;
             overflow: hidden;
         }
-
 
         .text {
             padding: 4em;
@@ -168,9 +163,9 @@ a:hover {
 }
 
 .project-info {
-  .title{
-    margin-bottom: 1em;
-  }
+    .title {
+        margin-bottom: 1em;
+    }
 }
 
 .inverted {
@@ -182,7 +177,6 @@ a:hover {
     h5,
     p {
         color: @white;
-
         display: inline;
         background: @black;
         box-shadow: 10px 0 0 @black, -10px 0 0 @black;
@@ -210,36 +204,34 @@ a:hover {
     background-size: cover;
 }
 
-.overlay-title{
-  position: absolute;
+.overlay-title {
+    position: absolute;
     left: 3em;
     right: 60%;
     text-align: left;
     top: 1em;
-  .title{
-    margin-bottom: 1em;
-  }
-}
 
+    .title {
+        margin-bottom: 1em;
+    }
+}
 
 #mainNav {
     .navbar-header {
         position: fixed;
-        top: 1em;
-        background-color: transparent;
+        top: 0;
+        background-color: white;
         width: 100%;
         left: 0;
         right: 0;
         z-index: 10;
 
         a.navbar-brand {
-            color: @white;
-            font-weight:400;
-            border: 2px solid @white;
+            color: @black;
+            font-weight: 400;
+            border: 2px solid @black;
             height: 1.8em;
-            padding: 5px;
-            padding-left:10px;
-            padding-right:10px;
+            padding: 5px 10px;
             margin-top: 1em;
         }
 
@@ -247,16 +239,22 @@ a:hover {
             float: right;
 
             .icon-bar {
-                background-color: @white;
-            }
-            @media (min-width: 768px) {
-                display: block;
+                background-color: @black;
             }
         }
     }
 }
 
-#mainNav.expanded {
+#mainNav {
+    .navbar-header {
+        text-align: right;
+
+        .nav_item {
+            font-size: 1.5em;
+            margin: 1em;
+        }
+    }
+
     a.navbar-brand {
         color: @white;
         border: 1px solid @white;
@@ -274,10 +272,43 @@ a:hover {
 }
 
 #portfolio {
-    .carousel {
-        .carousel-inner {
-            img {
+    margin-top: 8em;
+
+    .portfolio_item {
+        margin-bottom: 2em;
+
+        .portfolio_item_overlay {
+            background-color: @red;
+            opacity: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 15px;
+            right: 15px;
+            .transition( opacity 1s);
+
+            .inner {
+                height: 30%;
+                top: 35%;
+                position: absolute;
+                text-align: center;
                 width: 100%;
+
+                .title {
+                    text-align: center;
+
+                    h3 {
+                        font-family: AlphaHeadlinePro-Bold;
+                        font-size: 36px;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            &:hover {
+                opacity: 0.5;
             }
         }
     }
@@ -298,7 +329,7 @@ a:hover {
     top: 0;
     width: 100%;
     z-index: 9;
-    opacity:0.8;
+    opacity: 0.8;
 
     a.menu-item {
         text-align: center;
@@ -310,6 +341,6 @@ a:hover {
     }
 }
 
-.gallery-image{
-  float: left;
+.gallery-image {
+    float: left;
 }

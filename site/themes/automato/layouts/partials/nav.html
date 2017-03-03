@@ -8,23 +8,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
+
         <a class="navbar-brand page-scroll" href="{{ .Site.BaseURL }}#page-top">
             {{ with .Site.Params.navigation.brand }}{{ . }}{{ end }}
         </a>
+
+        {{ range .Site.Params.navigation.links }}
+            <span class="nav_item">
+                <a href="{{ $.Site.BaseURL }}{{ .link }}">
+                    {{ .name }}
+                </a>
+            </span>
+        {{end}}
+
       </div>
     </div>
 </nav>
-
-    <section class="dropDown menu fill" style="display:none">
-      <div class="container fill">
-        <div class="row middle">
-                {{ range .Site.Params.navigation.links }}
-                    <h1>
-                        <a class="menu-item page-scroll" href="{{ $.Site.BaseURL }}{{ .link }}">
-                            {{ .name }}
-                        </a>
-                    </h1>
-                {{end}}
-        </div>
-      </div>
-    </section>
