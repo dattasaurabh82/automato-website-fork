@@ -69,7 +69,8 @@ h5 {
 }
 
 p {
-    font-family: AlphaHeadlinePro-Bold;
+    font-family: 'Lusitana', serif;
+    font-size: 15pt;
 }
 
 a:focus,
@@ -356,4 +357,44 @@ a:hover {
 
 .gallery-image {
     float: left;
+}
+
+#single-project{
+  margin-top: 140px;
+
+  #project-header{
+    .bg-img{
+      min-height: 600px;
+    }
+  }
+
+  #project-content{
+      margin-top: -600px;
+      z-index: 1;
+      position: relative;
+      padding-top:2em;
+
+    .title{
+      h1{
+        /* POLITICS OF POWER: */
+        font-family: AlphaHeadlinePro-Bold;
+        font-size: 144px;
+        color: @red;
+        letter-spacing: 0;
+        text-transform: uppercase;
+
+        a{
+          color: @red;
+        }
+      }
+    }
+
+    .content{
+      margin-top: 3em;
+      background-color: @white;
+      padding: 2em 1em;
+    }
+
+  }
+
 }
