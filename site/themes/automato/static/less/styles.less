@@ -7,7 +7,7 @@
 @light-gray: #EFEFEF;
 @white: #fff;
 @rat: #9B928C;
-@red: #bd1e2d;
+@red: #FF5050;
 @black: #000000; // Font-Size
 @base-font-size: 1em; // Line-Height
 @base-line-height: 1.5;
@@ -207,36 +207,16 @@ a:hover {
 
 #mainNav {
     .navbar-header {
+        text-align: right;
         position: fixed;
         top: 0;
-        background-color: transparent;
+        background-color: @white;
         width: 100%;
         left: 0;
         right: 0;
         z-index: 10;
-
-        a.navbar-brand {
-            color: @black;
-            font-weight: 400;
-            border: 2px solid @black;
-            height: 1.8em;
-            padding: 5px 10px;
-            margin-top: 1em;
-        }
-
-        button.navbar-toggle {
-            float: right;
-
-            .icon-bar {
-                background-color: @black;
-            }
-        }
-    }
-}
-
-#mainNav {
-    .navbar-header {
-        text-align: right;
+        height: 120px;
+        padding-top: 25px;
 
         .nav_item {
             font-size: 1.2em;
@@ -257,20 +237,30 @@ a:hover {
         .transition( all 1s);
         color: @black;
         border: 1px solid @black;
+        color: @black;
+        font-weight: 400;
+        border: 2px solid @black;
+        height: 1.8em;
+        padding: 5px 10px;
+        margin-top: 1em;
     }
 
-    button.navbar-toggle .icon-bar {
-        background-color: @white;
+    button.navbar-toggle {
+        float: right;
+
+        .icon-bar {
+            background-color: @black;
+        }
     }
 
     &.inverted {
         a.navbar-brand {
-                color: @white;
-                border: 1px solid @white;
-
+            color: @white;
+            border: 1px solid @white;
         }
-        .nav_item a{
-          color: @white;
+
+        .nav_item a {
+            color: @white;
         }
     }
 }
@@ -287,16 +277,27 @@ a:hover {
 
     .portfolio_item {
         margin-bottom: 2em;
+        display: block;
+        min-height: 600px;
+        background-repeat: no-repeat;
+        background-color: @white;
+        .transition( background 1s);
+        background-position: center;
+        background-size: cover;
+        position: relative;
 
-        .portfolio_item_overlay {
+        &:hover {
             background-color: @red;
             background-blend-mode: multiply;
+        }
+
+        .portfolio_item_overlay {
+            background-color: transparent;
             opacity: 0;
             height: 100%;
+            width: 100%;
             position: absolute;
             top: 0;
-            left: 15px;
-            right: 15px;
             .transition( opacity 1s);
 
             .inner {
@@ -320,7 +321,7 @@ a:hover {
             }
 
             &:hover {
-                opacity: 0.5;
+                opacity: 1;
             }
         }
     }
