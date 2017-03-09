@@ -8,40 +8,194 @@ video-link=[]
 featured_in_home="yes"
 category=""
 clientLogo=""
+
+[galleries]
+
+[[galleries.gallery]]
+  name="heroGallery"
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "pop1a.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "pop1a.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "pop6a.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "pop5a.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "pop8.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+
+
+[[galleries.gallery]]
+  name="instructions"
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "model-d.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "model-m.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "model-t.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
 +++
 
 
-Due to fast-developing technology and its endless promises, autonomous systems are heading increasingly towards complex algorithms aimed at solving situations requiring some form of moral reasoning. Autonomous vehicles and lethal battlefield robots are good examples of such products due to the tremendous complexity of their tasks that they must carry out.
+With a growing number of networked and autonomous objects as well as the outbreak of fields such as « the IoT », communication protocols used by connected products are increasingly important as they act as the network’s backbone.
+Since the end product is « black-boxed » to the user, we often assume that all nodes of a network are equal.
+But is it?
 
-When it comes to discussion around the ethics of machines, the focus is often put on extreme examples (such as the above mentioned projects) where human life and death are involved. But what about more mundane and insignificant objects of our everyday lives? Soon, «smart» objects might also need to have moral capacities as “they know too much” about their surroundings to take a neutral stance.  If a « smart » coffee machine knows about its user’s heart problems, should it accept giving him a coffee when he requests one?
+For example, in a home, two appliances in the same network must be working at the same time, but because of a power shortage, they cannot run in parallel. This bring us to question, who should be given the priority and why?
+In every existing network – be it machine or nature, rules are established in order to determine its structure, hierarchy, and the way the communication will be synchronized between all the actors of the network. But who and what criterions will define this power hierarchy? Products and networks are inherently embedded with ideologies of the designers, engineers, and other stakeholders who shape their trajectory along the way.
 
-Even with such a banal situation, the level of complexity of such products cannot accommodate all parties. The system will be designed to take into account certain inputs, to process a 'certain' type of information under a 'certain' kind of logic. How are these “certainties” defined, and by whom? And, moreover, as the nature of ethics is very subjective, how will machines be able to deal with the variety of profiles, beliefs, and cultures?
-The “Ethical Objects” project looks at how an object, facing everyday ethical dilemmas, can keep a dose of humanity in its final decision while staying flexible enough to accommodate various ethical beliefs.
-In order to achieve that, our “ethical fan” connects to a crowd-sourcing website every time it faces an ethical dilemma. The fan is designed to let the user set various traits (such as religion, degree, sex, and age) as criterion to choose the worker who should respond to the dilemma, in order to assure that a part of the user’s culture and belief system is in line with the worker, or ethical agent.
+“Politics of Power” is an exploration of these questions on a micro-scale by using a simple ubiquitous product, the multi-plug.
+The project looks at how a mass-manufactured product – although developed for a precise and unique purpose – could behave differently depending on the nature of its communication protocol and how the design of the product itself could reflect these hidden logic and rules.
+Three multi-plugs – Model D, M and T – are designed to look and behave based on different ideologies and structures, allowing people to experience the hidden politics of networks in an everyday life products through an electrical system.
 
+{{< gridGallery type="full" galleryName="heroGallery" >}}
 
-{{< gallery title="Example gallery" >}}
+{{< gridGallery type="grid" galleryName="instructions" >}}
 
-{{% galleryimage
-  thumb="dress_thumb.jpg"
-  file="dress.jpg"
-  size="1280x885"
-  caption="This is me in Rome"
-  copyrightHolder="Rasmus Helmer Hansen" %}}
+{{< tabs >}}
+  {{% tab "Model M" %}}
 
-{{% galleryimage
-  thumb="dress_thumb.jpg"
-  file="dress.jpg"
-  size="993x1280"
-  caption="This is Andrea in Rome"
-  copyrightHolder="Tom Helmer Hansen" %}}
+    # Constitution for Pyramidal arch
+    # --- Establish Pyramidal ---
+    # Define which plug has the
+    # highest power
 
-{{% galleryimage
-  thumb="dress_thumb.jpg"
-  file="dress.jpg"
-  size="1280x857"
-  caption="Rain reservoir in the hall."
-  copyrightHolder="Tom Helmer Hansen" %}}
-{{< /gallery >}}
+    Assign_Hierarchical_Power:
 
-{{< galleryinit >}}
+    Top_Pyramid = HIGHEST_POWER_LEVEL
+    Middle_Pyramid = MIDDLE_POWER_LEVEL
+    Bottom_Pyramid = LOWEST_POWER_LEVEL
+
+    Top_Lifespan = Random(X_MINUTES)
+
+    # --- Pyramidal Setup ---
+    Pyramidal_Constitution:
+    Assign_Hierarchical_Power()
+
+    # --- Pyramidal Refresh ---
+    Refresh_Pyramidal:
+
+    Top_Pyramid = NO_POWER_LEVEL
+    Middle_Pyramid = HIGHEST_POWER_LEVEL
+    Bottom_Pyramid = LOWEST_POWER_LEVEL
+
+    if Current_Time >= Mourning_Time:
+    Assign_Hierarchical_Power()
+    Assign_Hierarchical_Power()
+
+    // --- Top Unplugged ---
+    // Delegate when the top is unplugged
+    Top_Unplugged:
+    // The top is more of an icon
+    //no big power changes if he isnt here
+    Middle_Pyramid = HIGHEST_POWER_LEVEL
+    Bottom_Pyramid = LOWEST_POWER_LEVEL
+    # --- Middle Unplugged ---
+    # Delegate when one plug in middle is
+    # unplugged
+    Middle_Unplugged:
+    # If all middle plugs are out
+    # then the bottom level is in chaos
+    if Middle_Pyramid == 0:
+
+    Bottom_Pyramid = UNSTABLE_POWER_LEVEL
+
+    # --- Bottom Unplugged ---
+    # Delegate when one plug in bottom is
+    # unplugged
+    Bottom_Unplugged:
+
+    # Plebs, nothing happen
+    NULL
+
+  {{% /tab %}}
+  {{% tab "Model T" %}}
+
+    # Constitution for Pyramidal arch
+    # --- Establish Pyramidal ---
+    # Define which plug has the
+    # highest power
+
+    Assign_Hierarchical_Power:
+
+    Top_Pyramid = HIGHEST_POWER_LEVEL
+    Middle_Pyramid = MIDDLE_POWER_LEVEL
+    Bottom_Pyramid = LOWEST_POWER_LEVEL
+
+    Top_Lifespan = Random(X_MINUTES)
+
+    # --- Pyramidal Setup ---
+    Pyramidal_Constitution:
+    Assign_Hierarchical_Power()
+
+    # --- Pyramidal Refresh ---
+    Refresh_Pyramidal:
+
+    Top_Pyramid = NO_POWER_LEVEL
+    Middle_Pyramid = HIGHEST_POWER_LEVEL
+    Bottom_Pyramid = LOWEST_POWER_LEVEL
+
+    if Current_Time >= Mourning_Time:
+    Assign_Hierarchical_Power()
+    Assign_Hierarchical_Power()
+
+    // --- Top Unplugged ---
+    // Delegate when the top is unplugged
+    Top_Unplugged:
+    // The top is more of an icon
+    //no big power changes if he isnt here
+    Middle_Pyramid = HIGHEST_POWER_LEVEL
+    Bottom_Pyramid = LOWEST_POWER_LEVEL
+    # --- Middle Unplugged ---
+    # Delegate when one plug in middle is
+    # unplugged
+    Middle_Unplugged:
+    # If all middle plugs are out
+    # then the bottom level is in chaos
+    if Middle_Pyramid == 0:
+
+    Bottom_Pyramid = UNSTABLE_POWER_LEVEL
+
+    # --- Bottom Unplugged ---
+    # Delegate when one plug in bottom is
+    # unplugged
+    Bottom_Unplugged:
+
+    # Plebs, nothing happen
+    NULL
+
+  {{% /tab %}}
+{{< /tabs >}}
