@@ -1,16 +1,13 @@
 @import "bootstrap/bootstrap.less";
 @import "../css/aos.css";
 @import "font-awesome/less/font-awesome.less"; //colors
-
-
 @cyan: #34BCEF;
 @magenta: #E0107C;
 @dark-gray: #3F4346;
 @light-gray: #EFEFEF;
 @white: #fff;
 @rat: #9B928C;
-
-@red: #bd1e2d;
+@red: #FF5050;
 @black: #000000; // Font-Size
 @base-font-size: 1em; // Line-Height
 @base-line-height: 1.5;
@@ -39,7 +36,7 @@
 html {
     height: 100%;
     width: 100%;
-    font-family: soleil;
+    font-family: AlphaHeadlinePro-Bold;
 }
 
 body {
@@ -48,8 +45,9 @@ body {
 
 section {
     margin-bottom: 2em;
-    h2{
-      margin-bottom: 1em;
+
+    h2 {
+        margin-bottom: 1em;
     }
 }
 
@@ -63,14 +61,17 @@ h5 {
         text-decoration: none;
     }
     .transition( font-size 1s);
-    font-family: soleil;
+    /* ABOUT: */
+    font-family: AlphaHeadlinePro-Bold;
+    font-size: 18px;
+    color: #1F1F1F;
+    letter-spacing: 0;
 }
 
 p {
-    font-family: soleil;
+    font-family: 'Lusitana', serif;
+    font-size: 15pt;
 }
-
-
 
 a:focus,
 a:hover {
@@ -95,10 +96,10 @@ a:hover {
     height: 100%;
 
     .middle {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-left: 1em;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 1em;
     }
 }
 
@@ -117,27 +118,26 @@ a:hover {
 
 .readMore {
     text-align: center;
-    a{
-      color: black;
+
+    a {
+        color: black;
     }
 }
 
-.smaller-container{
-  max-width: @bp-medium;
-  left: 0;
-  right: 0;
-  margin: auto;
+.smaller-container {
+    max-width: @bp-medium;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .list.grid {
-
     .item {
         .bg-container {
             height: 18em;
             width: 100%;
             overflow: hidden;
         }
-
 
         .text {
             padding: 4em;
@@ -168,24 +168,8 @@ a:hover {
 }
 
 .project-info {
-  .title{
-    margin-bottom: 1em;
-  }
-}
-
-.inverted {
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    p {
-        color: @white;
-
-        display: inline;
-        background: @black;
-        box-shadow: 10px 0 0 @black, -10px 0 0 @black;
+    .title {
+        margin-bottom: 1em;
     }
 }
 
@@ -210,74 +194,135 @@ a:hover {
     background-size: cover;
 }
 
-.overlay-title{
-  position: absolute;
+.overlay-title {
+    position: absolute;
     left: 3em;
     right: 60%;
     text-align: left;
     top: 1em;
-  .title{
-    margin-bottom: 1em;
-  }
-}
 
+    .title {
+        margin-bottom: 1em;
+    }
+}
 
 #mainNav {
     .navbar-header {
+        text-align: right;
         position: fixed;
-        top: 1em;
-        background-color: transparent;
+        top: 0;
+        background-color: @white;
         width: 100%;
         left: 0;
         right: 0;
         z-index: 10;
+        height: 120px;
+        padding-top: 25px;
 
+        .nav_item {
+            font-size: 1.2em;
+            margin-left: 2em;
+            font-family: AlphaHeadlinePro-Bold;
+            text-transform: uppercase;
+            padding: 8px 0 8px 20px;
+            display: inline-block;
+            margin-top: 1em;
+
+            a {
+                color: @black;
+            }
+        }
+    }
+
+    a.navbar-brand {
+        .transition( all 1s);
+        color: @black;
+        border: 1px solid @black;
+        color: @black;
+        font-weight: 400;
+        border: 2px solid @black;
+        height: 1.8em;
+        padding: 5px 10px;
+        margin-top: 1em;
+    }
+
+    button.navbar-toggle {
+        float: right;
+
+        .icon-bar {
+            background-color: @black;
+        }
+    }
+
+    &.inverted {
         a.navbar-brand {
             color: @white;
-            font-weight:400;
-            border: 2px solid @white;
-            height: 1.8em;
-            padding: 5px;
-            padding-left:10px;
-            padding-right:10px;
-            margin-top: 1em;
+            border: 1px solid @white;
         }
 
-        button.navbar-toggle {
-            float: right;
-
-            .icon-bar {
-                background-color: @white;
-            }
-            @media (min-width: 768px) {
-                display: block;
-            }
+        .nav_item a {
+            color: @white;
         }
-    }
-}
-
-#mainNav.expanded {
-    a.navbar-brand {
-        color: @white;
-        border: 1px solid @white;
-    }
-
-    button.navbar-toggle .icon-bar {
-        background-color: @white;
     }
 }
 
 #hero {
     h1 {
         color: @white;
+        font-size: 6em;
     }
 }
 
 #portfolio {
-    .carousel {
-        .carousel-inner {
-            img {
+    margin-top: 8em;
+
+    .portfolio_item {
+        margin-bottom: 2em;
+        display: block;
+        min-height: 600px;
+        background-repeat: no-repeat;
+        background-color: @white;
+        .transition( background 1s);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        &:hover {
+            background-color: @red;
+            background-blend-mode: difference;
+        }
+
+        .portfolio_item_overlay {
+            background-color: transparent;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            .transition( opacity 1s);
+
+            .inner {
+                height: 30%;
+                top: 35%;
+                position: absolute;
+                text-align: center;
                 width: 100%;
+
+                .title {
+                    text-align: center;
+
+                    h3 {
+                        font-family: AlphaHeadlinePro-Bold;
+                        font-size: 36px;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            &:hover {
+                opacity: 1;
             }
         }
     }
@@ -298,7 +343,7 @@ a:hover {
     top: 0;
     width: 100%;
     z-index: 9;
-    opacity:0.8;
+    opacity: 0.8;
 
     a.menu-item {
         text-align: center;
@@ -310,6 +355,46 @@ a:hover {
     }
 }
 
-.gallery-image{
-  float: left;
+.gallery-image {
+    float: left;
+}
+
+#single-project{
+  margin-top: 140px;
+
+  #project-header{
+    .bg-img{
+      min-height: 600px;
+    }
+  }
+
+  #project-content{
+      margin-top: -600px;
+      z-index: 1;
+      position: relative;
+      padding-top:2em;
+
+    .title{
+      h1{
+        /* POLITICS OF POWER: */
+        font-family: AlphaHeadlinePro-Bold;
+        font-size: 144px;
+        color: @red;
+        letter-spacing: 0;
+        text-transform: uppercase;
+
+        a{
+          color: @red;
+        }
+      }
+    }
+
+    .content{
+      margin-top: 3em;
+      background-color: @white;
+      padding: 2em 1em;
+    }
+
+  }
+
 }

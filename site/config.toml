@@ -33,7 +33,7 @@ theme ="automato"
   #section hero
   [params.hero]
   claim="Research, design & prototype from 7 hours in the future"
-  backgroundGif="politicsofpower.gif"
+  backgroundGif="plugs.jpg"
 
   #section portfolio
   [params.portfolio]
