@@ -1,77 +1,15 @@
-this is the gridgallery
-
-<h1>{{.Get "galleryName"}}</h1>
-
-
-{{range .Page.Params.galleries.gallery}}
-  ci sono {{.name}}
-  {{if eq .name .Get "galleryName"}}
-    yes
-    {{range .item}}
-      {{.img}}
-    {{end}}
-  {{end}}
-{{end}}
-
-{{range .Page.Params.gridgallery.photos}}
-    {{if .video}}
-        <div style="display:none;" id="{{.id}}">
-            <video class="lg-video-object lg-html5" controls preload="none">
-                <source src="{{ $.Site.BaseURL }}vid/{{$.Page.Params.datafolder}}/{{.video}}" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
-    {{end}}
-{{end}}
-
-<section id="{{ if .Get " id" }}{{ .Get " id" }}{{ end }}" class="gridGallery" data-aos="fade-up">
+{{ $galleryName := .Get "galleryName" }}
 
     <div class="container">
-        <div class="row">
-            <div id="lightgallery">
-                {{range .Page.Params.gridgallery.photos}}
-
-                    {{ if .video }}
-
-                        <div
-                        data-poster="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img "." "_1440."}}"
-                        data-html="#{{.id}}"
-                        class="col-md-4 col-sm-6 col-xs-6 gallery-item"
-                        data-sub-html="video caption1">
-                            <img
-                            data-original="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img "." "_460." }}" class="img-responsive lazy"/>
-                        </div>
-
-                    {{else}}
-
-                         <div data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img " ." " _1440." }}" class="col-md-4 col-sm-6 col-xs-6 gallery-item">
-                            <img data-original="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img " ." " _460." }}" class="img-responsive lazy"/>
-                        </div>
-
+        <div id="gridGallery">
+            {{range .Page.Params.galleries.gallery}}
+                {{if eq .name $galleryName}}
+                    {{range .item}}
+                        <a href="{{ $.Site.BaseURL }}img/{{.img }}" class="col-md-4 col-sm-6 col-xs-6">
+                            <img src="{{ $.Site.BaseURL }}img/{{ replace .img " ." " _460." }}" class="img-responsive"/>
+                        </a>
                     {{end}}
                 {{end}}
-
-            </div>
-
-            <!--
-        {{range .Page.Params.gridgallery.photos}}
-          <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{.img}}"/>
-
-
-             <div class="col-md-6 col-sm-6">
-                <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{.img}}"/>
-                <div class="caption">
-                    <h4 class="title">
-                        {{ .captionTitle}}
-                    </h4>
-                    <span class="paragraph">
-                        {{ .captionDescription}}
-                    </span>
-                </div>
-            </div>
-        {{end}}
-        -->
+            {{end}}
         </div>
-
     </div>
-</section>
