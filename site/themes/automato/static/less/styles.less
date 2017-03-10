@@ -131,6 +131,10 @@ a:hover {
     margin: auto;
 }
 
+.container.offset{
+  margin-left:-30px;
+}
+
 .list.grid {
     .item {
         .bg-container {
@@ -396,5 +400,27 @@ a:hover {
     }
 
   }
+}
+
+#gridGallery{
+  .item{
+    margin: 15px 0;
+
+    .thumb{
+      background-position: center;
+      background-size: cover;
+      min-height: 200px;
+      background-color: @white;
+      .transition (background-color 1s);
+
+      &:hover{
+        background-blend-mode: difference;
+
+        background-color: @red;
+
+      }
+    }
+  }
+
 
 }

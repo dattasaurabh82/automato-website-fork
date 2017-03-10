@@ -1,12 +1,12 @@
 {{ $galleryName := .Get "galleryName" }}
 
-    <div class="container">
+    <div class="container offset">
         <div id="gridGallery">
             {{range .Page.Params.galleries.gallery}}
                 {{if eq .name $galleryName}}
                     {{range .item}}
-                        <a href="{{ $.Site.BaseURL }}img/{{.img }}" class="col-md-4 col-sm-6 col-xs-6">
-                            <img src="{{ $.Site.BaseURL }}img/{{ replace .img " ." " _460." }}" class="img-responsive"/>
+                        <a href="{{ $.Site.BaseURL }}img/{{.img }}" class="col-md-4 col-sm-6 col-xs-6 item">
+                            <div style="background-image:url('{{ $.Site.BaseURL }}img/{{ replace .img " ." " _460." }}')" class="img-responsive thumb"></div>
                         </a>
                     {{end}}
                 {{end}}
