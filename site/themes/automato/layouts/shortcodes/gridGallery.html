@@ -1,6 +1,10 @@
 {{ $galleryName := .Get "galleryName" }}
+{{ $galleryType := .Get "type" }}
 
-    <div class="container offset">
+<div class="container offset">
+
+    {{if eq $galleryType "grid"}}
+
         <div id="gridGallery">
             {{range .Page.Params.galleries.gallery}}
                 {{if eq .name $galleryName}}
@@ -12,4 +16,35 @@
                 {{end}}
             {{end}}
         </div>
-    </div>
+
+        {{ else if eq $galleryType "full"}}
+
+        <div class="owl-carousel">
+            {{range .Page.Params.galleries.gallery}}
+                {{if eq .name $galleryName}}
+                    {{range .item}}
+                        {{if eq .type "photo" }}
+                            <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img " ." " _1440." }}"/>
+                        {{else}}
+                            <div class="videoBackground">
+                                <video loop muted autoplay controls>
+                                    <source src="{{$.Site.BaseURL}}vid/{{$.Page.Params.datafolder}}/{{.video}}" type="video/webm"/>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        {{end}}
+                        <div class="caption">
+                            <h4 class="title">
+                                {{ .captionTitle}}
+                            </h4>
+                            <span class="paragraph">
+                                {{ .captionDescription}}
+                            </span>
+                        </div>
+                    {{end}}
+                {{end}}
+            {{end}}
+        </div>
+    {{end}}
+
+</div>

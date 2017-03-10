@@ -45,7 +45,6 @@ clientLogo=""
   captionDescription = ""
 
 
-
 [[galleries.gallery]]
   name="instructions"
 
