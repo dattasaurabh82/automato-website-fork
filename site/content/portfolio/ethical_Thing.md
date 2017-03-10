@@ -9,7 +9,6 @@ featured_in_home=""
 category=""
 clientLogo=""
 
-
   [galleries]
 
   [[galleries.gallery]]

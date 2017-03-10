@@ -60,10 +60,8 @@ $('.nav-tabs a').click(function(e){
   tabPanel.find('.active').removeClass('active');
   tab.addClass('active');
   tabPane.addClass('active');
+});
 
 $(document).ready(function() {
-
     $('#gridGallery').lightGallery();
-
-
 });
