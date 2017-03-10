@@ -424,3 +424,56 @@ a:hover {
 
 
 }
+
+
+
+
+.code-tabs{
+  pre{
+    background-color: @white;
+    border: 0px;
+    border-radius: 0px;
+    padding: 5px 0px;
+
+    }
+
+  .nav-tabs{
+    border-bottom: 0px;
+
+
+    li{
+      &.active {
+          a{
+            border: 0px;
+            background-color: @black;
+            color: @white;
+            border-radius: 0px;
+          }
+      }
+
+      a{
+        border: 0px;
+        color: @black;
+        .transition(background-color 0.5s);
+        }
+      a:focus{
+        border: 0px;
+        background-color: @black;
+        color: @white;
+        border-radius: 0px;
+        }
+      a:hover{
+        color: @white;
+        border: 0px;
+        background-color: @red;
+        border-radius: 0px;
+        }
+      }
+    }
+
+  .tab-content{
+
+  }
+
+
+}
