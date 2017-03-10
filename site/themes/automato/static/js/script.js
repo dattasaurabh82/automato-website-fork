@@ -72,7 +72,7 @@ $(document).ready(function() {
     });
     var mycarousel = $('.owl-carousel').owlCarousel({
         center: true,
-        items: 1.1,
+        items: 1,
         loop: true,
         nav: true,
         lazyLoad: true,

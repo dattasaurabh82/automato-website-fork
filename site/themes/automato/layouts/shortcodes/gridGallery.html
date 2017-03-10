@@ -19,7 +19,7 @@
 
         {{ else if eq $galleryType "full"}}
 
-        <div class="owl-carousel">
+        <div class="owl-carousel col-md-12">
             {{range .Page.Params.galleries.gallery}}
                 {{if eq .name $galleryName}}
                     {{range .item}}
@@ -33,14 +33,14 @@
                                 </video>
                             </div>
                         {{end}}
-                        <div class="caption">
+                        <!-- <div class="caption">
                             <h4 class="title">
                                 {{ .captionTitle}}
                             </h4>
                             <span class="paragraph">
                                 {{ .captionDescription}}
                             </span>
-                        </div>
+                        </div> -->
                     {{end}}
                 {{end}}
             {{end}}
