@@ -2,9 +2,9 @@
 {{ partial "nav.html" .}}
 <div class="page-long page-list container">
 
-    <div class="row list grid">
-        {{ range .Data.Pages }}
-            <div class="item col-md-6 {{ .Params.fronttype }}">
+    {{ range .Data.Pages }}
+        <div class="row">
+            <div class="item col-md-12 {{ .Params.fronttype }}">
                 <a href="{{.Permalink }}">{{ .Params.frontType }}
                     <div class="bg-container">
                         {{ if eq .Params.fronttype "image"}}
@@ -17,11 +17,10 @@
                             </div>
                         {{end}}
 
-                        {{ if eq .Params.fronttype "text"}}
-                            
-                        {{end}}
+                        {{ if eq .Params.fronttype "text"}}{{end}}
 
                     </div>
+
                     <div class="overlay-title inverted">
                         <div class="title">
                             <h3>{{.Title}}</h3>
@@ -33,9 +32,14 @@
                 </a>
 
             </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            {{.Content}}
 
-        {{ end }}
-    </div>
+          </div>
+        </div>
+    {{ end }}
 
 </div>
 

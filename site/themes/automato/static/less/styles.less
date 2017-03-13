@@ -79,9 +79,16 @@ p {
     font-size: 15pt;
 }
 
+a {
+    color: @red;
+    text-decoration: none
+}
 a:focus,
 a:hover {
     text-decoration: none;
+    color: @red;
+    font-weight: bold;
+
 }
 
 .fill {
@@ -141,7 +148,7 @@ a:hover {
     margin-left: -30px;
 }
 
-.list.grid {
+.page-list {
     .item {
         .bg-container {
             height: 18em;
@@ -331,7 +338,6 @@ a:hover {
                 .subtitle{
                   color: @white;
                   font-size: 2em;
-                  font-family: AlphaHeadlinePro;
                 }
             }
 
@@ -372,7 +378,15 @@ a:hover {
 .gallery-image {
     float: left;
 }
+#single-page {
+    margin-top: 140px;
 
+    .columns{
+      column-count: 2;
+      padding: 20px;
+      background-color: @gray-lighter
+    }
+}
 #single-project {
     margin-top: 140px;
 
