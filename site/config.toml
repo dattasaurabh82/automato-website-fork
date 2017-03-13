@@ -12,7 +12,7 @@ theme ="automato"
 
   # Navigation
 	[params.navigation]
-		brand = "a u t o m a t o"
+		brand = "a u t o m a t o . f a r m"
 
 	[[params.navigation.links]]
     name     = "works"
