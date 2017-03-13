@@ -1,32 +1,6 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" .}}
-<div class=" fill">
 
-  {{ range .Data.Pages }}
-  <div class="project fill">
-
-    {{range .Params.img}}
-      <div class="bg-img fill" style="background-image:url({{$.Site.BaseURL}}img/{{.}})"></div>
-    {{end}}
-
-    <div class="container fill overlay">
-      <div class="row middle inverted project-info">
-        <div class="title">
-          <h1>
-              <a href="{{.Permalink }}">{{ .Title }}</a>
-          </h1>
-        </div>
-        <div class="subtitle">
-          <p>{{.Params.subtitle}}</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  {{ end }}
-
-</div>
-
+{{partial "portfolio_scroll.html" .}}
 
 {{ partial "footer.html" . }}

@@ -17,15 +17,11 @@ theme ="automato"
 	[[params.navigation.links]]
     name     = "works"
     link = "/portfolio"
-  [[params.navigation.links]]
-    name     = "research"
-    link = "/research"
+
   [[params.navigation.links]]
     name     = "about"
     link = "/about"
-  [[params.navigation.links]]
-    name     = "market"
-    link = "/market"
+
   [[params.navigation.links]]
     name     = "blog"
     link = "/blog"
