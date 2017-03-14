@@ -1,0 +1,15 @@
+<div class="container offset">
+    <div class="row">
+
+        {{ if .IsNamedParams }}
+            <div class="flex-video col-md-12">
+                <iframe src="//player.vimeo.com/video/{{ .Get "id" }}" allowfullscreen></iframe>
+            </div>
+            {{ else }}
+            <div class="flex-video col-md-12">
+                <iframe src="//player.vimeo.com/video/{{ .Get 0 }}" allowfullscreen></iframe>
+            </div>
+        {{ end }}
+
+    </div>
+</div>

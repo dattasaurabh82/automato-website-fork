@@ -1,0 +1,7 @@
+{{ $image := .Get "img" }}
+
+<div class="container offset">
+  <div class="row">
+    <img src="{{.Site.BaseURL}}img/{{$image}}" class="responsive_images"/>
+  </div>
+</div>
