@@ -23,7 +23,7 @@ theme ="automato"
     link = "/about"
 
   [[params.navigation.links]]
-    name     = "blog"
+    name     = "lab"
     link = "/blog"
 
   #section hero

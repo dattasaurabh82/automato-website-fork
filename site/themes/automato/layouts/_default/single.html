@@ -1,37 +1,56 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" .}}
+
 <div id="single-project">
 
-    <div id="post-header" class="fill cover">
+    <div id="project-header" class="fill">
         <div class="project fill">
+            {{range .Params.img}}
+                <div class="bg-img fill" style="background-image:url({{$.Site.BaseURL}}img/{{.}})">
+                    <div class="title container">
 
-            {{ if eq .Params.fronttype "image"}}
-                <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
-            {{end}}
-
-            {{ if eq .Params.fronttype "video"}}
-                <div class="flex-video">
-                    <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
-                </div>
-            {{end}}
-
-            {{ if eq .Params.fronttype "text"}}{{end}}
-
-            <div class="container fill overlay">
-                <div class="row middle inverted project-info">
-                    <div class="title">
                         <h1>
-                            <a href="{{.Permalink }}">{{ .Title }}</a>
+                            {{ $.Title }}
                         </h1>
                     </div>
+
                 </div>
-            </div>
+            {{end}}
         </div>
     </div>
 
-    <div id="project-content" class="">
+    <div id="project-content">
         <div class="container">
-            {{.Content}}
+
+            <!-- <div class="row project-info">
+                <div class="title">
+
+                </div>
+            </div> -->
+
+            <div class="row content">
+                <div class="col-md-9 ">
+                    {{.Content}}
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="attributes">
+                        <h5>Year:</h5>
+
+                        <div class="year">
+                            <span class="date">{{ .Date.Format "2006" }}</span>
+                        </div>
+                        <div class="tags">
+                            <h5>filed under:</h5>
+                            {{range .Params.tags}}
+                                <span class="tag">{{ . }}</span>
+                            {{end}}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>

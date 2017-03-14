@@ -6,7 +6,15 @@
     <div id="project-header" class="fill">
         <div class="project fill">
             {{range .Params.img}}
-                <div class="bg-img fill" style="background-image:url({{$.Site.BaseURL}}img/{{.}})"></div>
+                <div class="bg-img fill" style="background-image:url({{$.Site.BaseURL}}img/{{.}})">
+                    <div class="title container">
+
+                        <h1>
+                            {{ $.Title }}
+                        </h1>
+                    </div>
+
+                </div>
             {{end}}
         </div>
     </div>
@@ -14,13 +22,11 @@
     <div id="project-content">
         <div class="container">
 
-            <div class="row project-info">
+            <!-- <div class="row project-info">
                 <div class="title">
-                    <h1>
-                        <a href="{{.Permalink }}">{{ .Title }}</a>
-                    </h1>
+
                 </div>
-            </div>
+            </div> -->
 
             <div class="row content">
                 <div class="col-md-9 ">
