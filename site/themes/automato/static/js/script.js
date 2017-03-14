@@ -66,10 +66,14 @@ $('#hero').on('inview', function(event, isInView) {
     if (isInView) {
       console.log("hero");
         $('#mainNav').addClass("inverted");
+        $('#mainNav').addClass("transparent");
+
     } else {
       console.log("nothero");
 
         $('#mainNav').removeClass("inverted");
+        $('#mainNav').removeClass("transparent");
+
     }
 });
 

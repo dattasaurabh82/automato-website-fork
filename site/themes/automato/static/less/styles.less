@@ -224,9 +224,6 @@ a:hover {
 }
 
 #mainNav {
-
-
-
     .navbar-header {
         text-align: right;
         position: fixed;
@@ -236,10 +233,9 @@ a:hover {
         left: 0;
         right: 0;
         z-index: 10;
-        height: 80px;
-        padding-top: 5px;
-        .transition(background-color 0.2s);
-
+        height: 140px;
+        padding-top: 25px;
+        .transition(all 0.2s);
 
         .nav_item {
             font-size: 1.2em;
@@ -257,7 +253,7 @@ a:hover {
     }
 
     a.navbar-brand {
-        .transition( all 1s);
+        .transition( all 0.2s);
         color: @black;
         font-weight: 100;
         border: 2px solid @black;
@@ -275,11 +271,25 @@ a:hover {
         }
     }
 
-    &.inverted {
+    &.transparent {
       .navbar-header {
         background-color: transparent;
       }
+    }
 
+
+    &.affix {
+      z-index: 10;
+
+      .navbar-header {
+        background-color: @white;
+        height: 80px;
+        z-index: 10;
+        padding-top: 5px;
+      }
+    }
+
+    &.inverted {
         a.navbar-brand {
             color: @white;
             border: 1px solid @white;
