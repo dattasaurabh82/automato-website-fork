@@ -43,4 +43,4 @@ Even with such a banal situation, the level of complexity of such products canno
 The “Ethical Objects” project looks at how an object, facing everyday ethical dilemmas, can keep a dose of humanity in its final decision while staying flexible enough to accommodate various ethical beliefs.
 In order to achieve that, our “ethical fan” connects to a crowd-sourcing website every time it faces an ethical dilemma. The fan is designed to let the user set various traits (such as religion, degree, sex, and age) as criterion to choose the worker who should respond to the dilemma, in order to assure that a part of the user’s culture and belief system is in line with the worker, or ethical agent.
 
-{{< gridGallery type="grid" galleryName="squaredGallery" >}}
+{{< gallery type="grid" galleryName="squaredGallery" >}}

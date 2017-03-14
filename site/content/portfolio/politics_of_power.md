@@ -77,9 +77,9 @@ In every existing network – be it machine or nature, rules are established in 
 The project looks at how a mass-manufactured product – although developed for a precise and unique purpose – could behave differently depending on the nature of its communication protocol and how the design of the product itself could reflect these hidden logic and rules.
 Three multi-plugs – Model D, M and T – are designed to look and behave based on different ideologies and structures, allowing people to experience the hidden politics of networks in an everyday life products through an electrical system.
 
-{{< gridGallery type="full" galleryName="heroGallery" >}}
+{{< gallery type="full" galleryName="heroGallery" >}}
 
-{{< gridGallery type="grid" galleryName="instructions" >}}
+{{< gallery type="grid" galleryName="instructions" >}}
 
 {{< tabs >}}
   {{% tab "Model D" %}}
