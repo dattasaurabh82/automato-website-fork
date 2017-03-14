@@ -2,6 +2,7 @@
 {{ $galleryType := .Get "type" }}
 
 <div class="container offset">
+  <div class="row">
 
     {{if eq $galleryType "grid"}}
 
@@ -46,5 +47,5 @@
             {{end}}
         </div>
     {{end}}
-
+  </div>
 </div>
