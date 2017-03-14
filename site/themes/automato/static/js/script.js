@@ -77,6 +77,8 @@ $('#hero').on('inview', function(event, isInView) {
 $(document).ready(function() {
     $('#gridGallery').lightGallery();
 
+    $(".flex-video").fitVids();
+
     $('.masonryGrid').masonry({
       itemSelector: '.grid-item',
     });
