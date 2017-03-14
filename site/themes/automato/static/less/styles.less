@@ -120,7 +120,6 @@ a:hover {
     width: 100%;
 }
 
-
 .readMore {
     text-align: center;
 
@@ -534,16 +533,27 @@ a:hover {
 
 .page-list {
     .masonryGrid {
+        .grid-item {
+            margin-bottom: 10px;
+        }
 
-      .grid-item {
-        margin-bottom: 10px;
-      }
         .box-container {
-          display: block;
+            display: block;
 
-            .text-bg {
-              border: 1px solid black
+            .text-bg {}
 
+            .image-box {
+              background-color: @white;
+              .transition (all 0.5s);
+                img{
+                  &:hover {
+                      mix-blend-mode: difference;
+                  }
+                }
+
+                &:hover{
+                  background-color: @red;
+                }
             }
         }
     }

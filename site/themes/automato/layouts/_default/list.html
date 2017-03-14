@@ -4,13 +4,15 @@
     <div class="row">
         <div class="masonryGrid">
             {{ range .Data.Pages.ByDate.Reverse }}
-                <div class="grid-item grid-sizer col-md-{{.Params.width}} col-xs-12">
+                <div class="grid-item grid-sizer col-sm-{{.Params.width}} col-xs-12">
 
                     <a href="{{.Permalink }}">{{ .Params.frontType }}
 
                         <div class="box-container">
                             {{ if eq .Params.fronttype "image"}}
-                                <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+                            <div class="image-box">
+                              <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+                            </div>
                                 <div class="overlay-title inverted">
                                     <div class="title">
                                         <h3>{{.Title}}</h3>
