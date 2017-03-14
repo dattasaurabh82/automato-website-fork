@@ -1,13 +1,11 @@
 +++
-date = "2017-10-22T11:04:14+08:00"
-title = "text post"
-subtitle= "With objects that learn about our homes and environments or need to be taught about routines and habit"
-frontType= "text"
+date = "2017-10-23T11:04:14+08:00"
+title = "img post"
+frontType = "image"
 vimeoId = ""
-img=[""]
-externalLink=""
-width=6
-
+img = ["research-1.jpg"]
+externalLink= ""
+width=3
 +++
 
 With objects that learn about our homes and environments or need to be taught about routines and habits, the way we interact with devices and machines will more and more start to look like the one we have with pets.

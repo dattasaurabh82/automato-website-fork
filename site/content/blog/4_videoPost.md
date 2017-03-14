@@ -1,10 +1,12 @@
 +++
-date = "2016-10-25T11:04:14+08:00"
+date = "2017-10-22T11:04:14+08:00"
 title = "this is a video post"
 frontType = "video"
 vimeoId = 116183361
 img = [""]
 externalLink = ""
+width=12
+
 +++
 
 With objects that learn about our homes and environments or need to be taught about routines and habits, the way we interact with devices and machines will more and more start to look like the one we have with pets.

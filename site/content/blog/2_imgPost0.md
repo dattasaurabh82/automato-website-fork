@@ -1,12 +1,11 @@
 +++
-date = "2017-10-22T11:04:14+08:00"
-title = "text post"
-subtitle= "With objects that learn about our homes and environments or need to be taught about routines and habit"
-frontType= "text"
+date = "2017-10-24T11:04:14+08:00"
+title = "img post"
+frontType = "image"
 vimeoId = ""
-img=[""]
-externalLink=""
-width=6
+img = ["wshop.jpg"]
+externalLink= ""
+width=9
 
 +++
 

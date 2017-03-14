@@ -1,5 +1,5 @@
 +++
-date = "2017-10-22T11:04:14+08:00"
+date = "2017-10-21T11:04:14+08:00"
 title = "text post"
 subtitle= "With objects that learn about our homes and environments or need to be taught about routines and habit"
 frontType= "text"

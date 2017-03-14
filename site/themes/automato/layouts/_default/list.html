@@ -1,45 +1,61 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" .}}
 <div class="page-long page-list container">
-    {{ range .Data.Pages }}
-        <div class="row">
-            <div class="item col-md-12 {{ .Params.fronttype }}">
-                <a href="{{.Permalink }}">{{ .Params.frontType }}
-                    <div class="bg-container">
-                        {{ if eq .Params.fronttype "image"}}
-                            <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
-                        {{end}}
+    <div class="row">
+        <div class="masonryGrid">
+            {{ range .Data.Pages.ByDate.Reverse }}
+                <div class="grid-item grid-sizer col-md-{{.Params.width}} col-xs-12">
 
-                        {{ if eq .Params.fronttype "video"}}
-                            <div class="flex-video">
-                                <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
-                            </div>
-                        {{end}}
+                    <a href="{{.Permalink }}">{{ .Params.frontType }}
 
-                        {{ if eq .Params.fronttype "text"}}{{end}}
+                        <div class="box-container">
+                            {{ if eq .Params.fronttype "image"}}
+                                <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+                                <div class="overlay-title inverted">
+                                    <div class="title">
+                                        <h3>{{.Title}}</h3>
+                                    </div>
+                                    <div class="subtitle">
+                                        <p>{{.Params.subtitle}}</p>
+                                    </div>
+                                </div>
+                            {{end}}
 
-                    </div>
+                            {{ if eq .Params.fronttype "video"}}
+                                <div class="flex-video">
+                                    <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
+                                </div>
+                                <div class="overlay-title inverted">
+                                    <div class="title">
+                                        <h3>{{.Title}}</h3>
+                                    </div>
+                                    <div class="subtitle">
+                                        <p>{{.Params.subtitle}}</p>
+                                    </div>
+                                </div>
+                            {{end}}
 
-                    <div class="overlay-title inverted">
-                        <div class="title">
-                            <h3>{{.Title}}</h3>
+                            {{ if eq .Params.fronttype "text"}}
+                                <div class="text-bg">
+
+                                    <div class="title">
+                                        <h3>{{.Title}}</h3>
+                                    </div>
+                                    <div class="subtitle">
+                                        <p>{{.Params.subtitle}}</p>
+                                    </div>
+                                </div>
+
+                            {{end}}
+
                         </div>
-                        <div class="subtitle">
-                            <p>{{.Params.subtitle}}</p>
-                        </div>
-                    </div>
-                </a>
 
-            </div>
+                    </a>
+                </div>
+            {{end}}
         </div>
-        <div class="row">
-          <div class="col-md-9">
-            {{.Content}}
-
-          </div>
-        </div>
-    {{ end }}
-
+    </div>
+</div>
 </div>
 
 {{ partial "footer.html" . }}
