@@ -2,7 +2,7 @@
 date = "2014-10-25T11:04:14+08:00"
 title = "ethical autonomous vehicles"
 subtitle="Three algorithms solving unsolvable car crashes"
-img=["pop1a.jpg"]
+img=["eav.gif"]
 featured_in_home="yes"
 tags=["ethics", "autonomous vehicles"]
 

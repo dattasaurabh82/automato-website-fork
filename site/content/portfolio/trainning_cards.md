@@ -2,7 +2,7 @@
 date = "2017-01-25T11:04:14+08:00"
 title = "traiNNing cards"
 subtitle="A set of 5000 training images to train any of your machines to recognize a dog"
-img=["tc_packageall.jpg"]
+img=["trainning-cards.gif"]
 featured_in_home="yes"
 tags=["neural-networks"]
 

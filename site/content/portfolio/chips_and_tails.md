@@ -2,7 +2,7 @@
 date = "2016-11-25T11:04:14+08:00"
 title = "chips & tails"
 subtitle="A real/fictional store for non biological pets."
-img=["chips_tails_front.jpg"]
+img=["chipsandtails.gif"]
 featured_in_home="yes"
 tags=["IoT"]
 
