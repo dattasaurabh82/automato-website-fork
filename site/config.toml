@@ -54,3 +54,18 @@ theme ="automato"
   claim="We think about the future so you don’t have to."
   subtitle="We are based in Shanghai, Contact us."
   link=""
+
+  [[params.footer.social]]
+  name="facebook"
+  link="https://www.facebook.com/automatofarm/"
+  icon="fa-facebook"
+
+  [[params.footer.social]]
+  name="twitter"
+  link="https://twitter.com/automato_farm"
+  icon="fa-twitter"
+
+  [[params.footer.social]]
+  name="vimeo"
+  link="https://vimeo.com/automato"
+  icon="fa-vimeo"

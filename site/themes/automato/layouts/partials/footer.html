@@ -1,7 +1,16 @@
 <section id="footer">
     <div class="container">
+      <div class="row footer-claim">
         <h3>{{ .Site.Params.footer.claim }}</h3>
         <h4>{{ .Site.Params.footer.subtitle }}</h4>
+      </div>
+      <div class="row social-links">
+        {{ range .Site.Params.footer.social}}
+        <a href={{.link}} target="_blank">
+          <i class="fa fa-2x {{.icon}}" aria-hidden="true"></i>
+        </a>
+        {{end}}
+      </div>
     </div>
 </section>
 
