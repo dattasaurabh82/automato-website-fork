@@ -1,10 +1,10 @@
 +++
-date = "2016-10-25T11:04:14+08:00"
+date = "2016-01-25T11:04:14+08:00"
 title = "politics of power"
-subtitle="don't really know what we are talkin' about again"
+subtitle="Multi-plugs with manufactured ideologies"
 img=["pop1a.jpg"]
 featured_in_home="yes"
-tags=["ethics", "robot"]
+tags=["robot"]
 
 [galleries]
 

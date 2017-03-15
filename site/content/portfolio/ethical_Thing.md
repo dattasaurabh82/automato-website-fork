@@ -1,9 +1,9 @@
 +++
-date = "2016-10-25T11:04:14+08:00"
+date = "2015-10-25T11:04:14+08:00"
 title = "ethical things"
-subtitle="don't really know what we are talkin' about"
+subtitle="A fan solving dilemmas by using crowd-sourcing technologies"
 img=["settings.jpg"]
-tags=["ethics", "robot"]
+tags=["ethics", "IoT"]
 
   [galleries]
 
