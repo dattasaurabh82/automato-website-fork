@@ -13,14 +13,28 @@
             {{ with .Site.Params.navigation.brand }}{{ . }}{{ end }}
         </a>
 
-        {{ range .Site.Params.navigation.links }}
-            <span class="nav_item">
-                <a href="{{ $.Site.BaseURL }}{{ .link }}">
-                    {{ .name }}
-                </a>
-            </span>
-        {{end}}
-
+        <div class="collapse navbar-collapse">
+            {{ range .Site.Params.navigation.links }}
+                <span class="nav_item">
+                    <a href="{{ $.Site.BaseURL }}{{ .link }}">
+                        {{ .name }}
+                    </a>
+                </span>
+            {{end}}
+        </div>
       </div>
     </div>
 </nav>
+
+
+<div id="fullMenu">
+    <div class="container">
+        {{ range .Site.Params.navigation.links }}
+            <h1>
+                <a href="{{ $.Site.BaseURL }}{{ .link }}">
+                    {{ .name }}
+                </a>
+            </h1>
+        {{end}}  
+    </div>
+</div>
