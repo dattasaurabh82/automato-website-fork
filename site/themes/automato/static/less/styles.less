@@ -464,11 +464,15 @@ a:hover {
 }
 
 #single-project {
-    margin-top: 140px;
-
     #project-header {
         .bg-img {
             min-height: 600px;
+
+            @media @mq-small{
+              min-height: 200px;
+              max-height: 300px;
+
+            }
         }
 
         .title {
@@ -480,6 +484,11 @@ a:hover {
                 letter-spacing: 0;
                 text-transform: uppercase;
                 mix-blend-mode: difference;
+
+
+                @media @mq-small{
+                  font-size: 60px;
+                }
 
                 a {
                     color: @red;
@@ -494,10 +503,19 @@ a:hover {
         position: relative;
         padding-top: 2em;
 
+        @media @mq-small{
+          margin-top: 0px;
+          padding-top: 1em;
+        }
+
         .content {
             margin-top: 3em;
             background-color: @white;
             padding: 2em 0;
+
+            @media @mq-small{
+              margin-top: 0px;
+            }
         }
 
         .attributes {
