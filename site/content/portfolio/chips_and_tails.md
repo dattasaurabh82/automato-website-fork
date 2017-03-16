@@ -9,69 +9,226 @@ tags=["IoT"]
 [galleries]
 
 [[galleries.gallery]]
+  name="items"
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03742.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03747.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03750.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03755.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03758.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03764.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03768.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03772.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03775.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03778.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03782.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "DSC03787.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+[[galleries.gallery]]
   name="heroGallery"
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop1a.jpg"
+  img = "buy-cp.jpg"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop1a.jpg"
+  img = "dress-cp.jpg"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop6a.jpg"
+  img = "entry-cp.jpg"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop5a.jpg"
+  img = "front.jpg"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop8.jpg"
+  img = "hi.jpg"
   captionTitle = ""
   captionDescription = ""
 
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "packaging.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "pay.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "wshop.jpg"
+  captionTitle = ""
+  captionDescription = ""
 
 [[galleries.gallery]]
-  name="instructions"
+  name="posters"
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "model-d.jpg"
+  img = "Jokies.jpg"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "model-m.jpg"
+  img = "sample_poster.jpg"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "model-t.jpg"
+  img = "Personal-Speaker.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "Chair-mount-arm.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "Drone-Manicure.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "Drone-Spray.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "Extra-Hand.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "Fetchie.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+[[galleries.gallery]]
+  name="classes"
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "SERVICES-01.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "SERVICES-02.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "SERVICES-03.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "SERVICES-04.jpg"
   captionTitle = ""
   captionDescription = ""
 
 +++
 
 
-Many car manufacturers are projecting that by 2025 most cars will operate on driveless systems. While it is valid to think that our roads will be safer as autonomous vehicles replace traditional cars, the unpredictability of real-life situations that involve the complexities of moral and ethical reasoning complicate this assumption.
+With objects that learn about our homes and environments or need to be taught about routines and habits, the way we interact with devices and machines will more and more start to look like the one we have with pets. 
 
-How can such systems be designed to accommodate the complicatedness of moral and ethical thought processes, especially when human lives are involved? Just like choosing the color of a car, ethics can become a commodified feature in autonomous vehicles that one can buy, change, and repurchase, depending on personal taste.
+The relationship we have with Roombas, drones, cameras and thermostats might become closer to the one we have with dogs, cats, and birds. What products and services could be sold in a shop where pets are not only animals?
 
-Three distinct algorithms have been created – each adhering to a specific ethical principle/behaviour set-up – and embedded into driverless virtual cars that are operating in a simulated environment, where these autonomous vehicles will be confronted with various ethical dilemmas.
+Chips & Tails is a near future pop-up store where people can buy toys, treats, medicines and services for their non-animal pets.  Through a workshop with 20 artists, designers, writers, veterinaries and dog lovers we imagined, prototyped and packaged over 40 products and services.
+
+This project’s format is inspired by [99c futures](http://www.extrapolationfactory.com/99-FUTURES) by The Extrapolation Factory.
+
+Posters made by [Henry Hu](https://dribbble.com/henryhu)
+
+{{< gallery type="grid" galleryName="items" >}}
 
 {{< gallery type="full" galleryName="heroGallery" >}}
 
-{{< gallery type="grid" galleryName="instructions" >}}
+{{< gallery type="grid" galleryName="posters" >}}
+
+{{< gallery type="full" galleryName="classes" >}}
