@@ -1,30 +1,31 @@
 <nav id="mainNav" class="mainNav" data-spy="affix" data-offset-top="197">
-     <div class="navbar-header">
-       <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 navbar-header">
 
-        <div class="navbar-toggle collapsed" id="nav-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+                    <div class="navbar-toggle collapsed" id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
 
-        <a class="navbar-brand page-scroll" href="{{ .Site.BaseURL }}#page-top">
-            {{ with .Site.Params.navigation.brand }}{{ . }}{{ end }}
-        </a>
-
-        <div class="collapse navbar-collapse">
-            {{ range .Site.Params.navigation.links }}
-                <span class="nav_item">
-                    <a href="{{ $.Site.BaseURL }}{{ .link }}">
-                        {{ .name }}
+                    <a class="navbar-brand page-scroll" href="{{ .Site.BaseURL }}#page-top">
+                        {{ with .Site.Params.navigation.brand }}{{ . }}{{ end }}
                     </a>
-                </span>
-            {{end}}
-        </div>
-      </div>
-    </div>
-</nav>
+                </div>
+            </div>
 
+            <div class="collapse navbar-collapse">
+                {{ range .Site.Params.navigation.links }}
+                    <span class="nav_item">
+                        <a href="{{ $.Site.BaseURL }}{{ .link }}">
+                            {{ .name }}
+                        </a>
+                    </span>
+                {{end}}
+            </div>
+        </div>
+</nav>
 
 <div id="fullMenu">
     <div class="container">
@@ -34,6 +35,6 @@
                     {{ .name }}
                 </a>
             </h1>
-        {{end}}  
+        {{end}}
     </div>
 </div>

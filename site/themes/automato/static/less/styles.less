@@ -37,7 +37,17 @@
     -moz-transition: @transition;
     -ms-transition: @transition;
     -o-transition: @transition;
+    transition: @transition;
 }
+
+.transform (@transform) {
+    -webkit-transform: @transform;
+    -moz-transform: @transform;
+    -ms-transform: @transform;
+    -o-transform: @transform;
+    transform: @transform;
+}
+
 
 html {
     height: 100%;
@@ -102,7 +112,7 @@ a:hover {
 
 .middle {
   top: 50%;
-  transform: translateY(-50%);
+  .transform(translateY(-50%));
   position: relative;
 }
 
@@ -205,10 +215,10 @@ a:hover {
 }
 
 #mainNav {
+  z-index: 100;
     .navbar-header {
         text-align: right;
         position: fixed;
-        top: 0;
         background-color: @white;
         width: 100%;
         left: 0;
@@ -217,6 +227,8 @@ a:hover {
         height: 140px;
         padding-top: 25px;
         .transition(all 0.2s);
+        display: table;
+        top: 23px;
 
         .nav_item {
             font-size: 1.2em;
@@ -233,6 +245,12 @@ a:hover {
         }
     }
 
+    @media @mq-small{
+      .navbar-header {
+        height: 80px;
+      }
+    }
+
     a.navbar-brand {
         .transition( all 0.2s);
         color: @black;
@@ -240,12 +258,13 @@ a:hover {
         border: 2px solid @black;
         height: 2em;
         padding: 7px 13px;
-        margin-top: 1em;
         font-family: AlphaHeadlinePro-Bold;
     }
 
-    button.navbar-toggle {
+    .navbar-toggle {
         float: right;
+        margin: 0px;
+
 
         .icon-bar {
             background-color: @black;
@@ -259,19 +278,37 @@ a:hover {
     }
 
     &.affix {
-        z-index: 10;
-
         .navbar-header {
             height: 80px;
             z-index: 10;
-            padding-top: 5px;
+            //padding-top: 5px;
+            a.navbar-brand{
+              margin-top: 7px;
+            }
+        }
+        #nav-icon{
+          margin-top: 11px;
+        }
+    }
+
+    &.affix-top {
+        .navbar-header {
+            height: 80px;
+            z-index: 10;
+            //padding-top: 5px;
+            a.navbar-brand{
+              margin-top: 0px;
+            }
+        }
+        #nav-icon{
+          margin-top: 4px;
         }
     }
 
     &.inverted {
         a.navbar-brand {
             color: @white;
-            border: 1px solid @white;
+            border: 2px solid @white;
         }
 
         .nav_item a {
@@ -286,7 +323,7 @@ a:hover {
 
 #hero {
     margin-bottom: 0;
-
+    background-position: center;
     h1 {
         font-size: 6em;
         color: white;
@@ -590,7 +627,7 @@ a:hover {
 
 #fullMenu {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(255,0,0,0.7);
     position: fixed;
     top: 0;
@@ -601,7 +638,7 @@ a:hover {
     .container {
         position: relative;
         top: 50%;
-        transform: translateY(-50%);
+        .transform(translateY(-50%));
     }
 
     h1 {
@@ -618,26 +655,20 @@ a:hover {
 
 
 #nav-icon {
-    -moz-transform: rotate(0deg);
-    -moz-transition: .5s ease-in-out;
-    -o-transform: rotate(0deg);
-    -o-transition: .5s ease-in-out;
-    -webkit-transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
+
+    .transition(.2s ease-in-out);
+    .transform(rotate(0deg));
+
+
     cursor: pointer;
-    height: 45px;
-    margin: 25px auto;
     position: relative;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
     width: 30px;
+
     span {
-        -moz-transform: rotate(0deg);
-        -moz-transition: .25s ease-in-out;
-        -o-transform: rotate(0deg);
-        -o-transition: .25s ease-in-out;
-        -webkit-transform: rotate(0deg);
-        -webkit-transition: .25s ease-in-out;
+
+      .transition(.25s ease-in-out);
+      .transform(rotate(0deg));
+
         background: #000;
         border-radius: 9px;
         display: block;
@@ -645,28 +676,27 @@ a:hover {
         left: 0;
         opacity: 1;
         position: absolute;
-        transform: rotate(0deg);
-        transition: .25s ease-in-out;
         width: 100%;
         &:nth-child(1) {
+          top: 0px;
+
             -moz-transform-origin: left center;
             -o-transform-origin: left center;
             -webkit-transform-origin: left center;
-            top: 0px;
             transform-origin: left center;
         }
         &:nth-child(2) {
             -moz-transform-origin: left center;
             -o-transform-origin: left center;
             -webkit-transform-origin: left center;
-            top: 7px;
+            top: 10px;
             transform-origin: left center;
         }
         &:nth-child(3) {
             -moz-transform-origin: left center;
             -o-transform-origin: left center;
             -webkit-transform-origin: left center;
-            top: 14px;
+            top: 20px;
             transform-origin: left center;
         }
     }
@@ -674,24 +704,19 @@ a:hover {
 #nav-icon.open {
     span {
         &:nth-child(1) {
-            -moz-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
             left: 8px;
             top: -3px;
-            transform: rotate(45deg);
+            .transform(rotate(45deg));
+
         }
         &:nth-child(2) {
             opacity: 0;
             width: 0%;
         }
         &:nth-child(3) {
-            -moz-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
+          .transform(rotate(-45deg));
             left: 8px;
             top: 17px;
-            transform: rotate(-45deg);
         }
     }
 }
