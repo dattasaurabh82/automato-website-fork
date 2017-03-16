@@ -24,7 +24,7 @@
 @mq-xlarge: ~"(max-width: @{bp-xlarge})";
 @mq-xxlarge: ~"(max-width: @{bp-xxlarge})";
 @mq-retina: ~"(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
-@navbar-height: 70px;
+@navbar-height: 100px;
 @font-face {
     font-family: 'AlphaHeadlinePro-Bold';
     src: url('../fonts/AlphaHeadlinePro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/AlphaHeadlinePro-Bold.otf') format('opentype'), url('../fonts/AlphaHeadlinePro-Bold.woff') format('woff'), url('../fonts/AlphaHeadlinePro-Bold.ttf') format('truetype'), url('../fonts/AlphaHeadlinePro-Bold.svg#AlphaHeadlinePro-Bold') format('svg');
@@ -47,7 +47,6 @@
     -o-transform: @transform;
     transform: @transform;
 }
-
 
 html {
     height: 100%;
@@ -103,7 +102,7 @@ a:hover {
 }
 
 .fill {
-  height: 100%;
+    height: 100%;
 }
 
 .cover {
@@ -111,9 +110,9 @@ a:hover {
 }
 
 .middle {
-  top: 50%;
-  .transform(translateY(-50%));
-  position: relative;
+    top: 50%;
+    .transform(translateY(-50%));
+    position: relative;
 }
 
 .responsive_images {
@@ -215,40 +214,56 @@ a:hover {
 }
 
 #mainNav {
-  z-index: 100;
-    .navbar-header {
-        text-align: right;
-        position: fixed;
-        background-color: @white;
-        width: 100%;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        height: 140px;
-        padding-top: 25px;
-        .transition(all 0.2s);
-        display: table;
-        top: 23px;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: @white;
+    .transition(all 0.2s);
 
-        .nav_item {
-            font-size: 1.2em;
-            margin-left: 2em;
-            font-family: AlphaHeadlinePro-Bold;
-            text-transform: uppercase;
-            padding: 8px 0 8px 20px;
-            display: inline-block;
-            margin-top: 1em;
+    &.affix-top {
+        padding-top: 50px;
 
-            a {
-                color: @black;
-            }
+        .navbar-header {
+          height: @navbar-height
         }
     }
 
-    @media @mq-small{
-      .navbar-header {
-        height: 80px;
-      }
+    &.affix {
+        padding-top: 30px;
+
+        .navbar-header {
+            height: 60px;
+        }
+    }
+
+    .navbar-header {
+        height: @navbar-height
+        padding-top: 50px;
+        text-align: right;
+        width: 100%;
+        .transition(all 0.2s);
+        .navbar-collapse{
+          padding: 0px;
+          .nav_item {
+              font-size: 1.2em;
+              margin-left: 2em;
+              font-family: AlphaHeadlinePro-Bold;
+              text-transform: uppercase;
+              padding: 10px 0 0 20px;
+              display: inline-block;
+
+              a {
+                  color: @black;
+              }
+          }
+        }
+
+    }
+    @media @mq-small {
+        .navbar-header {
+            height: 80px;
+        }
     }
 
     a.navbar-brand {
@@ -263,8 +278,7 @@ a:hover {
 
     .navbar-toggle {
         float: right;
-        margin: 0px;
-
+        margin: 0;
 
         .icon-bar {
             background-color: @black;
@@ -272,38 +286,36 @@ a:hover {
     }
 
     &.transparent {
-        .navbar-header {
-            background-color: transparent;
-        }
+      background-color: transparent;
     }
+    // &.affix {
+    //     .navbar-header {
+    //         height: 80px;
+    //         z-index: 10;
+    //         //padding-top: 5px;
+    //         a.navbar-brand{
+    //           margin-top: 7px;
+    //         }
+    //     }
+    //     #nav-icon{
+    //       margin-top: 11px;
+    //     }
+    // }
+    //
+    // &.affix-top {
+    //     .navbar-header {
+    //         height: 80px;
+    //         z-index: 10;
+    //         //padding-top: 5px;
+    //         a.navbar-brand{
+    //           margin-top: 0px;
+    //         }
+    //     }
+    //     #nav-icon{
+    //       margin-top: 4px;
+    //     }
+    //}
 
-    &.affix {
-        .navbar-header {
-            height: 80px;
-            z-index: 10;
-            //padding-top: 5px;
-            a.navbar-brand{
-              margin-top: 7px;
-            }
-        }
-        #nav-icon{
-          margin-top: 11px;
-        }
-    }
-
-    &.affix-top {
-        .navbar-header {
-            height: 80px;
-            z-index: 10;
-            //padding-top: 5px;
-            a.navbar-brand{
-              margin-top: 0px;
-            }
-        }
-        #nav-icon{
-          margin-top: 4px;
-        }
-    }
 
     &.inverted {
         a.navbar-brand {
@@ -311,11 +323,11 @@ a:hover {
             border: 2px solid @white;
         }
 
-        .nav_item a {
+         .navbar-header .navbar-collapse .nav_item a {
             color: @white;
         }
 
-        #nav-icon span{
+        #nav-icon span {
             background: @white;
         }
     }
@@ -324,6 +336,7 @@ a:hover {
 #hero {
     margin-bottom: 0;
     background-position: center;
+
     h1 {
         font-size: 6em;
         color: white;
@@ -341,7 +354,7 @@ a:hover {
 }
 
 #portfolio {
-    margin-top: 8em;
+    margin-top: @navbar-height;
 
     .portfolio_item {
         margin-bottom: 2em;
@@ -653,22 +666,16 @@ a:hover {
     }
 }
 
-
 #nav-icon {
-
     .transition(.2s ease-in-out);
     .transform(rotate(0deg));
-
-
     cursor: pointer;
     position: relative;
     width: 30px;
 
     span {
-
-      .transition(.25s ease-in-out);
-      .transform(rotate(0deg));
-
+        .transition(.25s ease-in-out);
+        .transform(rotate(0deg));
         background: #000;
         border-radius: 9px;
         display: block;
@@ -677,14 +684,15 @@ a:hover {
         opacity: 1;
         position: absolute;
         width: 100%;
-        &:nth-child(1) {
-          top: 0px;
 
+        &:nth-child(1) {
+            top: 0;
             -moz-transform-origin: left center;
             -o-transform-origin: left center;
             -webkit-transform-origin: left center;
             transform-origin: left center;
         }
+
         &:nth-child(2) {
             -moz-transform-origin: left center;
             -o-transform-origin: left center;
@@ -692,6 +700,7 @@ a:hover {
             top: 10px;
             transform-origin: left center;
         }
+
         &:nth-child(3) {
             -moz-transform-origin: left center;
             -o-transform-origin: left center;
@@ -701,20 +710,22 @@ a:hover {
         }
     }
 }
+
 #nav-icon.open {
     span {
         &:nth-child(1) {
             left: 8px;
             top: -3px;
             .transform(rotate(45deg));
-
         }
+
         &:nth-child(2) {
             opacity: 0;
-            width: 0%;
+            width: 0;
         }
+
         &:nth-child(3) {
-          .transform(rotate(-45deg));
+            .transform(rotate(-45deg));
             left: 8px;
             top: 17px;
         }
