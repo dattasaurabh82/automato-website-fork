@@ -1,6 +1,5 @@
 <section id="portfolio">
     <div class="container">
-
         {{ range $index, $element := first 4 (where .Site.Pages "Section" "portfolio") }}
             <div class="portfolio_item " style="background-image:url('{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _1024." }}') ">
                 <!-- <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}"> -->
@@ -17,10 +16,7 @@
                         </div>
                     </div>
                 </a>
-
             </div>
-
         {{ end }}
     </div>
-
 </section>
