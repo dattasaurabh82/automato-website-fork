@@ -13,53 +13,31 @@ tags=["ethics", "autonomous vehicles"]
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop1a.jpg"
+  img = "HumanistBW_iB-01.png"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop1a.jpg"
+  img = "ProtectorBW_iB-01.png"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop6a.jpg"
+  img = "CapitalistBW_iB-01.png"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop5a.jpg"
+  img = "Case-Study2B-01.png"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop8.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-
-[[galleries.gallery]]
-  name="instructions"
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "model-d.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "model-m.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "model-t.jpg"
+  img = "Case-Study1B-01.png"
   captionTitle = ""
   captionDescription = ""
 
@@ -72,6 +50,8 @@ How can such systems be designed to accommodate the complicatedness of moral and
 
 Three distinct algorithms have been created – each adhering to a specific ethical principle/behaviour set-up – and embedded into driverless virtual cars that are operating in a simulated environment, where these autonomous vehicles will be confronted with various ethical dilemmas.
 
-{{< gallery type="full" galleryName="heroGallery" >}}
+By [Matthieu Cherubini](http://mchrbn.net/ethical-autonomous-vehicles/)
 
-{{< gallery type="grid" galleryName="instructions" >}}
+{{< vimeo id="194454704">}}
+
+{{< gallery type="grid" galleryName="heroGallery" >}}
