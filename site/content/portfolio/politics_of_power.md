@@ -19,7 +19,7 @@ tags=["robot"]
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "pop1a.jpg"
+  img = "technic.jpg"
   captionTitle = ""
   captionDescription = ""
 
@@ -76,6 +76,8 @@ In every existing network – be it machine or nature, rules are established in 
 “Politics of Power” is an exploration of these questions on a micro-scale by using a simple ubiquitous product, the multi-plug.
 The project looks at how a mass-manufactured product – although developed for a precise and unique purpose – could behave differently depending on the nature of its communication protocol and how the design of the product itself could reflect these hidden logic and rules.
 Three multi-plugs – Model D, M and T – are designed to look and behave based on different ideologies and structures, allowing people to experience the hidden politics of networks in an everyday life products through an electrical system.
+
+{{< vimeo id="155295826">}}
 
 {{< gallery type="full" galleryName="heroGallery" >}}
 
