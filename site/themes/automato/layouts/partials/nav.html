@@ -28,12 +28,12 @@
 
 <div id="fullMenu">
     <div class="container">
-        {{ range .Site.Params.navigation.links }}
+        {{ range $index, $element := .Site.Params.navigation.links }}
             <h1>
-                <a href="{{ $.Site.BaseURL }}{{ .link }}">
+                <a href="{{ $.Site.BaseURL }}{{ .link }}" class="glitchies-{{ $index }}" data-text="{{ .name }}">
                     {{ .name }}
                 </a>
             </h1>
-        {{end}}  
+        {{end}}
     </div>
 </div>
