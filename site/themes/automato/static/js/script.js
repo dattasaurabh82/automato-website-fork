@@ -13,7 +13,6 @@ window.onload = function() {
     $('body').scrollspy({
         target: ".navbar"
     });
-    AOS.init();
     $('#heroCarousel').carousel({
         interval: 3000
     });
@@ -100,7 +99,18 @@ $('#nav-icon').click(function(){
     $(this).toggleClass('open');
 });
 
+
+
+
 $(document).ready(function() {
+
+  var nav = document.getElementById('mainNav');
+  nav.addEventListener('touchmove', function(e) {
+          e.preventDefault();
+  }, false);
+
+
+
     $('#gridGallery').lightGallery();
 
     $(".flex-video").fitVids();
