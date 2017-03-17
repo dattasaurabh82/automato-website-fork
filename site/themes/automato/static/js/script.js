@@ -109,8 +109,6 @@ $(document).ready(function() {
           e.preventDefault();
   }, false);
 
-
-
     $('#gridGallery').lightGallery();
 
     $(".flex-video").fitVids();
