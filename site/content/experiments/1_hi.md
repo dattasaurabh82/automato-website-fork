@@ -7,6 +7,7 @@ vimeoId = ""
 img = "hi.jpg"
 externalLink = "http://www.google.com"
 width = 3
+draft=true
 +++
 
 With objects that learn about our homes and environments or need to be taught about routines and habits, the way we interact with devices and machines will more and more start to look like the one we have with pets.

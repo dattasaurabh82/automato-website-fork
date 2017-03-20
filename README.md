@@ -21,9 +21,18 @@ grunt edit
 
 You should be able to view it at http://127.0.0.1:8080/. the site is automatically regenerated and served every time you make new changes to the contents
 
+when you run grunt edit the website is built with option  `--buildDrafts=true` this means that even if a content is marked as draft will be rendered in preview
+
+
 ## edit the contents
 
 contents are stored in /site/contents, you can create new pages from the terminal with
+first move to the root of the hugo site inside /site
+
+```
+cd site
+```
+then use the `hugo new` command specifying the name and locatin of the content you want to build
 
 ```
 hugo new portfolio/myNewProject.md
@@ -38,7 +47,8 @@ first build the site with
 ```
 grunt
 ```
-then use the deploy task
+_nb: `--buildDrafts=false` draft content will not be built._
+then use deploy task to push the modification to githubpages
 ```
 grunt deploy
 ```

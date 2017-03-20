@@ -111,8 +111,25 @@ function theFuture(){
 }
 
 
+// Twitter widget is loading.
+  window.twttr = function (d, s, id) {
+  var t, js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return; js = d.createElement(s); js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+  }(document, 'script', 'twitter-wjs');
 
-// jQuery
+// When widget is ready, run masonry
+twttr.ready(function (twttr) {
+  twttr.events.bind('loaded', function (event) {
+    var $masonryGrid=$('.masonryGrid').masonry({
+        itemSelector: '.grid-item'
+    });
+  });
+});
+
+
 $(document).ready(function() {
 
     var nav = document.getElementById('mainNav');
@@ -129,12 +146,7 @@ $(document).ready(function() {
         var $masonryGrid=$('.masonryGrid').masonry({
             itemSelector: '.grid-item'
         });
-
-        // $masonryGrid.on( 'layoutComplete', function(){
-        //
-        // } );
     });
-
 
     $("img.lazy").lazyload({
         threshold: 200,

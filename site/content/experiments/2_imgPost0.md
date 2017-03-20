@@ -6,6 +6,7 @@ vimeoId = ""
 img = "wshop.jpg"
 externalLink = "http://www.google.com"
 width=9
+draft=true
 
 +++
 

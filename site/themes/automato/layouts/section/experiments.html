@@ -42,6 +42,10 @@
                                     </div> -->
                                 {{end}}
 
+                                {{ if eq .Params.fronttype "iframe"}}
+                                    {{.Content}}
+                                {{end}}
+
                                 {{ if eq .Params.fronttype "text"}}
                                     <div class="text-bg">
 
