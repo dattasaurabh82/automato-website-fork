@@ -8,7 +8,7 @@
 
 
                   {{ if .Params.externalLink }}
-                    <a href="{{.Params.externalLink}}">
+                    <a href="{{.Params.externalLink}}" target="_blank">
                   {{ else }}
                     <a href="{{.Permalink}}">
                   {{ end }}
@@ -18,28 +18,28 @@
                                     <div class="image-box">
                                         <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (.Params.img) " ." " _480." }}">
                                     </div>
-                                    <div class="overlay-title inverted">
+                                    <!-- <div class="overlay-title inverted">
                                         <div class="title">
                                             <h3>{{.Title}}</h3>
                                         </div>
                                         <div class="subtitle">
                                             <p>{{.Params.subtitle}}</p>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 {{end}}
 
                                 {{ if eq .Params.fronttype "video"}}
                                     <div class="flex-video">
                                         <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
                                     </div>
-                                    <div class="overlay-title inverted">
+                                    <!-- <div class="overlay-title inverted">
                                         <div class="title">
                                             <h3>{{.Title}}</h3>
                                         </div>
                                         <div class="subtitle">
                                             <p>{{.Params.subtitle}}</p>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 {{end}}
 
                                 {{ if eq .Params.fronttype "text"}}
