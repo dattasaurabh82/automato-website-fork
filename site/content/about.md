@@ -7,23 +7,22 @@ externalLink= ""
 type="page"
 +++
 
-We are a design & research studio based in Shanghai consisting of [Simone Rebaudengo](http://simonerebaudengo.com), [Matthieu Cherubini](http://mchrbn.net/), [Saurabh Datta](http://www.dattasaurabh.com) and [Lorenzo Romagnoli](http://lorenzoromagnoli.me/). We combine our pasts in computer science, product design and electrical engineering to work on the fringes of product and interaction design.
+# We are a design & research studio based in Shanghai consisting of [Simone Rebaudengo](http://simonerebaudengo.com), [Matthieu Cherubini](http://mchrbn.net/), [Saurabh Datta](http://www.dattasaurabh.com) and [Lorenzo Romagnoli](http://lorenzoromagnoli.me/). We combine our pasts in computer science, product design and electrical engineering to work on the fringes of product and interaction design.
 
-**Our work focuses on exploring the next evolution of what interaction design might mean.**
-Bridging and blurring physical and digital interfaces, digging deeper into algorithms and behaviors of products, translating complex black boxes into interfaces and using connectivity and intelligence as new materials to be shaped.
+# Our work focuses on exploring the next evolution of what interaction design might mean.
+# Bridging and blurring physical and digital interfaces, digging deeper into algorithms and behaviors of products, translating complex black boxes into interfaces and using connectivity and intelligence as new materials to be shaped.
 
-**We research and develop future products and interfaces, sometimes real and sometimes fictional.**
-We collaborate with studios, companies, and institutions to envision what happens when emerging technologies hits reality. We can talk fluently to both people and machines, but we like machines more.
-We also teach and talk a lot about machines, mundane appliances, and dogs…with very painful accents.
+# We research and develop future products and interfaces, sometimes real and sometimes fictional.
+# We collaborate with studios, companies, and institutions to envision what happens when emerging technologies hits reality. We can talk fluently to both people and machines, but we like machines more.
+# We also teach and talk a lot about machines, mundane appliances, and dogs…with very painful accents.
 
-**If you have a future to explore or if you are just scared of it, [contact us.](mailto:hi@automato.farm).**
+# If you have a future to explore or if you are just scared of it, [contact us](mailto:hi@automato.farm).
 
 
 {{% columns %}}
 
 #### Teaching and Workshops
 - [Copenhagen Institute of Interaction Design](http://ciid.dk/), Copenhagen
-- [Royal College of Art](http://www.design-interactions.rca.ac.uk/), London
 - [HEAD](https://www.hesge.ch/head/en), Geneva
 - [Master of Advanced Studies in Interaction Design](https://www.maind.supsi.ch/), Lugano
 - [Tongji University](http://tjdi.tongji.edu.cn/?lang=en), Shanghai
@@ -45,7 +44,6 @@ We also teach and talk a lot about machines, mundane appliances, and dogs…with
 - [Biennale Internationale Design](http://www.biennale-design.com/saint-etienne/2017/fr/home/), St-Etienne
 - [Sonar+D](https://sonarplusd.com/), Barcelona
 - [FACT Center](http://www.fact.co.uk/), Liverpool
-- [FILE2011](http://file.org.br/), Sao Paulo
 
 #### Selected Talks & Interviews
 - [Interaction17](http://interaction17.ixda.org/), New York
