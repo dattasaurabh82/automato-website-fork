@@ -69,3 +69,8 @@ theme ="automato"
   name="vimeo"
   link="https://vimeo.com/automato"
   icon="fa-vimeo"
+
+  [[params.footer.social]]
+  name="instagram"
+  link="https://www.instagram.com/automato.farm/"
+  icon="fa-instagram"
