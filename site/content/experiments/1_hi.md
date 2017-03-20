@@ -5,7 +5,7 @@ subtitle= "With objects that learn about our homes and environments or need to b
 frontType = "image"
 vimeoId = ""
 img = "hi.jpg"
-externalLink= ""
+externalLink= "http://www.google.com"
 width=3
 +++
 

@@ -4,7 +4,6 @@ title = "img post"
 frontType = "image"
 vimeoId = ""
 img = "research-1.jpg"
-externalLink= ""
 width=3
 +++
 

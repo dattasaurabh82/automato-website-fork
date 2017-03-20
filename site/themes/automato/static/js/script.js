@@ -121,21 +121,13 @@ $(document).ready(function() {
 
     $('.masonryGrid').imagesLoaded(function() {
 
-        console.log("images loaded");
-
         var $masonryGrid=$('.masonryGrid').masonry({
             itemSelector: '.grid-item'
         });
 
-        $masonryGrid.on( 'layoutComplete', function(){
-          console.log('layout done');
-        } );
-
-        // $masonryGrid.off( 'layoutComplete', onLayout );
-        // // bind event listener to be triggered just once. note ONE not ON
-        // $masonryGrid.one( 'layoutComplete', function() {
-        //   console.log('layout done, just this one time');
-        // });
+        // $masonryGrid.on( 'layoutComplete', function(){
+        //
+        // } );
     });
 
 
