@@ -4,6 +4,9 @@ title = "teacher of algorithms"
 subtitle="Future jobs deriving from smart fallacies."
 img="teacher.gif"
 tags=["fiction", "machine learning", "algorithms"]
+[commissionedBy]
+  name="ThingTank"
+  link="http://thingtank.org"
 +++
 
 We think of smart/learning objects as yet not finished entities that can evolve their behaviors by observing, reading and interpreting our habits. They train their algorithms based on deep learning or similar ways to constantly adapt and refine their decisions.
