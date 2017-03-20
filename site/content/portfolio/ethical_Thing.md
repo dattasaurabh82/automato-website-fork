@@ -3,7 +3,7 @@ date = "2015-10-25T11:04:14+08:00"
 title = "ethical things"
 subtitle="A fan solving dilemmas by using crowd-sourcing technologies"
 img=["ethical-things.gif"]
-tags=["ethics", "IoT"]
+tags=["ethics", "IoT", "MTurks"]
 
   [galleries]
 
@@ -34,11 +34,11 @@ tags=["ethics", "IoT"]
     captionTitle = ""
     captionDescription = ""
 
-    [[galleries.gallery.item]]
-    type="photo"
-    img = "graph.png"
-    captionTitle = ""
-    captionDescription = ""
+    # [[galleries.gallery.item]]
+    # type="photo"
+    # img = "graph.png"
+    # captionTitle = ""
+    # captionDescription = ""
 +++
 
 Due to fast-developing technology and its endless promises, autonomous systems are heading increasingly towards complex algorithms aimed at solving situations requiring some form of moral reasoning. Autonomous vehicles and lethal battlefield robots are good examples of such products due to the tremendous complexity of their tasks that they must carry out.
@@ -57,4 +57,10 @@ Process: [http://ethicalturks.tumblr.com] (http://ethicalturks.tumblr.com)
 
 {{< vimeo id="116183361">}}
 
+## The product
+
 {{< gallery type="full" galleryName="squaredGallery" >}}
+
+## The system
+
+{{<image img="graph.png">}}

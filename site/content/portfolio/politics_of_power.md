@@ -4,7 +4,7 @@ title = "politics of power"
 subtitle="Multi-plugs with manufactured ideologies"
 img=["politicsofpower.gif"]
 featured_in_home="yes"
-tags=["robot"]
+tags=["Real/Fictional", "Machine Biases"]
 
 [galleries]
 
@@ -17,11 +17,11 @@ tags=["robot"]
   captionTitle = ""
   captionDescription = ""
 
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "technic.jpg"
-  captionTitle = ""
-  captionDescription = ""
+  # [[galleries.gallery.item]]
+  # type="photo"
+  # img = "technic.jpg"
+  # captionTitle = ""
+  # captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
@@ -79,9 +79,18 @@ Three multi-plugs – Model D, M and T – are designed to look and behave based
 
 {{< vimeo id="155295826">}}
 
+## The products
+
+
 {{< gallery type="full" galleryName="heroGallery" >}}
 
+## How it works
+
+{{<image img="technic.jpg">}}
+
 {{< gallery type="grid" galleryName="instructions" >}}
+
+## Plugs Constitutions
 
 {{< tabs >}}
   {{% tab "Model D" %}}
