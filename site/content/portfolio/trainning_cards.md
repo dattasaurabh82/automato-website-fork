@@ -89,7 +89,11 @@ The Basic set **001 #dog** is sold for only **5000$** , but we can create custom
 
 We will ship to you globally, [contact us to get your first set!](mailto:hi@automato.farm)
 
+## The product
+
 {{< gallery type="full" galleryName="heroGallery" >}}
+
+## How it works
 
 {{< gallery type="full" galleryName="instructions" >}}
 

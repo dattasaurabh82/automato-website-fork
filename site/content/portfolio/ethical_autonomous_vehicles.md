@@ -53,4 +53,6 @@ By [Matthieu Cherubini](http://mchrbn.net/ethical-autonomous-vehicles/)
 
 {{< vimeo id="194454704">}}
 
+## How it works
+
 {{< gallery type="grid" galleryName="heroGallery" >}}
