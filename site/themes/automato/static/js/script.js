@@ -99,15 +99,20 @@ $('#nav-icon').click(function() {
 });
 
 
+function theFuture(){
+    $timezone = new Date().getTimezoneOffset()
+    $timezone = parseInt(($timezone<0? '+':'-')+(parseInt(Math.abs($timezone/60))));
+    if($timezone < 8)
+        $thefuture = 'Research & Design from ' + (8-$timezone) + ' hours in the future.';
+    else
+        $thefuture = 'Research & Design from a different future.';
+
+    $('#thefuture').text($thefuture);
+}
 
 
 
 // jQuery
-
-
-
-
-
 $(document).ready(function() {
 
     var nav = document.getElementById('mainNav');
@@ -170,7 +175,7 @@ $(document).ready(function() {
     if ($('#mainNav').hasClass('transparent')) isMenuTransparent = true;
     else isMenuTransparent = false;
 
-
+    theFuture();
 
 });
 
