@@ -4,7 +4,7 @@ title = "text post 2"
 subtitle= "With objects that learn about our homes and environments or need to be taught about routines and habit"
 frontType = "text"
 vimeoId = ""
-img = [""]
+img = ""
 externalLink = ""
 width=3
 

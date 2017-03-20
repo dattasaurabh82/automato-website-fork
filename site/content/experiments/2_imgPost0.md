@@ -3,7 +3,7 @@ date = "2017-10-24T11:04:14+08:00"
 title = "img post"
 frontType = "image"
 vimeoId = ""
-img = ["wshop.jpg"]
+img = "wshop.jpg"
 externalLink= ""
 width=9
 

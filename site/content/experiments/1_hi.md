@@ -4,7 +4,7 @@ title = "img post"
 subtitle= "With objects that learn about our homes and environments or need to be taught about routines and habit"
 frontType = "image"
 vimeoId = ""
-img = ["hi.jpg"]
+img = "hi.jpg"
 externalLink= ""
 width=3
 +++

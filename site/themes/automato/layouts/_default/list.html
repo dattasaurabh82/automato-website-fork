@@ -12,7 +12,7 @@
                         <div class="box-container">
                             {{ if eq .Params.fronttype "image"}}
                             <div class="image-box">
-                              <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}">
+                              <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (.Params.img) "." "_480." }}">
                             </div>
                                 <div class="overlay-title inverted">
                                     <div class="title">
