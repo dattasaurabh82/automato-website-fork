@@ -2,8 +2,7 @@
 date = "2016-11-25T11:04:14+08:00"
 title = "chips & tails"
 subtitle="A real/fictional store for non biological pets."
-img=["chipsandtails.gif"]
-featured_in_home="yes"
+img="chipsandtails.gif"
 tags=["IoT"]
 
 [galleries]
@@ -215,7 +214,7 @@ tags=["IoT"]
 +++
 
 
-With objects that learn about our homes and environments or need to be taught about routines and habits, the way we interact with devices and machines will more and more start to look like the one we have with pets. 
+With objects that learn about our homes and environments or need to be taught about routines and habits, the way we interact with devices and machines will more and more start to look like the one we have with pets.
 
 The relationship we have with Roombas, drones, cameras and thermostats might become closer to the one we have with dogs, cats, and birds. What products and services could be sold in a shop where pets are not only animals?
 

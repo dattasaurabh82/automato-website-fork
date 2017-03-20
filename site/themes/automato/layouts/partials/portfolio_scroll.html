@@ -2,10 +2,8 @@
     <div class="container">
 
         {{ range $index, $element := where .Site.Pages "Section" "portfolio" }}
-            <div class="portfolio_item " style="background-image:url('{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _1024." }}') ">
-                <!-- <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) " ." " _wide." }}"> -->
+            <div class="portfolio_item " style="background-image:url('{{.Site.BaseURL}}img/{{ replace .Params.img "." "_1024." }}') ">
                 <a href="{{ .Permalink }}">
-
                     <div class="portfolio_item_overlay">
                         <div class="inner">
                             <div class="title">

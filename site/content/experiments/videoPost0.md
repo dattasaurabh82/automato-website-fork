@@ -4,7 +4,6 @@ title = "this is a video post"
 frontType = "video"
 vimeoId = 116183361
 img = ""
-externalLink = ""
 width=8
 
 +++

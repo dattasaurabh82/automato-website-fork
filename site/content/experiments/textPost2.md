@@ -5,7 +5,6 @@ subtitle= "With objects that learn about our homes and environments or need to b
 frontType = "text"
 vimeoId = ""
 img = ""
-externalLink = ""
 width=5
 
 +++

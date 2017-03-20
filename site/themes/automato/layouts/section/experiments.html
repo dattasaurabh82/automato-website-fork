@@ -6,14 +6,12 @@
             {{ range .Data.Pages.ByDate.Reverse }}
                 <div class="grid-item grid-sizer col-sm-{{.Params.width}} col-xs-12">
 
-                    {{ if  eq .Params.externalLink ""}}
-                        <a href="{{.Permalink }}">
-                    {{ else }}
-                        <a href="{{.Params.externalLink}}">
-                    {{end}}
 
-                    <!-- <a href="{{.Permalink }}">{{ .Params.frontType }} -->
-
+                  {{ if .Params.externalLink }}
+                    <a href="{{.Params.externalLink}}">
+                  {{ else }}
+                    <a href="{{.Permalink}}">
+                  {{ end }}
 
                             <div class="box-container">
                                 {{ if eq .Params.fronttype "image"}}

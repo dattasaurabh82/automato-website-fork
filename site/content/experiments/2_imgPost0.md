@@ -4,7 +4,7 @@ title = "img post"
 frontType = "image"
 vimeoId = ""
 img = "wshop.jpg"
-externalLink= "http://www.google.com"
+externalLink = "http://www.google.com"
 width=9
 
 +++
