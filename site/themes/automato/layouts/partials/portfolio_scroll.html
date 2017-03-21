@@ -1,7 +1,7 @@
 <section id="portfolio">
     <div class="container">
 
-        {{ range $index, $element := where .Site.Pages "Section" "portfolio" }}
+      {{ range .Data.Pages }}
             <div class="portfolio_item " style="background-image:url('{{.Site.BaseURL}}img/{{ replace .Params.img "." "_1024." }}') ">
                 <a href="{{ .Permalink }}">
                     <div class="portfolio_item_overlay">
@@ -15,7 +15,6 @@
                         </div>
                     </div>
                 </a>
-
             </div>
 
         {{ end }}

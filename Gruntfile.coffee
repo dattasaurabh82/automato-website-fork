@@ -120,7 +120,7 @@ module.exports = (grunt) ->
         if target == 'dev'
             args.push '--baseUrl=http://127.0.0.1:8080'
             args.push '--buildDrafts=false'
-            args.push '--buildFuture=true'
+            args.push '--buildFuture=false'
         hugo = require('child_process').spawn 'hugo', args, stdio: 'inherit'
         (hugo.on e, -> done(true)) for e in ['exit', 'error']
 
