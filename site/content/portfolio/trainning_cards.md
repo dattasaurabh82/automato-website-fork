@@ -97,4 +97,4 @@ We will ship to you globally, [contact us to get your first set!](mailto:hi@auto
 
 {{< gallery type="full" galleryName="instructions" >}}
 
-{{< gallery type="full" galleryName="gif" >}}
+{{<image img="cards-ncc.gif">}}

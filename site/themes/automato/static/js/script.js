@@ -168,6 +168,7 @@ $(document).ready(function() {
         loop: true,
         nav: true,
         lazyLoad: true,
+        navigatio:true,
         navText: [
             "<i class='fa fa-chevron-left fa-2x' aria-hidden='true'></i>",
             "<i class='fa fa-chevron-right fa-2x' aria-hidden='true'></i>"
