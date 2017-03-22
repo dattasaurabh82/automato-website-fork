@@ -41,6 +41,14 @@ $('#mainNav .navbar-toggle, #fullMenu').click(function() {
     }
 });
 
+$("#single-project #project-header .title h1").boxfit(
+  {
+  multiline: true,
+  align_center:false
+  }
+);
+
+
 $('#fullMenu').click(function() {
     $('#nav-icon').removeClass('open');
 });

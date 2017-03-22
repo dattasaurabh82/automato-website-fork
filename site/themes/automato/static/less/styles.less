@@ -494,8 +494,8 @@ a:hover {
                 max-height: 300px;
             }
         }
-
         .title {
+          height: 100%;
             h1 {
                 /* POLITICS OF POWER: */
                 font-family: AlphaHeadlinePro-Bold;
@@ -504,8 +504,16 @@ a:hover {
                 letter-spacing: 0;
                 text-transform: uppercase;
                 mix-blend-mode: difference;
+                max-height: 350px;
+                display: block;
+                span{
+                  text-align: left;
+                }
+
                 @media @mq-small {
-                    font-size: 60px;
+                    //font-size: 60px;
+                    height: 100%;
+
                 }
 
                 a {
