@@ -31,18 +31,6 @@ theme ="automato"
   claim="Research, design & prototype from 7 hours in the future"
   backgroundImages=["plugs.jpg","fan_2.jpg","dog.gif"]
 
-  # #section portfolio
-  # [params.portfolio]
-  # title="We research and develop future products and interfaces sometimes real sometimes fictional."
-  # more="See all projects"
-  # morelink="/research"
-  #
-  # #section blog
-  # [params.blog]
-  # title="We collaborate with studios, companies and institutions to ideate & prototype with emerging technologies"
-  # more="More about automato.farm"
-  # morelink="/about"
-
   #section research
   [params.experiments]
   title="**Thoughts,** **Research,** **Code Snippets** and otehr **experiments** from the farm"

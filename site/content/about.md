@@ -5,8 +5,8 @@ frontType = "text"
 vimeoId = ""
 externalLink= ""
 type="page"
+heroText="We are a **design** and **research** studio based in **Shanghai**"
 +++
-{{<image img="WechatScreenshot.jpg">}}
 
 # We are a design & research studio based in Shanghai consisting of [Simone Rebaudengo](http://simonerebaudengo.com), [Matthieu Cherubini](http://mchrbn.net/), [Saurabh Datta](http://www.dattasaurabh.com) and [Lorenzo Romagnoli](http://lorenzoromagnoli.me/). We combine our pasts in computer science, product design and electrical engineering to work on the fringes of product and interaction design.
 
@@ -19,6 +19,7 @@ type="page"
 
 # If you have a future to explore or if you are just scared of it, [contact us](mailto:hi@automato.farm).
 
+{{<image img="WechatScreenshot.jpg">}}
 
 {{% columns %}}
 
