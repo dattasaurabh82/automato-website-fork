@@ -45,7 +45,7 @@ theme ="automato"
 
   #section research
   [params.research]
-  title="We teach, talk and research the complex relationships between people and machines"
+  title="Thoughts, Research, Code Snippets and otehr experiments from the farm"
   more="get in touch"
   morelink=""
 
