@@ -8,4 +8,4 @@ img=""
 width=6
 externalLink = "http://automato.farm"
 +++
-Yout favourite design collectivw has a new website
+Yout favourite design collection has a new website

@@ -29,7 +29,7 @@ theme ="automato"
   #section hero
   [params.hero]
   claim="Research, design & prototype from 7 hours in the future"
-  backgroundImages=["plugs.jpg","hi.jpg","dog.gif"]
+  backgroundImages=["plugs.jpg","fan_2.jpg","dog.gif"]
 
   #section portfolio
   [params.portfolio]
