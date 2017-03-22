@@ -1,8 +1,18 @@
-<section id="hero" class="bg-img fill cover" style="background-image:url({{$.Site.BaseURL}}img/{{.Site.Params.hero.backgroundGif}})">
+<section id="hero" class="cover fill">
+
+  <div class="owl-carousel cover fill">
+       {{range $.Site.Params.hero.backgroundImages}}
+            <div class="owl-slide fill cover" style="background-image:url({{$.Site.BaseURL}}img/{{.}}">
+            </div>
+        {{end}}
+   </div>
+
+
+
     <div class="container fill">
         <div class="row middle">
           <div class="col-md-12">
-            <h1>{{ .Site.Params.hero.claim }}</h1>
+            <h1 id="thefuture">{{ .Site.Params.hero.claim }}</h1>
           </div>
         </div>
     </div>

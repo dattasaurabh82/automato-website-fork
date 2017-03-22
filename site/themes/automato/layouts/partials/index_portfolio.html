@@ -8,7 +8,7 @@
                     {{ range $index, $element := first 4 (where .Site.Pages "Section" "portfolio") }}
 
                         <div class="item {{ if (eq $index 0) }}active{{end}}">
-                            <img src="{{.Site.BaseURL}}img/{{ replace (index .Params.img 0) "." "_wide." }}">
+                            <img src="{{.Site.BaseURL}}img/{{ replace .Params.img "." "_wide." }}">
 
 
                             <div class="carousel-caption col-md-4 inverted overlay-title">

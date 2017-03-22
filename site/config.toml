@@ -29,7 +29,7 @@ theme ="automato"
   #section hero
   [params.hero]
   claim="Research, design & prototype from 7 hours in the future"
-  backgroundGif="plugs.jpg"
+  backgroundImages=["plugs.jpg","hi.jpg","dog.gif"]
 
   #section portfolio
   [params.portfolio]
@@ -69,3 +69,8 @@ theme ="automato"
   name="vimeo"
   link="https://vimeo.com/automato"
   icon="fa-vimeo"
+
+  [[params.footer.social]]
+  name="instagram"
+  link="https://www.instagram.com/automato.farm/"
+  icon="fa-instagram"

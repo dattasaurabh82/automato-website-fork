@@ -2,8 +2,7 @@
 date = "2016-01-25T11:04:14+08:00"
 title = "politics of power"
 subtitle="Multi-plugs with manufactured ideologies"
-img=["politicsofpower.gif"]
-featured_in_home="yes"
+img="politicsofpower.gif"
 tags=["Real/Fictional", "Machine Biases"]
 
 [galleries]

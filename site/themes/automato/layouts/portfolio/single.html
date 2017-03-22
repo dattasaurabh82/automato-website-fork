@@ -5,17 +5,13 @@
 
     <div id="project-header" class="fill">
         <div class="project fill">
-            {{range .Params.img}}
-                <div class="bg-img fill" style="background-image:url({{$.Site.BaseURL}}img/{{.}})">
-                    <div class="title container">
-
-                        <h1>
-                            {{ $.Title }}
-                        </h1>
-                    </div>
-
+            <div class="bg-img fill" style="background-image:url({{$.Site.BaseURL}}img/{{.Params.img}})">
+                <div class="title container">
+                    <h1>
+                        {{ $.Title }}
+                    </h1>
                 </div>
-            {{end}}
+            </div>
         </div>
     </div>
 
@@ -47,8 +43,13 @@
                                 <span class="tag">{{ . }}</span>
                             {{end}}
                         </div>
+                        {{with .Params.commissionedBy}}
+                            <div class="commissionedBy">
+                                <h5>Commissioned by:</h5>
+                                <a href="{{ .link }}" class="committente" target="_blank">{{ .name }}</a>
+                            </div>
+                        {{end}}
                     </div>
-
                 </div>
             </div>
         </div>

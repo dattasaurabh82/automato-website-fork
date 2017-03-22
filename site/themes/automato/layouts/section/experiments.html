@@ -1,0 +1,72 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" .}}
+<div class="page-long page-list container scrolling-content">
+    <div class="row">
+        <div class="masonryGrid">
+            {{ range .Data.Pages.ByDate.Reverse }}
+                <div class="grid-item grid-sizer col-sm-{{.Params.width}} col-xs-12">
+
+
+                  {{ if .Params.externalLink }}
+                    <a href="{{.Params.externalLink}}" target="_blank">
+                  {{ else }}
+                    <a href="{{.Permalink}}">
+                  {{ end }}
+
+                            <div class="box-container">
+                                {{ if eq .Params.fronttype "image"}}
+                                    <div class="image-box">
+                                        <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (.Params.img) " ." " _480." }}">
+                                    </div>
+                                    <!-- <div class="overlay-title inverted">
+                                        <div class="title">
+                                            <h3>{{.Title}}</h3>
+                                        </div>
+                                        <div class="subtitle">
+                                            <p>{{.Params.subtitle}}</p>
+                                        </div>
+                                    </div> -->
+                                {{end}}
+
+                                {{ if eq .Params.fronttype "video"}}
+                                    <div class="flex-video">
+                                        <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
+                                    </div>
+                                    <!-- <div class="overlay-title inverted">
+                                        <div class="title">
+                                            <h3>{{.Title}}</h3>
+                                        </div>
+                                        <div class="subtitle">
+                                            <p>{{.Params.subtitle}}</p>
+                                        </div>
+                                    </div> -->
+                                {{end}}
+
+                                {{ if eq .Params.fronttype "iframe"}}
+                                    {{.Content}}
+                                {{end}}
+
+                                {{ if eq .Params.fronttype "text"}}
+                                    <div class="text-bg">
+
+                                        <div class="title">
+                                            <h3>{{.Title}}</h3>
+                                        </div>
+                                        <div class="subtitle">
+                                            <p>{{.Params.subtitle}}</p>
+                                        </div>
+                                    </div>
+
+                                {{end}}
+
+                            </div>
+
+                        </a>
+                    </div>
+                {{end}}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

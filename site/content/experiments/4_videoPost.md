@@ -3,9 +3,10 @@ date = "2017-10-22T11:04:14+08:00"
 title = "this is a video post"
 frontType = "video"
 vimeoId = 116183361
-img = [""]
-externalLink = ""
+img = ""
 width=12
+draft=true
+
 
 +++
 

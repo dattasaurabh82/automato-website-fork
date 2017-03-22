@@ -47,7 +47,7 @@ module.exports = (grunt) ->
                         { rename: false, width: '100%', height: '100%' }
                         # different sizes for non cropped images
                         #{ name: '2000', width: 2000 }
-                        #{ name: '1024', width: 1024 }
+                        { name: '1024', width: 1024 }
                         { name: '768', width: 768 }
                         { name: '480', width: 768 }
 
@@ -119,8 +119,8 @@ module.exports = (grunt) ->
         args = ['--source=site', "--destination=../build/#{target}"]
         if target == 'dev'
             args.push '--baseUrl=http://127.0.0.1:8080'
-            args.push '--buildDrafts=true'
-            args.push '--buildFuture=true'
+            args.push '--buildDrafts=false'
+            args.push '--buildFuture=false'
         hugo = require('child_process').spawn 'hugo', args, stdio: 'inherit'
         (hugo.on e, -> done(true)) for e in ['exit', 'error']
 

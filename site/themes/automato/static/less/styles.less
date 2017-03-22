@@ -32,6 +32,10 @@
     font-style: normal;
 }
 
+::-moz-selection { background: rgb(235,28,36);}
+::selection { background: rgb(235,28,36); }
+
+
 .transition (@transition) {
     -webkit-transition: @transition;
     -moz-transition: @transition;
@@ -55,7 +59,7 @@ html {
 }
 
 body {
-  height: 100%;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -136,6 +140,8 @@ a:hover {
 
 .container.offset {
     margin-left: -15px;
+    margin-right: -15px;
+
 }
 
 .page-list {
@@ -204,7 +210,6 @@ a:hover {
 .overlay-title {
     position: absolute;
     left: 3em;
-    right: 60%;
     text-align: left;
     top: 1em;
 
@@ -214,7 +219,7 @@ a:hover {
 }
 
 #mainNav {
-    z-index: 20;
+    z-index: 100;
     position: fixed;
     top: 0;
     width: 100%;
@@ -223,21 +228,21 @@ a:hover {
     display: table;
 
     &.affix-top {
-        padding: 50px 0px;
+        padding: 50px 0;
     }
+
     &.affix {
-        padding: 30px 0px;
+        padding: 30px 0;
     }
-
     @media @mq-small {
-         &.affix-top {
-             padding: 20px 0px;
-         }
-         &.affix {
-           padding: 10px 0px;
-           position: static;
+        &.affix-top {
+            padding: 20px 0;
+        }
 
-         }
+        &.affix {
+            padding: 10px 0;
+            position: static;
+        }
     }
 
     .navbar-header {
@@ -279,7 +284,7 @@ a:hover {
 
     .navbar-toggle {
         float: right;
-        margin: 5px 0px 0px 0px;
+        margin: 5px 0 0;
 
         .icon-bar {
             background-color: @black;
@@ -309,6 +314,34 @@ a:hover {
 #hero {
     margin-bottom: 0;
     background-position: center;
+
+    .owl-carousel.owl-loaded {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+
+        .owl-stage-outer {
+            height: 100%;
+
+            .owl-stage {
+                height: 100%;
+
+                .owl-item {
+                    height: 100%;
+
+                    .owl-slide {
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .container{
+      position: relative;
+      z-index: 1;
+    }
 
     h1 {
         font-size: 6em;
@@ -434,8 +467,10 @@ a:hover {
 
     .columns {
         column-count: 2;
-        padding: 20px;
-        background-color: @gray-lighter
+        padding: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: @white;
     }
 }
 
@@ -736,6 +771,7 @@ a:hover {
             color: @red;
         }
     }
+
     #footer {
         position: fixed;
         background-color: transparent;

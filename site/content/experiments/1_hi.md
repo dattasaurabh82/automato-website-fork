@@ -1,12 +1,13 @@
 +++
 date = "2017-10-25T11:04:14+08:00"
-title = "img post"
-subtitle= "With objects that learn about our homes and environments or need to be taught about routines and habit"
+title = "google"
+subtitle= "this should point to google.com"
 frontType = "image"
 vimeoId = ""
-img = ["hi.jpg"]
-externalLink= ""
-width=3
+img = "hi.jpg"
+externalLink = "http://www.google.com"
+width = 3
+draft=true
 +++
 
 With objects that learn about our homes and environments or need to be taught about routines and habits, the way we interact with devices and machines will more and more start to look like the one we have with pets.
