@@ -428,13 +428,24 @@ a:hover {
 
     .social-links {
         a {
-            width: 40px;
-            border: 1px solid #FF5050;
-            border-radius: 25px;
-            display: inline-block;
-            height: 40px;
-            padding-top: 6px;
-            margin: 0 10px;
+          width: 44px;
+      border: 1px solid #fff;
+      border-radius: 25px;
+      display: inline-block;
+      height: 44px;
+      padding-top: 7px;
+      margin: 0 10px;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+
+      .transition(all 0.5s);
+
+          &:hover{
+            border: 1px solid @red;
+            color: @red;
+
+          }
         }
     }
 }

@@ -56,6 +56,11 @@ theme ="automato"
   link=""
 
   [[params.footer.social]]
+  name="email"
+  link="mailto:hi.automato.farm"
+  icon="fa-envelope-o"
+
+  [[params.footer.social]]
   name="facebook"
   link="https://www.facebook.com/automatofarm/"
   icon="fa-facebook"
