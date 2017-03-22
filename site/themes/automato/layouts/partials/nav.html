@@ -1,4 +1,4 @@
-<nav id="mainNav" class="mainNav" data-spy="affix" data-offset-top="197">
+<nav id="mainNav" class="mainNav {{ if .IsHome }}home{{end}}" data-spy="affix" data-offset-top="197">
     <div class="container">
         <div class="row">
             <div class="col-md-12 navbar-header">
@@ -9,12 +9,12 @@
                     <span></span>
                 </div>
 
-                <a class="navbar-brand page-scroll" href="{{ .Site.BaseURL }}#page-top">
-                    {{ with .Site.Params.navigation.brand }}{{ . }}{{ end }}
+                <a class="navbar-brand page-scroll" href="{{ $.Site.BaseURL }}#page-top">
+                    {{ with $.Site.Params.navigation.brand }}{{ . }}{{ end }}
                 </a>
 
                 <div class="collapse navbar-collapse">
-                    {{ range .Site.Params.navigation.links }}
+                    {{ range $.Site.Params.navigation.links }}
                         <span class="nav_item">
                             <a href="{{ $.Site.BaseURL }}{{ .link }}">
                                 {{ .name }}
@@ -30,7 +30,7 @@
 
 <div id="fullMenu">
     <div class="container">
-        {{ range $index, $element := .Site.Params.navigation.links }}
+        {{ range $index, $element := $.Site.Params.navigation.links }}
             <h1>
                 <a href="{{ $.Site.BaseURL }}{{ .link }}" class="glitchies-{{ $index }}" data-text="{{ .name }}">
                     {{ .name }}

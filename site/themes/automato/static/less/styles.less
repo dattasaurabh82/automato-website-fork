@@ -210,6 +210,9 @@ a:hover {
     background-size: cover;
 }
 
+
+
+
 #mainNav {
     z-index: 100;
     position: fixed;
@@ -226,16 +229,29 @@ a:hover {
     &.affix {
         padding: 30px 0;
     }
-    @media @mq-small {
-        &.affix-top {
-            padding: 20px 0;
-            position: relative;
-        }
 
-        &.affix {
-            padding: 10px 0;
-            position: relative;
-        }
+    &.home{
+      @media @mq-small {
+          &.affix-top {
+              padding: 20px 0;
+          }
+          &.affix {
+              padding: 10px 0;
+          }
+      }
+    }
+
+    &:not(.home){
+      @media @mq-small {
+          &.affix-top {
+              padding: 20px 0;
+              position: relative !important;
+          }
+          &.affix {
+              padding: 10px 0;
+              position: relative !important;
+          }
+      }
     }
 
     .navbar-header {
@@ -286,6 +302,7 @@ a:hover {
 
     &.transparent {
         background-color: transparent;
+
     }
 
     &.inverted {
@@ -466,7 +483,7 @@ a:hover {
 }
 
 #single-page {
-    margin-top: 140px;
+    //margin-top: 140px;
 
     .columns {
         column-count: 2;
@@ -474,7 +491,12 @@ a:hover {
         margin-top: 50px;
         margin-bottom: 50px;
         background-color: @white;
+
+        @media @mq-small{
+          column-count: 1;
+        }
     }
+
 }
 
 #single-project {
