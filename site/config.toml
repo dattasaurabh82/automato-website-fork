@@ -45,7 +45,7 @@ theme ="automato"
 
   #section research
   [params.research]
-  title="We teach, talk and research the complex relationships between people and machines"
+  title="Thoughts, Research, Code Snippets and otehr experiments from the farm"
   more="get in touch"
   morelink=""
 
@@ -54,6 +54,11 @@ theme ="automato"
   claim="We think about the future so you don’t have to."
   subtitle="We are based in Shanghai, Contact us."
   link=""
+
+  [[params.footer.social]]
+  name="email"
+  link="mailto:hi.automato.farm"
+  icon="fa-envelope-o"
 
   [[params.footer.social]]
   name="facebook"

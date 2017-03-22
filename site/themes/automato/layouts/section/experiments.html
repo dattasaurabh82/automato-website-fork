@@ -3,8 +3,11 @@
 <div class="page-long page-list container scrolling-content">
     <div class="row">
         <div class="masonryGrid">
+          <div class="grid-sizer col-xs-3"></div>
+
             {{ range .Data.Pages.ByDate.Reverse }}
-                <div class="grid-item grid-sizer col-sm-{{.Params.width}} col-xs-12">
+
+                <div class="grid-item col-sm-{{.Params.width}} col-xs-12">
 
 
                   {{ if .Params.externalLink }}
@@ -26,9 +29,24 @@
                                             <p>{{.Params.subtitle}}</p>
                                         </div>
                                     </div> -->
-                                {{end}}
 
-                                {{ if eq .Params.fronttype "video"}}
+                                {{ else if eq .Params.fronttype "link"}}
+                                    <div class="image-box">
+                                        <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (.Params.img) " ." " _480." }}">
+                                    </div>
+                                     <div class="overlay-title">
+                                       <div class="inner middle">
+                                        <div class="title">
+                                            {{.Title}}
+                                        </div>
+                                        <div class="subtitle">
+                                            {{.Params.subtitle}}
+                                        </div>
+                                      </div>
+                                      <i class=" fa fa-2x fa-arrow-right" aria-hidden="true"></i>
+                                    </div>
+
+                                {{ else if eq .Params.fronttype "video"}}
                                     <div class="flex-video">
                                         <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
                                     </div>
@@ -40,9 +58,8 @@
                                             <p>{{.Params.subtitle}}</p>
                                         </div>
                                     </div> -->
-                                {{end}}
 
-                                {{ if eq .Params.fronttype "iframe"}}
+                                {{ else if eq .Params.fronttype "iframe"}}
                                     {{.Content}}
                                 {{end}}
 
