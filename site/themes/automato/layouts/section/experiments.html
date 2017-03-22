@@ -1,6 +1,10 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" .}}
-<div class="page-long page-list container scrolling-content">
+<div id="experiments" class="page-long page-list container scrolling-content experiments">
+
+  <div class="hero">
+    <h1>{{.Site.Params.experiments.title | markdownify}}</h1>
+  </div>
     <div class="row">
         <div class="masonryGrid">
           <div class="grid-sizer col-xs-3"></div>
