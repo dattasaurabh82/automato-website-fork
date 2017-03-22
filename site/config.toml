@@ -33,7 +33,7 @@ theme ="automato"
 
   #section research
   [params.experiments]
-  title="**Thoughts,** **Research,** **Code Snippets** and otehr **experiments** from the farm"
+  title="**Thoughts,** **Research,** **Code Snippets** and other **experiments** from the farm"
 
   #section footer
   [params.footer]
