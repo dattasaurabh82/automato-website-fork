@@ -116,7 +116,11 @@ module.exports = (grunt) ->
         'favicons': {
           options: {
             html: 'site/themes/automato/layouts/partials/favicon.html',
-            HTMLPrefix: "{{.Site.BaseURL}}/assets/favicons/"
+            HTMLPrefix: "{{.Site.BaseURL}}assets/favicons/",
+            tileBlackWhite:false,
+            appleTouchBackgroundColor:"none",
+            trueColor: true,
+            precomposed: true,
           },
           icons: {
             src: 'site/themes/automato/static/assets/favicon.png',
