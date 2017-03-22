@@ -6,7 +6,7 @@ frontType = "image" # types are image text link and video
 vimeoId = "" #only if video
 img = "hi.jpg" #used both for image or as background of link
 externalLink = "" # only for link
-width = 3 #number of columns that it will occupy in that amazing grid...
+width = 3 #number of columns that it will occupy in that amazing grid... best if it is multiple of 3
 draft=true #put false to
 +++
 
