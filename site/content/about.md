@@ -8,7 +8,7 @@ type="page"
 heroText="We are a **design** and **research** studio based in **Shanghai**"
 +++
 
-# automato.farm consists of Simone Rebaudengo, Matthieu Cherubini, Saurabh Datta and Lorenzo Romagnoli. of [Simone Rebaudengo](http://simonerebaudengo.com), [Matthieu Cherubini](http://mchrbn.net/), [Saurabh Datta](http://www.dattasaurabh.com) and [Lorenzo Romagnoli](http://lorenzoromagnoli.me/). We combine our pasts in computer science, product design and electrical engineering to work on the fringes of product and interaction design.
+# automato.farm consists of [Simone Rebaudengo](http://simonerebaudengo.com), [Matthieu Cherubini](http://mchrbn.net/), [Saurabh Datta](http://www.dattasaurabh.com) and [Lorenzo Romagnoli](http://lorenzoromagnoli.me/). We combine our pasts in computer science, product design and electrical engineering to work on the fringes of product and interaction design.
 
 # Our work focuses on exploring the next evolution of what interaction design might mean.
 # Bridging and blurring physical and digital interfaces, digging deeper into algorithms and behaviors of products, translating complex black boxes into interfaces and using connectivity and intelligence as new materials to be shaped.
