@@ -60,7 +60,7 @@ module.exports = (grunt) ->
                 files: [
                     expand: true
                     cwd: 'img'
-                    src: '**/*.{gif,jpg,png,svg}'
+                    src: '**/*.{gif,jpg,jpeg,png,svg}'
                     dest: 'site/static/img'
                 ]
 

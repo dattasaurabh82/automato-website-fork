@@ -26,9 +26,21 @@
                                             <p>{{.Params.subtitle}}</p>
                                         </div>
                                     </div> -->
-                                {{end}}
 
-                                {{ if eq .Params.fronttype "video"}}
+                                {{ else if eq .Params.fronttype "link"}}
+                                    <div class="image-box">
+                                        <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (.Params.img) " ." " _480." }}">
+                                    </div>
+                                     <div class="overlay-title inverted">
+                                        <div class="title">
+                                            <h3>{{.Title}}</h3>
+                                        </div>
+                                        <div class="subtitle">
+                                            <p>{{.Params.subtitle}}</p>
+                                        </div>
+                                    </div>
+
+                                {{ else if eq .Params.fronttype "video"}}
                                     <div class="flex-video">
                                         <iframe src="//player.vimeo.com/video/{{.Params.vimeoid}}" allowfullscreen></iframe>
                                     </div>
@@ -40,9 +52,8 @@
                                             <p>{{.Params.subtitle}}</p>
                                         </div>
                                     </div> -->
-                                {{end}}
 
-                                {{ if eq .Params.fronttype "iframe"}}
+                                {{ else if eq .Params.fronttype "iframe"}}
                                     {{.Content}}
                                 {{end}}
 
