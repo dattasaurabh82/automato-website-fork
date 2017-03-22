@@ -50,11 +50,13 @@ We also teach and talk a lot about machines, mundane appliances, and dogs…with
 #### Selected Talks & Interviews
 - [Interaction17](http://interaction17.ixda.org/), New York
 - [Interaction16](http://interaction16.ixda.org/), Helsinki
+- [Ethical Machines](http://ethicalmachines.com/)
 - [Push Conference 15](http://push-conference.com/2015/), Münich
 - [Resonate 14](http://resonate.io/2014/), Belgrade
 - TEI2015, Stanford
 - [NODE15](http://node15.vvvv.org/), Frankfurt
 - [Tasmeem Art&Design Biennale](http://www.tasmeemdoha.com/), Doha
+  - [CBC Radio's Spark](http://www.cbc.ca/radio/spark/spark-248-1.2848222/brad-the-toaster-1.2848225)
 
 #### Selected Media
 - [form design](http://form.de/en/magazine/form268/filter)
