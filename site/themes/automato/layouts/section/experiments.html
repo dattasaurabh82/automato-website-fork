@@ -3,8 +3,11 @@
 <div class="page-long page-list container scrolling-content">
     <div class="row">
         <div class="masonryGrid">
+          <div class="grid-sizer col-xs-3"></div>
+
             {{ range .Data.Pages.ByDate.Reverse }}
-                <div class="grid-item grid-sizer col-sm-{{.Params.width}} col-xs-12">
+
+                <div class="grid-item col-sm-{{.Params.width}} col-xs-12">
 
 
                   {{ if .Params.externalLink }}
@@ -31,13 +34,16 @@
                                     <div class="image-box">
                                         <img class="responsive_images" src="{{.Site.BaseURL}}img/{{ replace (.Params.img) " ." " _480." }}">
                                     </div>
-                                     <div class="overlay-title inverted">
+                                     <div class="overlay-title">
+                                       <div class="inner middle">
                                         <div class="title">
-                                            <h3>{{.Title}}</h3>
+                                            {{.Title}}
                                         </div>
                                         <div class="subtitle">
-                                            <p>{{.Params.subtitle}}</p>
+                                            {{.Params.subtitle}}
                                         </div>
+                                      </div>
+                                      <i class=" fa fa-2x fa-arrow-right" aria-hidden="true"></i>
                                     </div>
 
                                 {{ else if eq .Params.fronttype "video"}}
