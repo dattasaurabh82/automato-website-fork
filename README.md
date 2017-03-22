@@ -56,6 +56,6 @@ grunt deploy
 ### notes:
 - the main css file you should edit is placed inside site/themes/automato/static/less/styles.less
 - images for the blog post that need to be resized should be placed inside a img foolder at the root of the project, the different image sizes will be generated according to the gruntfile
-
+- the favicons are generated with a grunt task `grunt favicons` - just provide the original image called **favicon.png** inside the assets folder of the theme 
 
 Automato site is built with hugo and based on [Hugo, grunt, less kickstart template](https://github.com/lorenzoromagnoli/hugoGruntKickstart) inspired by [http://tjm.io/grunt-hugo/](http://tjm.io/grunt-hugo/) tutorial

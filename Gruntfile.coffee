@@ -113,6 +113,16 @@ module.exports = (grunt) ->
             },
             src: ['**']
         }
+        'favicons': {
+          options: {
+            html: 'site/themes/automato/layouts/partials/favicon.html',
+            HTMLPrefix: "{{.Site.BaseURL}}/assets/favicons/"
+          },
+          icons: {
+            src: 'site/themes/automato/static/assets/favicon.png',
+            dest: 'site/themes/automato/static/assets/favicons'
+          },
+        }
 
     grunt.registerTask 'hugo', (target) ->
         done = @async()
@@ -134,8 +144,10 @@ module.exports = (grunt) ->
         'grunt-responsive-images'
         'grunt-svg-sprite'
         'grunt-gh-pages'
+        'grunt-favicons'
     ]
     grunt.registerTask 'dev', ['less:dev', 'coffee', 'copy:coffee', 'svg_sprite','responsive_images', 'hugo:dev']
-    grunt.registerTask 'default', ['less:dist', 'coffee', 'copy:coffee', 'uglify','svg_sprite', 'responsive_images', 'hugo:dist']
+    grunt.registerTask 'default', ['less:dist', 'coffee', 'copy:coffee', 'uglify','svg_sprite', 'responsive_images','hugo:dist']
     grunt.registerTask 'edit', ['connect', 'watch']
     grunt.registerTask 'deploy', ['gh-pages']
+    grunt.registerTask 'favicon', ['favicons']
