@@ -1,0 +1,14 @@
+<meta property="og:image" content="
+{{if .Params.img }}
+  {{$.Site.BaseURL}}img/{{ replace (.Params.img) " ." " _480." }}
+{{else}}
+  {{$.Site.BaseURL}}img/{{ replace (index $.Site.Params.hero.backgroundImages 0) " ." " _480." }}
+{{end}}
+"
+ />
+
+<meta property="og:description" content="{{ $.Content | truncate 120 " ..." }}" />
+
+<meta property="og:url"content="{{ .Permalink }}" />
+
+<meta property="og:title" content="{{ $.Title }}" />
