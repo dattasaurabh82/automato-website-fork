@@ -87,6 +87,115 @@ width = 12
   captionTitle = ""
   captionDescription = ""
 
+  [[galleries.gallery]]
+ name="items"
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03742.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03747.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03750.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03755.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03758.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03764.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03768.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03772.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03775.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03778.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03782.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery.item]]
+ type="photo"
+ img = "DSC03787.jpg"
+ captionTitle = ""
+ captionDescription = ""
+
+ [[galleries.gallery]]
+  name="heroGallery"
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "buy-cp.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "dress-cp.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "entry-cp.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "hi.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+  [[galleries.gallery.item]]
+  type="photo"
+  img = "pay.jpg"
+  captionTitle = ""
+  captionDescription = ""
+
+
 +++
 
 With objects that learn about our homes and environments or need to be taught about routines and habits, the way we interact with devices and machines will more and more start to look like the one we have with pets.
@@ -97,7 +206,7 @@ Chips & Tails is a near future pop-up store where people can buy toys, treats, m
 
 This project’s format is inspired by [99c futures](http://www.extrapolationfactory.com/99-FUTURES) by The Extrapolation Factory and is a continuation of the work of the [Teacher of algorithms](https://vimeo.com/125768041)
 
-<!-- Posters made by [Henry Hu](https://dribbble.com/henryhu) -->
+<!-- Posters made by [Henry Hu](https://dribbble.com/henryhu)->
 
 ## The products
 
@@ -105,7 +214,7 @@ This project’s format is inspired by [99c futures](http://www.extrapolationfac
 
 {{< gallery type="full" galleryName="heroGallery" >}}
 
-<!-- {{< gallery type="grid" galleryName="posters" >}} -->
+<!-- {{< gallery type="grid" galleryName="posters" >}}->
 
 ## The service offerings
 
