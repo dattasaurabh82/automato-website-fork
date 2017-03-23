@@ -1,137 +1,13 @@
 +++
-date = "2016-05-25T11:04:14+08:00"
-title = "chips & tails"
-subtitle="A real/fictional store for non biological pets."
-img="chipsandtails.gif"
-tags=["IoT"]
-
-[galleries]
-
-[[galleries.gallery]]
-  name="items"
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03742.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03747.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03750.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03755.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03758.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03764.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03768.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03772.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03775.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03778.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03782.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "DSC03787.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-[[galleries.gallery]]
-  name="heroGallery"
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "buy-cp.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "dress-cp.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "entry-cp.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  # [[galleries.gallery.item]]
-  # type="photo"
-  # img = "front.jpg"
-  # captionTitle = ""
-  # captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "hi.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  # [[galleries.gallery.item]]
-  # type="photo"
-  # img = "packaging.jpg"
-  # captionTitle = ""
-  # captionDescription = ""
-
-  [[galleries.gallery.item]]
-  type="photo"
-  img = "pay.jpg"
-  captionTitle = ""
-  captionDescription = ""
-
-  # [[galleries.gallery.item]]
-  # type="photo"
-  # img = "wshop.jpg"
-  # captionTitle = ""
-  # captionDescription = ""
+externalLink = ""
+img = "dress.jpg"
+vimeoId = ""
+frontType = "link"
+subtitle = "Building a fictional store for non biological pet"
+draft = false
+date = "2017-04-25T13:18:05+08:00"
+title = "Chips and Tails Workshop"
+width = 12
 
 [[galleries.gallery]]
   name="posters"
@@ -212,7 +88,6 @@ tags=["IoT"]
   captionDescription = ""
 
 +++
-
 
 With objects that learn about our homes and environments or need to be taught about routines and habits, the way we interact with devices and machines will more and more start to look like the one we have with pets.
 
