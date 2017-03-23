@@ -1,6 +1,6 @@
-baseurl = "https://www.automato.farm"
+baseurl = "https://automato-build.github.io/website/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "automato.farm"
 theme ="automato"
 
 [params]

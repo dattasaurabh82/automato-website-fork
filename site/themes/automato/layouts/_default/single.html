@@ -37,14 +37,20 @@
                         <div class="year">
                             <span class="date">{{ .Date.Format "2006" }}</span>
                         </div>
-                        <div class="tags">
-                            <h5>filed under:</h5>
-                            {{range .Params.tags}}
-                                <span class="tag">{{ . }}</span>
-                            {{end}}
-                        </div>
-                    </div>
 
+                        {{ with .Params.tags }}
+
+                            {{ $len := len . }}
+                            {{if ne $len 0}}
+                                <div class="tags">
+                                    <h5>filed under:</h5>
+                                    {{range .}}
+                                        <span class="tag">{{ . }}</span>
+                                    {{end}}
+                                {{end}}
+                            </div>
+                        {{end}}
+                    </div>
                 </div>
             </div>
         </div>
