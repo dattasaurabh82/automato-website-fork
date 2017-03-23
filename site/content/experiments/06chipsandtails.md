@@ -206,7 +206,6 @@ Chips & Tails is a near future pop-up store where people can buy toys, treats, m
 
 This project’s format is inspired by [99c futures](http://www.extrapolationfactory.com/99-FUTURES) by The Extrapolation Factory and is a continuation of the work of the [Teacher of algorithms](https://vimeo.com/125768041)
 
-<!-- Posters made by [Henry Hu](https://dribbble.com/henryhu)->
 
 ## The products
 
@@ -214,7 +213,7 @@ This project’s format is inspired by [99c futures](http://www.extrapolationfac
 
 {{< gallery type="full" galleryName="heroGallery" >}}
 
-<!-- {{< gallery type="grid" galleryName="posters" >}}->
+<!-- {{< gallery type="grid" galleryName="posters" >}} -->
 
 ## The service offerings
 
