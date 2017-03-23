@@ -143,6 +143,12 @@ twttr.ready(function (twttr) {
   });
 });
 
+$('iframe.frame').load(function(){
+  var $masonryGrid=$('.masonryGrid').masonry({
+      itemSelector: '.grid-item'
+  });
+});
+
 
 $(document).ready(function() {
 
