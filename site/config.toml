@@ -1,4 +1,4 @@
-baseurl = "https://www.automato.farm"
+baseurl = "https://www.automato.farm/"
 languageCode = "en-us"
 title = "automato.farm"
 theme ="automato"
