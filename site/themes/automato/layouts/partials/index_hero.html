@@ -2,7 +2,7 @@
 
   <div class="owl-carousel cover fill">
        {{range $.Site.Params.hero.backgroundImages}}
-            <div class="owl-slide fill cover" style="background-image:url({{$.Site.BaseURL}}img/{{.}}">
+            <div class="owl-slide fill cover" style="background-image:url({{$.Site.BaseURL}}img/{{ replace . "." "_1024." }}">
             </div>
         {{end}}
    </div>

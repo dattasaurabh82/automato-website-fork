@@ -2,7 +2,7 @@
 date = "2016-11-25T11:04:14+08:00"
 title = "The White Box"
 subtitle="An exploration in Transparent automation for Casa Jasmina"
-img="whitebox.gif"
+img="whiteBoxGif.gif"
 tags=["Connected home", "Automation"]
 
 [galleries]
