@@ -1,4 +1,4 @@
-baseurl = "https://automato-build.github.io/website/"
+baseurl = "https://www.automato.farm"
 languageCode = "en-us"
 title = "automato.farm"
 theme ="automato"
