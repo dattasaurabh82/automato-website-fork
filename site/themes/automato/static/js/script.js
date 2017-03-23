@@ -48,6 +48,13 @@ $("#single-project #project-header .title h1").boxfit(
   }
 );
 
+$("#portfolio .portfolio_item .title h3").boxfit(
+  {
+  multiline: true,
+  align_center:true
+  }
+);
+
 $('#fullMenu').click(function() {
     $('#nav-icon').removeClass('open');
 });
