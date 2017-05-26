@@ -11,11 +11,11 @@
               <div class="hero">
                 <h1>{{.Params.heroText | markdownify}}</h1>
               </div>
-              
+
                 {{.Content}}
             </div>
         </div>
     </div>
 </div>
-
+{{ partial "scripts.html" . }}
 {{ partial "footer.html" . }}
