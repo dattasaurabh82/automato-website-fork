@@ -132,7 +132,7 @@ module.exports = (grunt) ->
         done = @async()
         args = ['--source=site', "--destination=../build/#{target}"]
         if target == 'dev'
-            args.push '--baseUrl=http://127.0.0.1:8080'
+            args.push '--baseUrl=http://127.0.0.1:8080/'
             args.push '--buildDrafts=false'
             args.push '--buildFuture=false'
         hugo = require('child_process').spawn 'hugo', args, stdio: 'inherit'

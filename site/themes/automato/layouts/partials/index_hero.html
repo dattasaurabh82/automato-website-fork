@@ -1,11 +1,16 @@
 <section id="hero" class="cover fill">
 
-  <div class="owl-carousel cover fill">
+   <div class="owl-carousel cover fill">
        {{range $.Site.Params.hero.backgroundImages}}
             <div class="owl-slide fill cover" style="background-image:url('{{$.Site.BaseURL}}img/{{ replace . "." "_1024." }}')">
             </div>
         {{end}}
    </div>
+	 <!-- <div class="background-video">
+		 <video autoplay muted loop id="myVideo">
+		   <source src="rain.mp4" type="video/mp4">
+		 </video>
+	 </div> -->
 
 
 
