@@ -11,7 +11,7 @@
                 {{if eq .name $galleryName}}
                     {{range .item}}
                         <a href="{{ $.Site.BaseURL }}img/{{.img }}" class="col-md-4 col-sm-6 col-xs-6 item">
-                            <div style="background-image:url('{{ $.Site.BaseURL }}img/{{ replace .img " ." " _460." }}')" class="img-responsive thumb"></div>
+                            <div style="background-image:url('{{ $.Site.BaseURL }}img/{{ replace .img "." "_480." }}')" class="img-responsive thumb"></div>
                         </a>
                     {{end}}
                 {{end}}
@@ -25,7 +25,7 @@
                 {{if eq .name $galleryName}}
                     {{range .item}}
                         {{if eq .type "photo" }}
-                            <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img " ." " _1440." }}"/>
+                            <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img "." "_1440." }}"/>
                         {{else}}
                             <div class="videoBackground">
                                 <video loop muted autoplay controls>
