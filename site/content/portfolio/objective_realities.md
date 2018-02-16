@@ -128,6 +128,27 @@ tags=["Connected home", "Automation","VR","Object Centered Design" ]
 		img = "OR_Lyon_sign.jpg"
 		captionTitle = ""
 		captionDescription = ""
+
+		[[galleries.gallery]]
+		  name="OR_gifs"
+
+		  [[galleries.gallery.item]]
+		  type="photo"
+		  img = "OR_gif1.gif"
+		  captionTitle = ""
+		  captionDescription = ""
+
+		  [[galleries.gallery.item]]
+		  type="photo"
+			img = "OR_gif2.gif"
+		  captionTitle = ""
+		  captionDescription = ""
+
+			[[galleries.gallery.item]]
+			type="photo"
+			img = "OR_gif3.gif"
+			captionTitle = ""
+			captionDescription = ""
 +++
 **How does it feel to be an object in a  smart home?**
 
@@ -149,6 +170,11 @@ How will we change the way we think about objects, once we can become one oursel
 ## Be anything
 
 {{< gallery type="full" galleryName="OR_factory" >}}
+
+## OR perspectives
+
+{{< gallery type="grid" galleryName="OR_gifs" >}}
+
 
 ## Interaction18 @ Lyon
 
