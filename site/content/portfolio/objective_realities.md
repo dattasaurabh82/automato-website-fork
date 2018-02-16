@@ -119,7 +119,7 @@ tags=["Connected home", "Automation","VR","Object Centered Design" ]
 
 		[[galleries.gallery.item]]
 		type="photo"
-		img = "OR_Lyon_table.jpg"
+		img = "OR_Lyon_sign.jpg"
 		captionTitle = ""
 		captionDescription = ""
 +++
@@ -131,7 +131,7 @@ While designers and companies that deal with smartness and artificial intelligen
 
 **Objective Realities is series of VR experiences** that change the perspective from a human point of view to the one of an object. In OR you will be able to see and act in a virtual smart home with the capabilities and limitations of a specific object and listen to the invisible chatter that happens between networked things and the home.
 
-{{<image img="whitebox.jpg">}}
+{{<image img="OR_together_grey_bg_1024.jpg">}}
 
 **Objective realities** is designed to be a multi-player/object experience where people can switch to an object centric life and interact with each other in their object version of self in the same virtual home. After 'wearing' one of the objects, you will be sweeping the floors like a cleaning robot, blowing things around the house like a fan or moving from plug to plug across the electrical wires. Cleaning robots might get angry at Fans making a mess, Plugs can decide to switch on and off other objects to save energy and you can decide to follow or not the tips from the overlooking Smart Home voice.
 
