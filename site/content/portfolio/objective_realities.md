@@ -58,6 +58,12 @@ tags=["Connected home", "Automation","VR","Object Centered Design" ]
 	captionTitle = ""
 	captionDescription = ""
 
+	[[galleries.gallery.item]]
+	type="photo"
+	img = "OR_factory_plug_power.jpg"
+	captionTitle = ""
+	captionDescription = ""
+
 
 
 	[[galleries.gallery.item]]
