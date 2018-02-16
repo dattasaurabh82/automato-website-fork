@@ -25,7 +25,7 @@
                 {{if eq .name $galleryName}}
                     {{range .item}}
                         {{if eq .type "photo" }}
-                            <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img "." "_1440." }}"/>
+                            <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img "." "_1024." }}"/>
                         {{else}}
                             <div class="videoBackground">
                                 <video loop muted autoplay controls>
