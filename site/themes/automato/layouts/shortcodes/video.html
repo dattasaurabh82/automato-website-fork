@@ -1,0 +1,15 @@
+{{ $video := .Get "video" }}
+
+
+<div class="container offset">
+	<div class="row">
+		<div class="col-md-12">
+			<video controls class="responsive_images">
+				<source src="{{$.Site.BaseURL}}videos/{{$.Page.Params.datafolder}}/{{$video}}.webm" type="video/webm"/>
+				<source src="{{$.Site.BaseURL}}videos/{{$.Page.Params.datafolder}}/{{$video}}.mp4" type="video/mp4"/>
+
+				Your browser does not support the video tag.
+			</video>
+		</div>
+	</div>
+</div>

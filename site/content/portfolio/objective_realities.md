@@ -167,14 +167,18 @@ How will we change the way we think about objects, once we can become one oursel
 
 {{< vimeo id="256034475">}}
 
+
 ## Be anything
 
 {{< gallery type="full" galleryName="OR_factory" >}}
 
 ## OR perspectives
 
-{{< gallery type="grid" galleryName="OR_gifs" >}}
-
+<!-- {{< gallery type="grid" galleryName="OR_gifs" >}} -->
+{{< video video="intro_vr">}}
+{{< video video="fan_vr">}}
+{{< video video="roomba_vr">}}
+{{< video video="plug_vr">}}
 
 ## Interaction18 @ Lyon
 

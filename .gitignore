@@ -5,3 +5,4 @@ build/*
 site/themes/antefact/static/symbol/*
 site/static/css/*
 site/static/img/*
+site/static/videos/*
