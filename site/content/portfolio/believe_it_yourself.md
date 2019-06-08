@@ -12,65 +12,58 @@ tags=["numerology", "Automation","machine divination","BIY", "PCB" ]
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "OR_factory_00_Main.jpg"
+  img = "BIY_3.jpg"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "OR_factory_01_roomba_bump.jpg"
+  img = "BIY_HEAR_CABLES.jpg"
   captionTitle = ""
   captionDescription = ""
 
   [[galleries.gallery.item]]
   type="photo"
-  img = "OR_factory_02_plug_limbo.jpg"
+  img = "BIY_HEAR_SPEAKER.jpg"
   captionTitle = ""
   captionDescription = ""
 
 	[[galleries.gallery.item]]
 	type="photo"
-	img = "OR_factory_03_Fan_closeup.jpg"
+	img = "BIY_HEAR.jpg"
 	captionTitle = ""
 	captionDescription = ""
 
 	[[galleries.gallery.item]]
 	type="photo"
-	img = "OR_factory_04_group.jpg"
+	img = "BIY_MOVE_COMPASS.jpg"
 	captionTitle = ""
 	captionDescription = ""
 
 	[[galleries.gallery.item]]
 	type="photo"
-	img = "OR_factory_05_plug_closup.jpg"
+	img = "BIY_MOVE_HAND.jpg"
 	captionTitle = ""
 	captionDescription = ""
 
 	[[galleries.gallery.item]]
   type="photo"
-  img = "OR_factory_06_unpacking.jpg"
+  img = "BIY_SEE_CAT.jpg"
   captionTitle = ""
   captionDescription = ""
 
 	[[galleries.gallery.item]]
 	type="photo"
-	img = "OR_factory_07_group2.jpg"
+	img = "BIY_SEE_LOTTO.jpg"
 	captionTitle = ""
 	captionDescription = ""
 
 	[[galleries.gallery.item]]
 	type="photo"
-	img = "OR_factory_plug_power.jpg"
+	img = "BIY_SEE_SPEAKER.jpg"
 	captionTitle = ""
 	captionDescription = ""
 
-
-
-	[[galleries.gallery.item]]
-	type="photo"
-	img = "OR_factory_09_mask_off.jpg"
-	captionTitle = ""
-	captionDescription = ""
 +++
 
 **BIY™ is the world’s first belief-based computing kit, that turns popular beliefs and superstitions into 0100110010. Most technology is made for you to blindly believe in it, but BIY™ lets you create and hack with your own logic and beliefs!**
@@ -107,7 +100,7 @@ Our BIY™ kits are built with state-of-the-art machine intelligence software, t
 - 13 programmable IO pin
 - FACTS IN / BELIEFS OUT ports
 
-Check the full kit's technical sheet
+[Check the full kit's technical sheet](../../download/POSTERS_BIY_Move.pdf)
 
 {{< vimeo id="339397826">}}
 
@@ -130,7 +123,7 @@ Check the full kit's technical sheet
 - 13 programmable IO pin
 - FACTS IN / BELIEFS OUT ports
 
-Check the full kit's technical sheet
+[Check the full kit's technical sheet](../../download/POSTERS_BIY_See.pdf)
 
 {{< vimeo id="339396770">}}
 
@@ -152,6 +145,6 @@ Check the full kit's technical sheet
 - 13 programmable IO pin
 - FACTS IN / BELIEFS OUT ports
 
-Check the full kit's technical sheet
+[Check the full kit's technical sheet](../../download/POSTERS_BIY_Hear.pdf)
 
 {{< gallery type="grid" galleryName="BIY_making_of" >}}
