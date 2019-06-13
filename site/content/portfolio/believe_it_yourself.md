@@ -76,7 +76,7 @@ BIY™- Believe it Yourself is a series of real-fictional belief-based computing
 
 We worked with experts in fortune telling from Italy, geomancy from China  and numerology from India to translate their knowledge and beliefs into 0100110010. With BIY™ you can tinker with cameras that can see luck, microphones that interpret your destiny, and compasses that can point you to harmony and balance.
 
-As we like to believe what machines say without often questioning them, now we can all make machines that believe what we might believe in.
+As we tend to believe what machines say without often questioning them, now we can at least make machines that believe what we might believe in.
 
 {{< vimeo id="340687631">}}
 
