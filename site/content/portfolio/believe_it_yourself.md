@@ -74,16 +74,17 @@ But what if we would train machines to measure even more unmeasurable, personal 
 
 BIY™- Believe it Yourself is a series of real-fictional belief-based computing kits to make and tinker with vernacular logics and superstitions.
 
+{{< vimeo id="340687631">}}
+
 We worked with experts in fortune telling from Italy, geomancy from China  and numerology from India to translate their knowledge and beliefs into 0100110010. With BIY™ you can tinker with cameras that can see luck, microphones that interpret your destiny, and compasses that can point you to harmony and balance.
 
 As we tend to believe what machines say without often questioning them, now we can at least make machines that believe what we might believe in.
 
-{{< vimeo id="340687631">}}
+{{<image img="BIY_posters.png">}}
 
 **Order your own BIY™ kits now to translate cold and objective facts into your own true and subjective beliefs!**
-**BIY.SEE, BIY.MOVE and BIY.HEAR are now available for preorder**
+## [BIY.SEE, BIY.MOVE and BIY.HEAR are now available for preorder](mailto:hi@automato.farm)
 
-{{<image img="BIY_posters.png">}}
 
 {{< vimeo id="339397318">}}
 
@@ -155,7 +156,7 @@ As we tend to believe what machines say without often questioning them, now we c
 
 {{< gallery type="grid" galleryName="BIY_making_of" >}}
 
-**BIY™ was a commision by the MAK Vienna for the 2019 Vienna Biennale and part of the "Uncanny Values" Exhibition curated by Marlies Wirth and Paul Faigenfeld.**
+**BIY™ was a commision by the [MAK Vienna](https://www.mak.at/) for the 2019 Vienna Biennale and part of the ["Uncanny Values"](https://www.mak.at/en/program/exhibitions/exhibitions?event_id=1542957252147&article_id=1542957252132) Exhibition curated by Marlies Wirth and Paul Faigenfeld.**
 
 Thanks to all the friends of automato.farm that helped with their support, beliefs, brains, and hands:
 Marlies Wirth, Paul Feigefeld, Jose Emiliano Salto del Giorgio, MariaLuce Lupetti, Bizhou Wang, Chiu Chih, Mi You, Azure Yang, Carmelo Ferreri, Daniel Prost, Bob The Voice, San Isidoro, and San Gennaro.
