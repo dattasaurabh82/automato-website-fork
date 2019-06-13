@@ -66,9 +66,17 @@ tags=["numerology", "Automation","machine divination","BIY", "PCB" ]
 
 +++
 
-**BIY™ is the world’s first belief-based computing kit, that turns popular beliefs and superstitions into 0100110010. Most technology is made for you to blindly believe in it, but BIY™ lets you create and hack with your own logic and beliefs!**
+The fast spreading and ease of access to Machine Learning and Cloud computing has brought to a boom of experiments and excitement around our ability to build machines that make sense, learn, measure and predict the world around us.
 
-Our BIY™ kits are built with state-of-the-art machine intelligence software, translating vernacular knowledge and popular wisdom into playful and educational electronic kits: Tinker with cameras that can see luck, microphones that interpret your destiny, and compasses that can help point you to harmony.
+Moreover, with enough examples, we can train a tool or a 'machine' to recognize or quantify pretty much anything we want. 'Beauty', 'Hotdog-ness' or the more problematic 'Criminal-ness' and 'Sexual orientation' can be now measured within a few frames, based on a model, a probability, determined by a set of arbitrarily collected data. Subjective judgments and biased datasets can easily be turned into objective measures and potential truths, which will then be embedded in devices around us.
+
+But what if we would train machines to measure even more unmeasurable, personal and culturally driven things? If we gather enough samples could we detect signs that prove and detect our superstitions? and can we use that to build tools and devices that reflect our own beliefs?
+
+BIY™- Believe it Yourself is a series of real-fictional belief-based computing kits to make and tinker with vernacular logics and superstitions.
+
+We worked with experts in fortune telling from Italy, geomancy from China  and numerology from India to translate their knowledge and beliefs into 0100110010. With BIY™ you can tinker with cameras that can see luck, microphones that interpret your destiny, and compasses that can point you to harmony and balance.
+
+As we like to believe what machines say without often questioning them, now we can all make machines that believe what we might believe in.
 
 {{< vimeo id="340687631">}}
 
@@ -82,13 +90,11 @@ Our BIY™ kits are built with state-of-the-art machine intelligence software, t
 # BIY.MOVE
 ### Harmonious self driving
 
-**Build your own projects to move around following harmonius paths! The BIY MoveBoards comes preloaded with special trained models and functions!**
+**Build your own projects to move around following harmonious paths! The BIY.Move kit reinterprets location and context awarness through the logic of Chinese Geomancy and Fengshui**
 
-- **BALANCED LOCATION** The board uses its GPS coordinate calculate wheeter it’s in a good location considering the Fengshui rules of positions of Mountains and Rivers nearby.
-
-- **AUSPICIOUS RULER** The board comes with a distance sensor, calculating constantly the most optimal distance to be at, based on the auspiciousess rules of Chinese Geomancy.
-
-- **HARMONIUS COMPASS** The board functions as an harmonius compass, translating the antique knowledge of the Bagua and the balance of the elements into directions and paths for people and robots.
+- **BALANCED LOCATION** The board uses its own GPS coordinate to calculate whether it’s in a good location considering the Fengshui rules of positions of Mountains and Rivers nearby.
+- **AUSPICIOUS RULER** The board comes with a distance sensor, calculating constantly the most optimal distance to be at, based on the auspiciousness rules of Chinese Geomancy.
+- **HARMONIOUS COMPASS** The board functions also as a harmonious compass, translating the antique knowledge of the Bagua and the balance of the personal and natural elements into directions and paths for people and robots.
 
 **Featuring:**
 
@@ -107,10 +113,10 @@ Our BIY™ kits are built with state-of-the-art machine intelligence software, t
 # BIY.SEE
 ### Fortune recognition kit
 
-**Build your own projects to see good and bad luck in everything around you. The BIY See Boards comes preloaded with special trained models and functions!**
+**Build your own projects to see good and bad luck in everything around you. The BIY.See kit reinterprets Object Recognition trained on vernacular Italian Superstisions and through the logic of the Smorfia, Naples' book of dreams**
 
-- **BAD LUCK ALERT:** The board uses the camera feed to interpret the scene and inform the user of very unlucky configurations (e.g. a black cat crossing the street - 13 people sitting at a dinner table, or a person opening an umbrella indoor).
-- **DEEPDREAM TO SMORFIA:** The camera interprets what it sees according to the “smorfia” a book that details the old Neapolitan tradition in which dreams are analyzed and converted into numbers.
+- **OBJECT RECOGNITION TO SMORFIA:** The camera interprets what it sees according to the “smorfia” a book that details the old Neapolitan tradition in which dreams are analyzed and converted into numbers.
+- **BAD LUCK ALERT:** The board uses a camera  to interpret its surrounding and inform the user of very unlucky configurations (e.g. a black cat crossing the street - 13 people sitting at a dinner table, or a person opening an umbrella indoor).
 - **FACE 2 ‘JETTATORE:’**Our Facial recognition is trained on specific facial physiognomies of people that normally bring bad luck (known as Jettatore)
 
 **Featuring:**
@@ -129,11 +135,11 @@ Our BIY™ kits are built with state-of-the-art machine intelligence software, t
 
 ## BIY.HEAR
 ### Numerological language processing kit
-**Build your own projects to find meaning in every name or object. The BIY Hear Boards comes preloaded with special trained models and functions!**
+**Build your own projects to find meaning in every name or object. The BIY.Hear kit tweaks natural language processing to recognize and calculate the destiny hidden in words, trained on Indian Numerology and Astrology**
 
-- **VOICE TO DESTINY:** The two microphones of the  board interpret every name of a person, animal or object it hears into a destiny and lucky numberbased on the word letters and conformations.
+- **VOICE TO DESTINY:** The  microphones on the board listen for every name of a person, animal or object into to then calculate a lucky number and a destiny based on the word letters and conformations.
 - **GENERATIVE PROPHECIES:** The board generates prophecies based on the lucky and destiny numbers that can be heard from its speaker or also printed out with our Destiny printer extension kit.
-- **DESTINY CLOCK:** The board interprets the date and time in which is turned on to determine a contextual Lucky numbers and Destiny number for your projects.
+- **DESTINY CLOCK:** The board interprets the date and time in which is turned on to constantly determine a Lucky numbers and Destiny number for the board itself, that can be used for your projects.
 
 **Featuring:**
 
@@ -148,3 +154,8 @@ Our BIY™ kits are built with state-of-the-art machine intelligence software, t
 [Check the full kit's technical sheet](../../download/POSTERS_BIY_Hear.pdf)
 
 {{< gallery type="grid" galleryName="BIY_making_of" >}}
+
+**BIY™ was a commision by the MAK Vienna for the 2019 Vienna Biennale and part of the "Uncanny Values" Exhibition curated by Marlies Wirth and Paul Faigenfeld.**
+
+Thanks to all the friends of automato.farm that helped with their support, beliefs, brains, and hands:
+Marlies Wirth, Paul Feigefeld, Jose Emiliano Salto del Giorgio, MariaLuce Lupetti, Bizhou Wang, Chiu Chih, Mi You, Azure Yang, Carmelo Ferreri, Daniel Prost, Bob The Voice, San Isidoro, and San Gennaro.
