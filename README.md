@@ -1,18 +1,32 @@
-## setup the environment
+## Setup the environment
+1. Make sure you have the pre-requisities for the dev environment:
+   - [Hugo](https://gohugo.io/installation/)
+   - [node js](https://nodejs.org/en/) 
+     ```shell
+     # mac
+     brew install node
+     ```
+     > Best practice is to install a [node version manager](https://tecadmin.net/install-nvm-macos-with-homebrew/) to manage your nodejs instllations. 
+   - [graphicsmagic](http://www.graphicsmagick.org/index.html).
+   
+      > To create the different sizes of images it uses graphicmagic
+      
+      ```shell
+      # mac
+      brew install imagemagick
+      brew install graphicsmagick
+      npm i -g gm
+      ```
 
- ##### 1. clone the repo
- ##### 2. install the dependencies
-  - if you don't have it already, install [hugo](www.gohugo.io), node and npm. (if you are on mac do everything with brew)
-    - `brew install hugo`
-    - `brew install node`
-  - install the project dependencies
-    - `cd` to the folder
-    - `npm install` (might take a bit)
-
-
- ##### 3. to create the different sizes of images it uses graphicsmagic, if you don't have it, install it as well
-
-## run the site
+2. Clone the repository.
+3. Install the dependencies. 
+   ```shell
+    # cd to the folder
+    npm install
+    # might take a bit ...
+    ```
+ 
+## Run the site
 to run the site on the local machine run
 
 ```
@@ -24,7 +38,7 @@ You should be able to view it at http://127.0.0.1:8080/. the site is automatical
 when you run grunt edit the website is built with option  `--buildDrafts=true` this means that even if a content is marked as draft will be rendered in preview
 
 
-## edit the contents
+## Edit the contents
 
 contents are stored in /site/contents, you can create new pages from the terminal with
 first move to the root of the hugo site inside /site
@@ -42,7 +56,7 @@ this automatically gives date and title to the new contents.
 
 have a look at how other contents are build to understand how to use shortcode and add images and galleries
 
-## deploy the changes
+## Deploy the changes
 first build the site with
 ```
 grunt
