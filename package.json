@@ -1,27 +1,37 @@
 {
-	"name": "site",
-	"version": "1.0.0",
-	"license": "ISC",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"dependencies": {
-		"grunt-svg-sprite": "^1.3.6",
-		"svg-sprite": "^1.3.6"
-	},
-	"devDependencies": {
-		"grunt": "^1.0.1",
-		"grunt-contrib-coffee": "^1.0.0",
-		"grunt-contrib-connect": "^1.0.2",
-		"grunt-contrib-copy": "^1.0.0",
-		"grunt-contrib-less": "^1.4.0",
-		"grunt-contrib-uglify": "^2.0.0",
-		"grunt-contrib-watch": "^1.0.0",
-		"grunt-favicons": "^0.8.0",
-		"grunt-gh-pages": "^2.0.0",
-		"grunt-responsive-images": "^0.1.9",
-		"less-plugin-autoprefix": "^1.5.1",
-		"less-plugin-clean-css": "^1.5.1"
-	}
+  "name": "site",
+  "version": "1.0.0",
+  "description": "automato site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/automato-build/website.git"
+  },
+  "author": "tomatoes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/automato-build/website/issues"
+  },
+  "homepage": "https://github.com/automato-build/website#readme",
+  "dependencies": {
+    "grunt-svg-sprite": "^2.0.1",
+    "svg-sprite": "^2.0.2"
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-coffee": "^2.1.0",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-gh-pages": "^4.0.0",
+    "grunt-responsive-images": "^1.10.1",
+    "less-plugin-autoprefix": "^1.4.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "grunt-favicons": "^0.8.0"
+  }
 }
